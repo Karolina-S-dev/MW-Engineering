@@ -20,40 +20,84 @@ li {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 /* --------------------------- */
 /* REUSABLE */
 /* --------------------------- */
+
+/* BUTTONS */
+.btn {
+  height: 4.5rem;
+  width: 12rem;
+  padding: 0.9rem;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.4s;
+}
+.btn-full {
+  background-color: #b78833;
+  color: #000;
+}
+.btn-full:hover {
+  background-color: #d4a64a;
+}
+/* -------------------------------- */
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
 
 /* --------------------------- */
 /* HEADER */
 /* --------------------------- */
 
 header {
-  padding: 2.5rem 30rem 2.5rem 30rem;
   background-color: #0c0b0c;
 }
 
-.header-logo {
+.header-inner {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+
+.header-brand-col {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  text-decoration: none;
 }
 
-.header-logo p {
+.header-brand-col img {
+  display: block;
+  max-width: 14rem;
+  height: auto;
+}
+
+.header-tagline {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   color: #b1b1b1;
+  letter-spacing: 1px;
 }
-
-nav {
+/* ---MAIN HEADER ROW DIV--- */
+.nav-main-items-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-nav img {
-  max-width: 13rem;
 }
 
 .nav-links {
@@ -71,25 +115,25 @@ nav img {
   text-align: center;
   color: #fff;
   letter-spacing: 2px;
+  transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
   transform: scale(1.05);
-  transition: 0.4s all;
   color: #b78833;
 }
 
 /* --------------------------- */
-/* CLIENTS */
+/* ---- SECTION CLIENTS ---- */
 /* --------------------------- */
 
 .clients {
-  margin: 0 auto;
+  margin: 0 auto 7rem auto;
   max-width: 130rem;
   text-align: center;
 }
 
-.clients-text {
+.clients-header {
   font-size: 4.2rem;
   color: #aaa;
   font-weight: 300;
@@ -98,7 +142,7 @@ nav img {
   text-transform: uppercase;
 }
 
-.carousel {
+.carousel-main-div {
   max-width: 130rem;
   margin: 0 auto;
   overflow: hidden;
@@ -122,8 +166,8 @@ nav img {
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: scroll 24s linear infinite;
-  height: 15rem;
+  animation: scroll 20s linear infinite;
+  height: 13rem;
 }
 .carousel-track:hover {
   animation-play-state: paused;
@@ -142,7 +186,7 @@ nav img {
   width: auto;
   flex-shrink: 0;
   display: block;
-  /* filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4)); */
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.212));
 }
 
 @keyframes scroll {
@@ -152,4 +196,82 @@ nav img {
   to {
     transform: translateX(-50%);
   }
+}
+
+/* --------------------------- */
+/* FOOTER */
+/* --------------------------- */
+
+footer {
+  background-color: #100b0f;
+  color: #fff;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.footer-top-main-div-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 130rem;
+  margin: 0 auto;
+  max-height: fit-content;
+}
+
+footer img {
+  max-width: 45rem;
+  max-height: 25rem;
+}
+
+.footer-contact-and-map-data-row {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.footer-contact-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact-column ion-icon {
+  font-size: 3rem;
+  color: #b78833;
+}
+
+.footer-contact-data {
+  padding-left: 5rem;
+  font-size: 1.6rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-style: normal;
+}
+
+.footer-ion-icon-and-data-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.footer-ion-icon-and-data-row a {
+  transition: all 0.3s ease;
+}
+
+.footer-ion-icon-and-data-row a:hover {
+  color: #b78833;
+}
+
+.footer-google-map iframe {
+  width: 32rem;
+  height: 32rem;
+}
+
+.footer-menu-text {
+  line-height: 3.2rem;
 }

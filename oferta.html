@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- FONT MONTSERRAT -->
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +28,7 @@
     <link rel="manifest" href="img/favicon/site.webmanifest" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/oferta.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <title>MW-engineering</title>
   </head>
@@ -35,91 +36,81 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div class="header-inner">
-        <div class="nav-main-items-row">
-          <a href="index.html" class="header-brand-col">
-            <img
-              src="img/header-logo.png"
-              alt="MW-Engineering - instalacje elektryczne"
-            />
-            <span class="header-tagline">
-              ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY
-            </span>
-          </a>
-          <nav>
-            <ul class="nav-links">
-              <li><a href="about.html">O FIRMIE</a></li>
-              <li><a href="oferta.html">OFERTA</a></li>
-              <li><a href="realizacje.html">REALIZACJE</a></li>
-              <li><a href="kontakt.html">KONTAKT</a></li>
-            </ul>
-          </nav>
+      <nav>
+        <div class="header-logo">
+          <img src="img/logo.png" alt="Company logo" />
+          <p>ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY</p>
         </div>
-      </div>
+        <ul class="nav-links">
+          <li><a href="">O FIRMIE</a></li>
+          <li><a href="">OFERTA</a></li>
+          <li><a href="">REALIZACJE</a></li>
+          <li><a href="">KONTAKT</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <section>
+      <div class="main">
+        <p>Oferta</p>
+      </div>
+    </section>
 
     <!-- SECTION CLIENTS -->
     <section class="clients">
-      <h2 class="clients-header">Współpracujemy z:</h2>
-      <div class="carousel-main-div" aria-label="Logotypy klientów i partnerów">
+      <p class="clients-text">Współpracujemy z:</p>
+      <div class="carousel">
         <div class="carousel-track">
           <!-- GROUP 1 -->
-          <ul class="carousel-group">
-            <li><img src="img/airbus.jpg" alt="Logo Airbus" /></li>
-            <li><img src="img/amazon.jpg" alt="Logo Amazon" /></li>
-            <li><img src="img/luxon.jpg" alt="Logo Luxon" /></li>
-            <li><img src="img/orlen.jpg" alt="Logo Orlen" /></li>
-            <li><img src="img/prologis.jpg" alt="Logo Prologis" /></li>
-            <li><img src="img/signify.jpg" alt="Logo Signify" /></li>
-            <li><img src="img/stellantis.jpg" alt="Logo Stellantis" /></li>
-            <li><img src="img/diagnostyka.jpg" alt="Logo Diagnostyka" /></li>
-          </ul>
+          <div class="carousel-group">
+            <img src="img/airbus.jpg" alt="Logo Airbus" />
+            <img src="img/amazon.jpg" alt="Logo Amazon" />
+            <img src="img/luxon.jpg" alt="Logo Luxon" />
+            <img src="img/orlen.jpg" alt="Logo Orlen" />
+            <img src="img/prologis.jpg" alt="Logo Prologis" />
+            <img src="img/signify.jpg" alt="Logo Signify" />
+            <img src="img/stellantis.jpg" alt="Logo Stellantis" />
+            <img src="img/diagnostyka.jpg" alt="Logo Diagnostyka" />
+          </div>
 
           <!-- GROUP 2 (animation duplicate) -->
-          <ul class="carousel-group" aria-hidden="true">
-            <li><img src="img/airbus.jpg" alt="Logo Airbus" /></li>
-            <li><img src="img/amazon.jpg" alt="Logo Amazon" /></li>
-            <li><img src="img/luxon.jpg" alt="Logo Luxon" /></li>
-            <li><img src="img/orlen.jpg" alt="Logo Orlen" /></li>
-            <li><img src="img/prologis.jpg" alt="Logo Prologis" /></li>
-            <li><img src="img/signify.jpg" alt="Logo Signify" /></li>
-            <li><img src="img/stellantis.jpg" alt="Logo Stellantis" /></li>
-            <li><img src="img/diagnostyka.jpg" alt="Logo Diagnostyka" /></li>
-          </ul>
+          <div class="carousel-group">
+            <img src="img/airbus.jpg" alt="Logo Airbus" />
+            <img src="img/amazon.jpg" alt="Logo Amazon" />
+            <img src="img/luxon.jpg" alt="Logo Luxon" />
+            <img src="img/orlen.jpg" alt="Logo Orlen" />
+            <img src="img/prologis.jpg" alt="Logo Prologis" />
+            <img src="img/signify.jpg" alt="Logo Signify" />
+            <img src="img/stellantis.jpg" alt="Logo Stellantis" />
+            <img src="img/diagnostyka.jpg" alt="Logo Diagnostyka" />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-      <div class="footer-top-main-div-row">
-        <img
-          src="img/footer-logo.png"
-          alt="MW-Engineering - instalacje elektryczne"
-        />
+      <div class="footer-top">
+        <img src="img/logo-footer.png" alt="" />
 
-        <div class="footer-contact-and-map-data-row">
-          <div class="footer-contact-column">
-            <address class="footer-contact-data">
+        <div class="footer-contact-data-row">
+          <div class="footer-menu">
+            <div class="footer-menu-main">
               <h3>Dane kontaktowe:</h3>
               <h3>MW-Engineering Mariusz Wąchocki</h3>
-            </address>
+            </div>
 
-            <div class="footer-ion-icon-and-data-row">
+            <div class="footer-menu-ion-row">
               <ion-icon name="call-outline"></ion-icon>
-              <p>tel. <a href="tel:+48 695 413 382">+48 695 413 382</a></p>
+              <p>tel. +48 695 413 382</p>
             </div>
 
-            <div class="footer-ion-icon-and-data-row">
+            <div class="footer-menu-ion-row">
               <ion-icon name="mail-outline"></ion-icon>
-              <p>
-                email:<a href="mailto:biuro@mw-engineering.pl">
-                  biuro@mw-engineering.pl</a
-                >
-              </p>
+              <p>email: biuro@mw-engineering.pl</p>
             </div>
 
-            <div class="footer-ion-icon-and-data-row">
+            <div class="footer-menu-ion-row">
               <ion-icon name="location-outline"></ion-icon>
               <div class="footer-menu-text">
                 <p>Białe Zagłębie 11 lok. 9</p>
@@ -127,7 +118,7 @@
               </div>
             </div>
 
-            <div class="footer-ion-icon-and-data-row">
+            <div class="footer-menu-ion-row">
               <ion-icon name="business-outline"></ion-icon>
               <div class="footer-menu-text">
                 <p>NIP: 6572847203</p>
@@ -135,7 +126,7 @@
               </div>
             </div>
           </div>
-          <div class="footer-google-map">
+          <div class="footer-map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d191335.39728885508!2d20.530634!3d50.824967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471786364533893f%3A0xf237a4926323931e!2zQmlhxYJlIFphZ8WCxJliaWUgMTEvOSwgMjYtMDUyIE5vd2lueQ!5e1!3m2!1spl!2spl!4v1776257057550!5m2!1spl!2spl"
               width="600"
@@ -149,7 +140,6 @@
         </div>
       </div>
     </footer>
-
     <!-- ION ICONS -->
     <script
       type="module"
