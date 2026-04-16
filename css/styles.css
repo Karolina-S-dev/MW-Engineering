@@ -28,26 +28,26 @@ a {
 
 /* BUTTONS */
 .btn {
-  height: 4.5rem;
-  width: 12rem;
+  height: 4rem;
+  width: 15rem;
   padding: 0.9rem;
   font-size: 1.6rem;
-  border-radius: 8px;
+  border-radius: 23px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   transition: all 0.4s;
 }
 .btn-full {
-  background-color: #b78833;
+  background-color: #ebbb62;
   color: #000;
 }
 .btn-full:hover {
-  background-color: #d4a64a;
+  background-color: #fff;
 }
 /* -------------------------------- */
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -213,7 +213,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 130rem;
+  max-width: 160rem;
   margin: 0 auto;
   max-height: fit-content;
 }
@@ -226,7 +226,7 @@ footer img {
 .footer-contact-and-map-data-row {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 12rem;
 }
 
 .footer-contact-column {
