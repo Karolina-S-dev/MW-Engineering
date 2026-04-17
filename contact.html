@@ -28,6 +28,7 @@
     <link rel="manifest" href="img/favicon/site.webmanifest" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <title>MW-engineering</title>
   </head>
@@ -49,6 +50,7 @@
           <nav>
             <ul class="nav-links">
               <li><a href="about.html">O FIRMIE</a></li>
+              <li><a href="oferta.html">OFERTA</a></li>
               <li><a href="experience.html">DOŚWIADCZENIE</a></li>
               <li><a href="contact.html">KONTAKT</a></li>
             </ul>
@@ -57,36 +59,116 @@
       </div>
     </header>
 
-    <!-- SECTION CLIENTS -->
-    <section class="clients">
-      <h2 class="clients-header">Współpracujemy z:</h2>
-      <div class="carousel-main-div" aria-label="Logotypy klientów i partnerów">
-        <div class="carousel-track">
-          <!-- GROUP 1 -->
-          <ul class="carousel-group">
-            <li><img src="img/airbus.jpg" alt="Logo Airbus" /></li>
-            <li><img src="img/amazon.jpg" alt="Logo Amazon" /></li>
-            <li><img src="img/luxon.jpg" alt="Logo Luxon" /></li>
-            <li><img src="img/orlen.jpg" alt="Logo Orlen" /></li>
-            <li><img src="img/prologis.jpg" alt="Logo Prologis" /></li>
-            <li><img src="img/signify.jpg" alt="Logo Signify" /></li>
-            <li><img src="img/stellantis.jpg" alt="Logo Stellantis" /></li>
-            <li><img src="img/diagnostyka.jpg" alt="Logo Diagnostyka" /></li>
-          </ul>
+    <!-- SECTION CONTACT-US -->
 
-          <!-- GROUP 2 (animation duplicate) -->
-          <ul class="carousel-group" aria-hidden="true">
-            <li><img src="img/airbus.jpg" alt="Logo Airbus" /></li>
-            <li><img src="img/amazon.jpg" alt="Logo Amazon" /></li>
-            <li><img src="img/luxon.jpg" alt="Logo Luxon" /></li>
-            <li><img src="img/orlen.jpg" alt="Logo Orlen" /></li>
-            <li><img src="img/prologis.jpg" alt="Logo Prologis" /></li>
-            <li><img src="img/signify.jpg" alt="Logo Signify" /></li>
-            <li><img src="img/stellantis.jpg" alt="Logo Stellantis" /></li>
-            <li><img src="img/diagnostyka.jpg" alt="Logo Diagnostyka" /></li>
-          </ul>
+    <section class="contact-us-main-row">
+      <!-- CONTACT INVITATION AND PHOTOS (LEFT SIDE) -->
+      <div class="contact-invitation-and-photos">
+        <div class="contact-us-col">
+          <h1>Skontaktuj się z nami !</h1>
+          <p class="contact-us-description">
+            Realizujesz inwestycję, modernizację lub utrzymanie infrastruktury
+            elektrycznej i oświetleniowej? Jeśli szukasz partnera, który rozumie
+            realia pracy zakładów przemysłowych i dowozi projekty bez przestojów
+            — zostaw kontakt. Od lat wspieramy firmy produkcyjne w projektach
+            wymagających niezawodności, optymalizacji kosztów i sprawnej
+            realizacji. Odezwiemy się i zaproponujemy konkretne rozwiązania
+            dopasowane do Twojego zakładu.
+          </p>
+          <div class="contact-us-photos-div-row">
+            <img src="img/air-liquide.jpg" alt="" class="img-left" />
+            <img src="img/air-liquide2.jpg" alt="" class="img-right" />
+          </div>
         </div>
       </div>
+
+      <!-- CONTACT-US-FORM SECTION -->
+      <form
+        class="form-contact-us-main"
+        action="#"
+        method="post"
+        aria-label="Formularz kontaktowy"
+      >
+        <div class="form-group-col">
+          <div class="form-contact-data">
+            <div class="form-ion-icon-and-data-row">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+              <div class="footer-menu-text">
+                <h3>MW-Engineering Mariusz Wąchocki</h3>
+                <p>Białe Zagłębie 11 lok. 9</p>
+                <p>26-052 Nowiny</p>
+              </div>
+            </div>
+
+            <div class="form-ion-icon-and-data-row">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+              <p>
+                tel.
+                <a
+                  href="tel:+48695413382"
+                  aria-label="Zadzwoń pod numer +48695413382"
+                  >+48 695 413 382</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Imię i nazwisko*</label>
+            <input
+              type="text"
+              placeholder="Imię i nazwisko"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input
+              type="email"
+              placeholder="Adres e-mail"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Numer telefonu*</label>
+            <input
+              type="tel"
+              placeholder="Podaj swój numer telefonu"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="position">Stanowisko</label>
+            <input
+              type="text"
+              placeholder="Pana/Pani stanowisko"
+              id="position"
+              name="position"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Wiadomość*</label>
+            <textarea
+              id="message"
+              placeholder="Wpisz swoją wiadomość"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <div class="form-button">
+            <button class="btn btn-full" type="submit">Wyślij</button>
+          </div>
+        </div>
+      </form>
     </section>
 
     <!-- FOOTER -->

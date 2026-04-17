@@ -7,7 +7,7 @@
   min-height: 90vh;
   background-image:
     linear-gradient(#ffffffab, #ffffff9e),
-    url(../css/img/tło.png);
+    url(../css/img/background-image.png);
   background-size: contain;
   }
 

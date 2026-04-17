@@ -28,7 +28,7 @@
     <link rel="manifest" href="img/favicon/site.webmanifest" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/kontakt.css" />
+    <link rel="stylesheet" href="css/experience.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <title>MW-engineering</title>
   </head>
@@ -51,124 +51,71 @@
             <ul class="nav-links">
               <li><a href="about.html">O FIRMIE</a></li>
               <li><a href="oferta.html">OFERTA</a></li>
-              <li><a href="realizacje.html">REALIZACJE</a></li>
-              <li><a href="kontakt.html">KONTAKT</a></li>
+              <li><a href="experience.html">DOŚWIADCZENIE</a></li>
+              <li><a href="contact.html">KONTAKT</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
 
-    <!-- SECTION CONTACT-US -->
+    <!-- SECTION-HERO -->
+    <section class="hero">
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source
+          src="img/photos-from-investments/movies/hero-movie.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="hero-text">
+        <h1>
+          <span class="hero-span-bold">4500+</span> zrealizowanych projektów
+          oświetleniowych
+        </h1>
+        <p>15 lat doświadczenia zespołu</p>
+        <p>Projekty realizowane w Polsce i Niemczech</p>
+        <p>Kilkadziesiąt wdrożeń w środowiskach o podwyższonych wymaganiach</p>
+      </div>
+    </section>
 
-    <section class="contact-us-main-row">
-      <!-- CONTACT INVITATION AND PHOTOS (LEFT SIDE) -->
-      <div class="contact-invitation-and-photos">
-        <div class="contact-us-col">
-          <h1>Skontaktuj się z nami !</h1>
-          <p class="contact-us-description">
-            Realizujesz inwestycję, modernizację lub utrzymanie infrastruktury
-            elektrycznej i oświetleniowej? Jeśli szukasz partnera, który rozumie
-            realia pracy zakładów przemysłowych i dowozi projekty bez przestojów
-            — zostaw kontakt. Od lat wspieramy firmy produkcyjne w projektach
-            wymagających niezawodności, optymalizacji kosztów i sprawnej
-            realizacji. Odezwiemy się i zaproponujemy konkretne rozwiązania
-            dopasowane do Twojego zakładu.
-          </p>
-          <div class="contact-us-photos-div-row">
-            <img src="img/air-liquide.jpg" alt="" class="img-left" />
-            <img src="img/air-liquide2.jpg" alt="" class="img-right" />
-          </div>
+    <!-- SECTION-GALLERY -->
+
+    <section class="gallery">
+      <h1>NASZE REALIZACJE</h1>
+      <div class="gallery-cards-row">
+        <div class="gallery-card">
+          <img src="img/photos-from-investments/car-park/carpark1.jpeg" alt="">
+          <h3>Nazwa realizacji</h3>
+          <p>opis</p>
+        </div>
+
+        <div class="gallery-card">
+          <img src="img/photos-from-investments/Air-Liquide/air-liquide.jpeg" alt="">
+          <h3>Nazwa realizacji</h3>
+          <p>opis</p>
+        </div>
+
+        <div class="gallery-card">
+          <img src="img/photos-from-investments/castorama/castorama.jpeg" alt="">
+          <h3>Nazwa realizacji</h3>
+          <p>opis</p>
+        </div>
+         <div class="gallery-card">
+          <img src="img/photos-from-investments/Jysk/jysk.jpeg" alt="">
+          <h3>Nazwa realizacji</h3>
+          <p>opis</p>
+        </div>
+        <div class="gallery-card">
+          <img src="img/photos-from-investments/bricoman/bricoman.jpeg" alt="">
+          <h3>Nazwa realizacji</h3>
+          <p>opis</p>
+        </div>
+        <div class="gallery-card">
+          <img src="img/photos-from-investments/manufaktura/manu.jpeg" alt="">
+          <h3>Nazwa realizacji</h3>
+          <p>opis</p>
         </div>
       </div>
-
-      <!-- CONTACT-US-FORM SECTION -->
-      <form
-        class="form-contact-us-main"
-        action="#"
-        method="post"
-        aria-label="Formularz kontaktowy"
-      >
-        <div class="form-group-col">
-          <div class="form-contact-data">
-            <div class="form-ion-icon-and-data-row">
-              <ion-icon name="location" aria-hidden="true"></ion-icon>
-              <div class="footer-menu-text">
-                <h3>MW-Engineering Mariusz Wąchocki</h3>
-                <p>Białe Zagłębie 11 lok. 9</p>
-                <p>26-052 Nowiny</p>
-              </div>
-            </div>
-
-            <div class="form-ion-icon-and-data-row">
-              <ion-icon name="call" aria-hidden="true"></ion-icon>
-              <p>
-                tel.
-                <a
-                  href="tel:+48695413382"
-                  aria-label="Zadzwoń pod numer +48695413382"
-                  >+48 695 413 382</a
-                >
-              </p>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="name">Imię i nazwisko*</label>
-            <input
-              type="text"
-              placeholder="Imię i nazwisko"
-              id="name"
-              name="name"
-              autocomplete="name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email*</label>
-            <input
-              type="email"
-              placeholder="Adres e-mail"
-              id="email"
-              name="email"
-              autocomplete="email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="phone">Numer telefonu*</label>
-            <input
-              type="tel"
-              placeholder="Podaj swój numer telefonu"
-              id="phone"
-              name="phone"
-              autocomplete="tel"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="position">Stanowisko</label>
-            <input
-              type="text"
-              placeholder="Pana/Pani stanowisko"
-              id="position"
-              name="position"
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Wiadomość*</label>
-            <textarea
-              id="message"
-              placeholder="Wpisz swoją wiadomość"
-              name="message"
-              required
-            ></textarea>
-          </div>
-          <div class="form-button">
-            <button class="btn btn-full" type="submit">Wyślij</button>
-          </div>
-        </div>
-      </form>
     </section>
 
     <!-- FOOTER -->
@@ -240,5 +187,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="js/experience.js"></script>
   </body>
 </html>

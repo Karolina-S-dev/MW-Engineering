@@ -1,0 +1,112 @@
+/* ----SECTION-HERO---- */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    #000000e7 0%,
+    /* czarny */ #00000099 40%,
+    /* pół przezroczysty */ #b789335f 100% /* złoty */
+  );
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  left: 8rem;
+  bottom: 5rem;
+  color: #fff;
+  z-index: 3;
+  line-height: 5rem;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.hero-text p {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.hero-span-bold {
+  font-weight: 700;
+}
+
+/* -- SECTION-GALLERY -- */
+
+.gallery {
+  background-color: #dcdee3;
+  padding: 5rem 5rem;
+}
+
+.gallery-cards-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+  max-width: 170rem;
+  margin: 0 auto;
+}
+.gallery-card {
+  background-color: #fff;
+  height: 65rem;
+  flex: 1 0 calc(33% - 5rem);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  transition: all 0.4s ease;
+}
+
+.gallery-card:hover{
+  transform: scale(1.03);
+  box-shadow: 0 2rem 4rem #0000003c; 
+}
+.gallery-card img {
+  width: 100%;
+  border-radius: 1rem;
+  max-height: 30rem;
+  height: 100%;
+}
+
+.gallery h1{
+  padding: 5rem;
+  text-align: center;
+  font-size: 4.2rem;
+  color: #6d6b6b;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.gallery-card h3{
+  padding: 4rem 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase ;
+}
+.gallery-card p{
+  padding: 4rem 1rem;
+  font-weight: 400;
+  font-size: 3rem;
+}
