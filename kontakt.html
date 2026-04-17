@@ -61,13 +61,12 @@
 
     <!-- SECTION CONTACT-US -->
 
-    
     <section class="contact-us-main-row">
       <!-- CONTACT INVITATION AND PHOTOS (LEFT SIDE) -->
       <div class="contact-invitation-and-photos">
         <div class="contact-us-col">
           <h1>Skontaktuj się z nami !</h1>
-          <h2>
+          <p class="contact-us-description">
             Realizujesz inwestycję, modernizację lub utrzymanie infrastruktury
             elektrycznej i oświetleniowej? Jeśli szukasz partnera, który rozumie
             realia pracy zakładów przemysłowych i dowozi projekty bez przestojów
@@ -75,7 +74,7 @@
             wymagających niezawodności, optymalizacji kosztów i sprawnej
             realizacji. Odezwiemy się i zaproponujemy konkretne rozwiązania
             dopasowane do Twojego zakładu.
-          </h2>
+          </p>
           <div class="contact-us-photos-div-row">
             <img src="img/air-liquide.jpg" alt="" class="img-left" />
             <img src="img/air-liquide2.jpg" alt="" class="img-right" />
@@ -84,13 +83,16 @@
       </div>
 
       <!-- CONTACT-US-FORM SECTION -->
-      <form class="form-contact-us-main">
+      <form
+        class="form-contact-us-main"
+        action="#"
+        method="post"
+        aria-label="Formularz kontaktowy"
+      >
         <div class="form-group-col">
-
-
           <div class="form-contact-data">
             <div class="form-ion-icon-and-data-row">
-              <ion-icon name="location"></ion-icon>
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
               <div class="footer-menu-text">
                 <h3>MW-Engineering Mariusz Wąchocki</h3>
                 <p>Białe Zagłębie 11 lok. 9</p>
@@ -99,29 +101,49 @@
             </div>
 
             <div class="form-ion-icon-and-data-row">
-              <ion-icon name="call"></ion-icon>
-              <p>tel. <a href="tel:+48 695 413 382">+48 695 413 382</a></p>
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+              <p>
+                tel.
+                <a
+                  href="tel:+48695413382"
+                  aria-label="Zadzwoń pod numer +48695413382"
+                  >+48 695 413 382</a
+                >
+              </p>
             </div>
-
-
           </div>
 
-
-
           <div class="form-group">
-            <label for="name">Imię i nazwisko</label>
-            <input type="text" placeholder="Imię i nazwisko" id="name" required/>
+            <label for="name">Imię i nazwisko*</label>
+            <input
+              type="text"
+              placeholder="Imię i nazwisko"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="email">Email*</label>
-            <input type="email" placeholder="Adres e-mail" id="email" required/>
+            <input
+              type="email"
+              placeholder="Adres e-mail"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="phone">Numer telefonu*</label>
             <input
               type="tel"
               placeholder="Podaj swój numer telefonu"
-              id="phone" required
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+              required
             />
           </div>
           <div class="form-group">
@@ -129,23 +151,25 @@
             <input
               type="text"
               placeholder="Pana/Pani stanowisko"
-              id="position" required
+              id="position"
+              name="position"
             />
           </div>
           <div class="form-group">
-            <label for="message">Wiadomość</label>
+            <label for="message">Wiadomość*</label>
             <textarea
               id="message"
-              placeholder="Wpisz swoją wiadomość" required
+              placeholder="Wpisz swoją wiadomość"
+              name="message"
+              required
             ></textarea>
           </div>
           <div class="form-button">
-            <button class="btn btn-full">Wyślij</button>
+            <button class="btn btn-full" type="submit">Wyślij</button>
           </div>
         </div>
       </form>
     </section>
-    
 
     <!-- FOOTER -->
     <footer>

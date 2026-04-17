@@ -1,30 +1,29 @@
 /* -----SECTION CONTACT-US----- */
 
 .contact-us-main-row {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem 0;
   display: flex;
   flex-direction: row;
-  height: 105rem;
+  min-height: 90vh;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.769), rgba(255, 255, 255, 0.85)),
+    linear-gradient(#ffffffab, #ffffff9e),
     url(../css/img/tło.png);
   background-size: contain;
-}
+  }
 
 /* -----CONTACT INVITATION AND PHOTOS (LEFT SIDE)----- */
 .contact-invitation-and-photos {
-  width: 60%;
+  flex: 0 0 60%;
 }
 
 .contact-us-col {
   max-width: 90rem;
-  margin: 3rem 5rem 5rem 40rem;
+  margin: 3rem auto 5rem auto;
+  transform: translateX(6rem);
+  padding: 0 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  display: flex;
-  flex-direction: column;
   gap: 8rem;
 }
 
@@ -49,23 +48,23 @@
   background: #b78833;
 }
 
-.contact-us-col h2 {
+.contact-us-description {
   font-size: 2rem;
   text-align: justify;
   text-indent: 3rem;
   color: #393838;
   line-height: 3.5rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .contact-us-photos-div-row {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 6rem;
+  gap: 5rem;
 }
 
 .contact-us-photos-div-row img {
+  width: calc(50% - 1.5rem);
   max-width: 30rem;
   height: auto;
   border-radius: 2rem;
@@ -81,19 +80,26 @@
 
 /* -----CONTACT-US-FORM SECTION (RIGHT SIDE)----- */
 .form-contact-us-main {
-  width: 40%;
+  min-width: 32rem;
   background-color: #dcdee3;
   border-top-left-radius: 6rem;
   border-bottom-left-radius: 6rem;
-  padding-left: 5rem;
-  padding-top: 5rem;
+  padding: 5rem;
+  flex: 0 0 40%;
+  transition: all 0.3s ease;
+}
+
+.form-contact-us-main:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 1.2rem 3rem #00000014;
 }
 
 .form-group-col {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 70rem;
+  width: 100%;
+  max-width: 70rem;
 }
 
 .form-ion-icon-and-data-row {
@@ -162,8 +168,8 @@ textarea {
 }
 .form-group input:focus,
 .form-group textarea:focus {
-  border: 1px solid #475569; /* 🔥 steel blue-gray */
-  box-shadow: 0 0 0 2px rgba(71, 85, 105, 0.2);
+  border: 1px solid #475569;
+  box-shadow: 0 0 0 2px #47556933;
   transform: scale(1.01);
 }
 
@@ -177,3 +183,4 @@ textarea {
   display: block;
   align-self: center;
 }
+

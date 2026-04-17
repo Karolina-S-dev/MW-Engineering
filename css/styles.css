@@ -38,12 +38,27 @@ a {
   transition: all 0.4s;
 }
 .btn-full {
-  background-color: #ebbb62;
-  color: #000;
+  background: linear-gradient(135deg, #ebbb62, #b78833);
+  color: #fff;
+  border: none;
 }
 .btn-full:hover {
   background-color: #fff;
 }
+
+.btn.btn-full {
+  transition: all 0.3s ease;
+}
+
+.btn.btn-full:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem #00000026;
+}
+
+.btn.btn-full:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem #0000001f;}
+
 /* -------------------------------- */
 
 h1 {
