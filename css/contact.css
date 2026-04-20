@@ -67,7 +67,7 @@
   width: calc(50% - 1.5rem);
   max-width: 30rem;
   height: auto;
-  border-radius: 2rem;
+  border-radius: 5px;
 }
 
 .img-left {
@@ -182,5 +182,33 @@ textarea {
 .form-button {
   display: block;
   align-self: center;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #c89b3c, #a67c2a);
+  border: 1px solid #a67c2a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: none;
+  height: 4rem;
+  width: 15rem;
+  padding: 0.9rem;
+  font-size: 1.6rem;
+  border-radius: 23px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.4s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1rem 2rem #00000026;
+  background: #fff;
+  color: black;
+}
+
+.btn-submit:active {
+  transform: translateY(3px);
+  box-shadow: 0 0.5rem 1rem #0000001f;
 }
 
