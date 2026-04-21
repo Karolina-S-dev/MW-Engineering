@@ -67,17 +67,6 @@ a {
   transform: translateY(-1px);
 }
 
-/* ----------------------------*/
-h2 {
-  font-size: 4.2rem;
-  font-weight: 300;
-  letter-spacing: 3px;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
 /* --------------------------- */
 /* HEADER */
 /* --------------------------- */
@@ -185,7 +174,7 @@ header {
 /* --------------------------- */
 
 .home-hero-section {
-  background-image: url(../img/landing-page/landing-background.png);
+  background-image: url(../img/home/landing-background.png);
   height: 60vh;
   background-size: cover;
   background-position: center;
@@ -214,16 +203,16 @@ header {
   position: relative;
   max-width: 80rem;
   z-index: 3;
-  padding: 4rem;
+  padding: 4rem 0;
   margin-left: 34rem;
-  height: 60vh;
+  max-height: fit-content;
 }
 .home-hero-content h1 {
   font-size: 4.5rem;
   color: #fff;
   font-weight: 600;
   line-height: 7rem;
-  margin-bottom: 1.5rem 0 2rem 0;
+  margin: 1rem 0 2rem 0;
 }
 
 .home-hero-content p {
@@ -246,15 +235,197 @@ header {
   flex-direction: row;
   align-items: center;
   gap: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 1.5rem;
   color: #fff;
   font-size: 1.9rem;
+}
+.home-hero-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .home-hero-list ion-icon {
   font-size: 3rem;
   color: #f5a623;
   flex-shrink: 0;
+}
+
+/* --------------------------- */
+/* ---- SECTION OFFER ---- */
+/* --------------------------- */
+
+.home-offer-container {
+  margin: 0 auto;
+  max-width: 170rem;
+  padding: 5rem 0;
+}
+
+.home-offer-intro h2 {
+  font-size: 3.8rem;
+  color: #143158;
+  font-weight: 600;
+  line-height: 5rem;
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.home-offer-intro h2::after {
+  position: absolute;
+  content: "";
+  background: #14315830;
+  height: 2px;
+  width: 100rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+}
+
+.home-offer-intro p {
+  font-size: 1.9rem;
+  color: #143158;
+  font-weight: 600;
+  line-height: 3.3rem;
+  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.home-offer-cards-div {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.home-offer-card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  flex: 1 1 0;
+  aspect-ratio: 1 / 0.8;
+  border-radius: 6px;
+}
+.home-offer-card-icon-header-row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 3px solid #6d6b6b53;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3rem;
+  gap: 1rem;
+}
+
+.home-offer-card h3 {
+  font-size: 2.7rem;
+  line-height: 4rem;
+  font-weight: 700;
+  color: #143158;
+  width: fit-content;
+}
+
+.home-offer-card p {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #143158;
+  font-weight: 600;
+  text-align: justify;
+  padding-top: 3rem;
+}
+
+.home-offer-card img {
+  width: 9rem;
+  height: 9rem;
+  object-fit: contain;
+}
+
+/* --------------------------- */
+/* ---- SECTION PROOF ---- */
+/* --------------------------- */
+
+.home-proof-section {
+  padding: 6rem 0;
+}
+.home-proof-container {
+  margin: 0 auto;
+  max-width: 140rem;
+  min-height: 40rem;
+}
+
+.home-proof-container h2 {
+  font-size: 3.8rem;
+  color: #143158;
+  font-weight: 600;
+  line-height: 5rem;
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+}
+
+.home-proof-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 2px solid rgba(20, 49, 88, 0.08);
+  border-bottom: 2px solid rgba(20, 49, 88, 0.08);
+}
+
+.home-proof-stat {
+  display: inline-flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+  position: relative;
+  flex: 1;
+}
+
+.home-proof-stat:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 6rem;
+  background-color: rgba(20, 49, 88, 0.12);
+}
+
+.home-proof-stat:last-child strong {
+  font-size: 3.4rem;
+  color: #2f3742;
+}
+.home-proof-stat strong {
+  display: block;
+  font-size: 5.2rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #f08a1a;
+  margin-bottom: 1rem;
+}
+
+.home-proof-stat strong span {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.home-proof-stat p {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #2f3742;
+  font-weight: 600;
+}
+.home-proof-logos {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.home-proof-logos img {
+  max-height: 7rem;
+  width: auto;
+  object-fit: contain;
 }
 
 /* --------------------------- */
