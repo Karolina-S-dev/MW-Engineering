@@ -25,6 +25,15 @@ a {
 /* --------------------------- */
 /* REUSABLE */
 /* --------------------------- */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
 /* BUTTONS */
 
 .btn {
@@ -38,12 +47,12 @@ a {
   align-items: center;
   letter-spacing: 1.5px;
   font-weight: 600;
-  border-radius: 3px;
+  border-radius: 0.3rem;
   transition: all 0.2s ease;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #c89b3c, #a67c2a);
+  background: linear-gradient(135deg, #e2b041, #a67c2a);
   color: #fff;
   border: 1px solid #a67c2a;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
@@ -78,13 +87,11 @@ header {
 .header-inner {
   max-width: 160rem;
   margin: 0 auto;
-  padding: 2.5rem 0;
   width: 100%;
+  padding: 3rem 0;
 }
 
 .header-brand-col {
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
   text-decoration: none;
 }
@@ -104,13 +111,11 @@ header {
 /* ---MAIN HEADER ROW DIV--- */
 .nav-main-items-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
 .nav-links {
   display: flex;
-  flex-direction: row;
   gap: 2rem;
 }
 
@@ -126,7 +131,6 @@ header {
   align-items: center;
   letter-spacing: 2px;
   color: #fff;
-  font-weight: 500;
 }
 
 .nav-button:hover {
@@ -154,7 +158,7 @@ header {
 
 .nav-button--primary {
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   color: #000;
   font-weight: 600;
 }
@@ -203,7 +207,6 @@ header {
   position: relative;
   max-width: 80rem;
   z-index: 3;
-  padding: 4rem 0;
   margin-left: 34rem;
   max-height: fit-content;
 }
@@ -218,14 +221,12 @@ header {
 .home-hero-content p {
   font-size: 2rem;
   color: #fff;
-  font-weight: 500;
   line-height: 4rem;
   margin-bottom: 2rem;
 }
 
 .home-hero-buttons {
   display: flex;
-  flex-direction: row;
   gap: 2rem;
   margin-bottom: 4rem;
 }
@@ -247,7 +248,7 @@ header {
 
 .home-hero-list ion-icon {
   font-size: 3rem;
-  color: #f5a623;
+  color: #e2b041;
   flex-shrink: 0;
 }
 
@@ -258,15 +259,13 @@ header {
 .home-offer-container {
   margin: 0 auto;
   max-width: 170rem;
-  padding: 5rem 0;
 }
 
 .home-offer-intro h2 {
   font-size: 3.8rem;
-  color: #143158;
   font-weight: 600;
   line-height: 5rem;
-  margin: 1rem 0 2rem 0;
+  margin-bottom: 2rem;
   text-align: center;
   position: relative;
 }
@@ -284,60 +283,54 @@ header {
 
 .home-offer-intro p {
   font-size: 1.9rem;
-  color: #143158;
   font-weight: 600;
   line-height: 3.3rem;
-  margin-bottom: 2rem;
   margin-bottom: 5rem;
   text-align: center;
 }
 
 .home-offer-cards-div {
   display: flex;
-  flex-direction: row;
   gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .home-offer-card {
-  display: flex;
-  flex-direction: column;
   padding: 3rem;
   background-color: rgba(255, 255, 255, 0.96);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  flex: 1 1 0;
   aspect-ratio: 1 / 0.8;
-  border-radius: 6px;
+  border-radius: 0.6rem;
+  flex: 0 0 calc(25% - 2.5rem);
 }
 .home-offer-card-icon-header-row {
   display: flex;
-  flex-direction: row;
   border-bottom: 3px solid #6d6b6b53;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding-bottom: 3rem;
   gap: 1rem;
 }
 
 .home-offer-card h3 {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   line-height: 4rem;
   font-weight: 700;
-  color: #143158;
   width: fit-content;
 }
 
 .home-offer-card p {
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #143158;
   font-weight: 600;
   text-align: justify;
   padding-top: 3rem;
 }
 
 .home-offer-card img {
-  width: 9rem;
-  height: 9rem;
+  width: 8rem;
+  height: 8rem;
   object-fit: contain;
 }
 
@@ -345,38 +338,33 @@ header {
 /* ---- SECTION PROOF ---- */
 /* --------------------------- */
 
-.home-proof-section {
-  padding: 6rem 0;
-}
 .home-proof-container {
   margin: 0 auto;
   max-width: 140rem;
-  min-height: 40rem;
 }
 
 .home-proof-container h2 {
   font-size: 3.8rem;
-  color: #143158;
   font-weight: 600;
   line-height: 5rem;
-  margin: 1rem 0 2rem 0;
+  margin-bottom: 4rem;
   text-align: center;
 }
 
 .home-proof-stats {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   border-top: 2px solid rgba(20, 49, 88, 0.08);
   border-bottom: 2px solid rgba(20, 49, 88, 0.08);
 }
 
 .home-proof-stat {
-  display: inline-flex;
+  align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 3rem 2rem;
   position: relative;
   flex: 1;
+  min-height: 14rem;
 }
 
 .home-proof-stat:not(:last-child)::after {
@@ -386,20 +374,21 @@ header {
   right: 0;
   transform: translateY(-50%);
   width: 1px;
-  height: 6rem;
+  height: 5rem;
   background-color: rgba(20, 49, 88, 0.12);
 }
 
 .home-proof-stat:last-child strong {
-  font-size: 3.4rem;
-  color: #2f3742;
+  font-size: 4.5rem;
+  color: #282828;
 }
+
 .home-proof-stat strong {
   display: block;
-  font-size: 5.2rem;
+  font-size: 5rem;
   line-height: 1;
   font-weight: 700;
-  color: #f08a1a;
+  color: #e2b041;
   margin-bottom: 1rem;
 }
 
@@ -411,17 +400,17 @@ header {
 .home-proof-stat p {
   font-size: 2rem;
   line-height: 1.4;
-  color: #2f3742;
   font-weight: 600;
 }
+
 .home-proof-logos {
-  margin-top: 3rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 80rem;
-  margin: 0 auto;
+  justify-content: center;
+  max-width: 100rem;
+  margin: 2rem auto 0 auto;
+  gap: 2rem;
 }
+
 .home-proof-logos img {
   max-height: 7rem;
   width: auto;
@@ -433,7 +422,7 @@ header {
 /* --------------------------- */
 
 .clients {
-  margin: 0 auto 7rem auto;
+  margin: 0 auto;
   max-width: 130rem;
   text-align: center;
 }
@@ -443,8 +432,8 @@ header {
   color: #aaa;
   font-weight: 300;
   letter-spacing: 3px;
-  padding: 4rem 0;
   text-transform: uppercase;
+  margin-bottom: 5rem;
 }
 
 .carousel-main-div {
@@ -516,7 +505,6 @@ footer {
 
 .footer-top-main-div-row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   max-width: 175rem;
   width: 100%;
@@ -532,12 +520,9 @@ footer img {
 
 .footer-contact-and-map-data-row {
   display: flex;
-  flex-direction: row;
 }
 
 .footer-contact-column {
-  display: flex;
-  flex-direction: column;
   margin-right: 15rem;
 }
 
@@ -550,8 +535,6 @@ footer img {
   padding-left: 5rem;
   font-size: 1.6rem;
   height: 6rem;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1rem;
   font-style: normal;
@@ -559,7 +542,6 @@ footer img {
 
 .footer-ion-icon-and-data-row {
   display: flex;
-  flex-direction: row;
   gap: 1rem;
   align-items: center;
   padding: 1.2rem;
