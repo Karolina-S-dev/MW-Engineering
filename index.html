@@ -25,6 +25,11 @@
       href="img/favicon/apple-touch-icon.png"
     />
     <meta name="apple-mobile-web-app-title" content="MW" />
+    <meta
+      name="description"
+      content="
+      Projektowanie i wykonawstwo instalacji elektrycznych oraz oświetlenia przemysłowego. Modernizacje, rozdzielnice, systemy sterowania."
+    />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -46,7 +51,7 @@
               ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY
             </span>
           </a>
-          <nav>
+          <nav aria-label="Główna nawigacja">
             <ul class="nav-links">
               <li>
                 <a href="about.html" class="nav-button nav-button--secondary"
@@ -68,217 +73,235 @@
         </div>
       </div>
     </header>
-
-    <!-- SECTION HERO -->
-    <section class="home-hero-section section">
-      <div class="home-hero-content">
-        <h1>
-          Oświetlenie przemysłowe <br />i instalacje elektryczne dopasowane do
-          pracy zakładu
-        </h1>
-        <p>
-          Realizujemy modernizacje i wdrożenia w istniejącej infrastrukturze — z
-          uwzględnieniem organizacji produkcji, wymagań BHP i optymalizacji
-          kosztów inwestycji.
-        </p>
-        <div class="home-hero-buttons">
-          <a href="contact.html" class="btn btn-primary">Skontaktuj się</a>
-          <a href="projects.html" class="btn btn-secondary"
-            >Zobacz realizacje</a
-          >
-        </div>
-        <ul class="home-hero-list">
-          <li>
-            <ion-icon name="checkmark-outline"></ion-icon
-            ><span>Dostosowanie prac do harmonogramu produkcji</span>
-          </li>
-          <li>
-            <ion-icon name="checkmark-outline"></ion-icon
-            ><span>Wykorzystanie istniejącej infrastruktury</span>
-          </li>
-          <li>
-            <ion-icon name="checkmark-outline"></ion-icon
-            ><span>Rozwiązania dopasowane do realnych warunków pracy</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SECTION OFFER -->
-    <section class="home-offer-section">
-      <div class="home-offer-container section">
-        <div class="home-offer-intro">
-          <h2>
-            Kompleksowa realizacja projektów elektrycznych <br />
-            i oświetleniowych
-          </h2>
+    <main>
+      <!-- SECTION HERO -->
+      <section class="home-hero-section">
+        <div class="home-hero-content">
+          <h1>
+            Oświetlenie przemysłowe <br />i instalacje elektryczne dopasowane do
+            pracy zakładu
+          </h1>
           <p>
-            Realizujemy projekty w formule „zaprojektuj i wybuduj” — <br />od
-            audytu, przez projekt, po wdrożenie i uruchomienie instalacji.
+            Realizujemy modernizacje i wdrożenia w istniejącej infrastrukturze —
+            <br />
+            z uwzględnieniem organizacji produkcji, wymagań BHP i optymalizacji
+            kosztów inwestycji.
           </p>
-        </div>
-        <div class="home-offer-cards-div">
-          <div class="home-offer-card flex-col">
-            <div class="home-offer-card-icon-header-row">
-              <img src="img/home/cards-img/bulb.png" alt="" />
-              <h3>Oświetlenie przemysłowe</h3>
-            </div>
-            <p>
-              Projektowanie i modernizacja oświetlenia ogólnego oraz awaryjnego
-              — z uwzględnieniem norm, warunków pracy i efektywności
-              energetycznej.
-            </p>
-          </div>
-          <div class="home-offer-card">
-            <div class="home-offer-card-icon-header-row">
-              <img src="img/home/cards-img/installation.png" alt="" />
-              <h3>Instalacje elektryczne</h3>
-            </div>
-            <p>
-              Wykonawstwo instalacji, przebudowy zasilania, prefabrykacja
-              rozdzielnic oraz integracja z istniejącą infrastrukturą.
-            </p>
-          </div>
-          <div class="home-offer-card">
-            <div class="home-offer-card-icon-header-row">
-              <img src="img/home/cards-img/control.png" alt="" />
-              <h3>Systemy sterowania</h3>
-            </div>
-            <p>
-              Projekt i wdrożenie systemów sterowania oświetleniem (m.in. WAGO,
-              Helvar, Signify) dopasowanych do specyfiki zakładu.
-            </p>
-          </div>
-          <div class="home-offer-card">
-            <div class="home-offer-card-icon-header-row">
-              <img src="img/home/cards-img/modernization.png" alt="" />
-              <h3>Modernizacje <br />i optymalizacja</h3>
-            </div>
-            <p>
-              Analiza istniejącej instalacji i dobór rozwiązań pozwalających
-              ograniczyć koszty inwestycji i eksploatacji.
-            </p>
+          <div class="home-hero-buttons">
+            <a href="contact.html" class="btn btn-primary">Skontaktuj się</a>
+            <a href="projects.html" class="btn btn-secondary"
+              >Zobacz realizacje</a
+            >
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SECTION PROOF -->
-    <section class="section">
-      <div class="home-proof-container">
-        <h2>Doświadczenie potwierdzone w wymagających środowiskach</h2>
-        <div class="home-proof-stats">
-          <div class="home-proof-stat flex-col">
-            <p><strong>4500+</strong> zrealizowanych projektów</p>
-          </div>
-          <div class="home-proof-stat">
+      <!-- SECTION OFFER -->
+      <section class="home-offer-section section-light">
+        <div class="home-offer-container">
+          <div class="home-offer-intro">
+            <h2>
+              Kompleksowa realizacja projektów elektrycznych <br />
+              i oświetleniowych
+            </h2>
             <p>
-              <strong>15 <span>lat</span></strong> doświadczenia
+              Realizujemy projekty w formule „zaprojektuj i wybuduj” — od
+              audytu, przez projekt, po wdrożenie <br />i uruchomienie
+              instalacji.
             </p>
           </div>
-          <div class="home-proof-stat">
-            <p><strong>Projekty</strong> w Polsce i Niemczech</p>
+          <div class="home-offer-cards-div">
+            <div class="home-offer-card flex-col">
+              <div class="home-offer-card-icon-header-row">
+                <img src="img/home/cards-img/bulb.png" alt="" />
+                <h3>Oświetlenie przemysłowe</h3>
+              </div>
+              <p>
+                Projektowanie i modernizacja oświetlenia ogólnego oraz
+                awaryjnego — z uwzględnieniem norm, warunków pracy i
+                efektywności energetycznej.
+              </p>
+            </div>
+            <div class="home-offer-card">
+              <div class="home-offer-card-icon-header-row">
+                <img src="img/home/cards-img/installation.png" alt="" />
+                <h3>Instalacje elektryczne</h3>
+              </div>
+              <p>
+                Wykonawstwo instalacji, przebudowy zasilania, prefabrykacja
+                rozdzielnic oraz integracja z istniejącą infrastrukturą.
+              </p>
+            </div>
+            <div class="home-offer-card">
+              <div class="home-offer-card-icon-header-row">
+                <img src="img/home/cards-img/control.png" alt="" />
+                <h3>Systemy sterowania</h3>
+              </div>
+              <p>
+                Projekt i wdrożenie systemów sterowania oświetleniem (m.in.
+                WAGO, Helvar, Signify) dopasowanych do specyfiki zakładu.
+              </p>
+            </div>
+            <div class="home-offer-card">
+              <div class="home-offer-card-icon-header-row">
+                <img src="img/home/cards-img/modernization.png" alt="" />
+                <h3>Modernizacje <br />i optymalizacja</h3>
+              </div>
+              <p>
+                Analiza istniejącej instalacji i dobór rozwiązań pozwalających
+                ograniczyć koszty inwestycji i eksploatacji.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="home-proof-logos">
-          <img src="img/home/company-logos/qemetica.jpg" alt="Qemetica" />
-          <img src="img/home/company-logos/swiss-krono.jpg" alt="Swiss Krono" />
-          <img src="img/home/company-logos/unilever.jpg" alt="Unilever" />
-          <img src="img/home/company-logos/prologis.jpg" alt="Dove" />
-          <img src="img/home/company-logos/airbus.jpg" alt="Airbus" />
-          <img src="img/home/company-logos/colian.jpg" alt="Colian" />
+      </section>
+
+      <!-- SECTION PROOF -->
+      <section>
+        <div class="home-proof-container">
+          <h2>Doświadczenie potwierdzone w wymagających środowiskach</h2>
+          <div class="home-proof-stats">
+            <div class="home-proof-stat flex-col">
+              <p><strong>4500+</strong> zrealizowanych projektów</p>
+            </div>
+            <div class="home-proof-stat flex-col">
+              <p>
+                <strong>15 <span>lat</span></strong> doświadczenia
+              </p>
+            </div>
+            <div class="home-proof-stat flex-col">
+              <p><strong>Projekty</strong> w Polsce i Niemczech</p>
+            </div>
+          </div>
+          <div class="home-proof-logos">
+            <img src="img/home/company-logos/qemetica.jpg" alt="Qemetica" />
+            <img
+              src="img/home/company-logos/swiss-krono.jpg"
+              alt="Swiss Krono"
+            />
+            <img src="img/home/company-logos/unilever.jpg" alt="Unilever" />
+            <img src="img/home/company-logos/prologis.jpg" alt="Prologis" />
+            <img src="img/home/company-logos/airbus.jpg" alt="Airbus" />
+            <img src="img/home/company-logos/colian.jpg" alt="Colian" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SECTION CLIENTS -->
-    <section class="clients section">
-      <h2 class="clients-header">Współpracujemy z:</h2>
-      <div class="carousel-main-div" aria-label="Logotypy klientów i partnerów">
-        <div class="carousel-track">
-          <!-- GROUP 1 -->
-          <ul class="carousel-group">
-            <li>
-              <img src="img/home/company-logos/airbus.jpg" alt="Logo Airbus" />
-            </li>
-            <li>
-              <img src="img/home/company-logos/amazon.jpg" alt="Logo Amazon" />
-            </li>
-            <li>
-              <img src="img/home/company-logos/luxon.jpg" alt="Logo Luxon" />
-            </li>
-            <li>
-              <img src="img/home/company-logos/orlen.jpg" alt="Logo Orlen" />
-            </li>
-            <li>
-              <img
-                src="img/home/company-logos/prologis.jpg"
-                alt="Logo Prologis"
-              />
-            </li>
-            <li>
-              <img
-                src="img/home/company-logos/signify.jpg"
-                alt="Logo Signify"
-              />
-            </li>
-            <li>
-              <img
-                src="img/home/company-logos/stellantis.jpg"
-                alt="Logo Stellantis"
-              />
-            </li>
-            <li>
-              <img
-                src="img/home/company-logos/diagnostyka.jpg"
-                alt="Logo Diagnostyka"
-              />
-            </li>
-          </ul>
-
-          <!-- GROUP 2 (animation duplicate) -->
-          <ul class="carousel-group" aria-hidden="true">
-            <li>
-              <img src="img/home/company-logos/airbus.jpg" alt="Logo Airbus" />
-            </li>
-            <li>
-              <img src="img/home/company-logos/amazon.jpg" alt="Logo Amazon" />
-            </li>
-            <li>
-              <img src="img/home/company-logos/luxon.jpg" alt="Logo Luxon" />
-            </li>
-            <li>
-              <img src="img/home/company-logos/orlen.jpg" alt="Logo Orlen" />
-            </li>
-            <li>
-              <img
-                src="img/home/company-logos/prologis.jpg"
-                alt="Logo Prologis"
-              />
-            </li>
-            <li>
-              <img
-                src="img/home/company-logos/signify.jpg"
-                alt="Logo Signify"
-              />
-            </li>
-            <li>
-              <img
-                src="img/home/company-logos/stellantis.jpg"
-                alt="Logo Stellantis"
-              />
-            </li>
-            <li>
-              <img
-                src="img/home/company-logos/diagnostyka.jpg"
-                alt="Logo Diagnostyka"
-              />
-            </li>
-          </ul>
+      <!-- SECTION BENEFITS -->
+      <section class="section-dark">
+        <div class="home-benefits-container">
+          <div class="home-benefits-content">
+            <h2>Podejście dopasowane do realiów przemysłu</h2>
+            <ul class="home-benefits-container-list">
+              <li>
+                <ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon
+                ><span>Dostosowanie do pracy zakładu</span>
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon
+                ><span>Wykorzystanie istniejącej infrastruktury</span>
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon
+                ><span>Bezpieczeństwo i zgodność z normami</span>
+              </li>
+              <li>
+                <ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon
+                ><span>Rozwiązania dopasowane do realnych warunków pracy</span>
+              </li>
+            </ul>
+          </div>
+          <div class="home-benefits-image">
+            <img src="img/home/distribution-board-2.jpg" alt="" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- SECTION CLIENTS -->
+      <section class="clients">
+        <h2 class="clients-header">Współpracujemy z:</h2>
+        <div
+          class="carousel-main-div"
+          aria-label="Logotypy klientów i partnerów"
+        >
+          <div class="carousel-track">
+            <!-- GROUP 1 -->
+            <ul class="carousel-group">
+              <li>
+                <img
+                  src="img/home/company-logos/airbus.jpg"
+                  alt="Logo Airbus"
+                />
+              </li>
+              <li>
+                <img
+                  src="img/home/company-logos/amazon.jpg"
+                  alt="Logo Amazon"
+                />
+              </li>
+              <li>
+                <img src="img/home/company-logos/luxon.jpg" alt="Logo Luxon" />
+              </li>
+              <li>
+                <img src="img/home/company-logos/orlen.jpg" alt="Logo Orlen" />
+              </li>
+              <li>
+                <img
+                  src="img/home/company-logos/prologis.jpg"
+                  alt="Logo Prologis"
+                />
+              </li>
+              <li>
+                <img
+                  src="img/home/company-logos/signify.jpg"
+                  alt="Logo Signify"
+                />
+              </li>
+              <li>
+                <img
+                  src="img/home/company-logos/stellantis.jpg"
+                  alt="Logo Stellantis"
+                />
+              </li>
+              <li>
+                <img
+                  src="img/home/company-logos/diagnostyka.jpg"
+                  alt="Logo Diagnostyka"
+                />
+              </li>
+            </ul>
+
+            <!-- GROUP 2 (animation duplicate) -->
+            <ul class="carousel-group" aria-hidden="true">
+              <li>
+                <img src="img/home/company-logos/airbus.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/home/company-logos/amazon.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/home/company-logos/luxon.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/home/company-logos/orlen.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/home/company-logos/prologis.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/home/company-logos/signify.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/home/company-logos/stellantis.jpg" alt="" />
+              </li>
+              <li>
+                <img src="img/home/company-logos/diagnostyka.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- FOOTER -->
     <footer>
       <div class="footer-top-main-div-row">
@@ -295,12 +318,12 @@
             </address>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="call-outline"></ion-icon>
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
               <p>tel. <a href="tel:+48 695 413 382">+48 695 413 382</a></p>
             </div>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="mail-outline"></ion-icon>
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
               <p>
                 email:<a href="mailto:biuro@mw-engineering.pl">
                   biuro@mw-engineering.pl</a
@@ -309,7 +332,7 @@
             </div>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="location-outline"></ion-icon>
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
               <div class="footer-menu-text">
                 <p>Białe Zagłębie 11 lok. 9</p>
                 <p>26-052 Nowiny</p>
@@ -317,7 +340,7 @@
             </div>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="business-outline"></ion-icon>
+              <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
               <div class="footer-menu-text">
                 <p>NIP: 6572847203</p>
                 <p>REGON: 542543502</p>
@@ -333,6 +356,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa dojazdu do siedziby MW-Engineering"
             ></iframe>
           </div>
         </div>

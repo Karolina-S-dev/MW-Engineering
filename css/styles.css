@@ -30,18 +30,14 @@ a {
   flex-direction: column;
 }
 
-.section {
-  padding: 5rem 0;
-}
-
 /* BUTTONS */
 
 .btn {
   font-family: "Montserrat", sans-serif;
-  padding: 1.6rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   max-width: 22rem;
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -81,14 +77,12 @@ a {
 /* --------------------------- */
 
 header {
-  background-color: #0c0b0c;
+  background-color: #11151b;
 }
 
 .header-inner {
-  max-width: 160rem;
   margin: 0 auto;
-  width: 100%;
-  padding: 3rem 0;
+  padding: 3rem 15rem;
 }
 
 .header-brand-col {
@@ -98,13 +92,13 @@ header {
 
 .header-brand-col img {
   display: block;
-  max-width: 14rem;
+  max-width: 12rem;
   height: auto;
 }
 
 .header-tagline {
   color: #fff;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   color: #b1b1b1;
   letter-spacing: 1px;
 }
@@ -125,7 +119,7 @@ header {
   transition: all 0.4s ease;
   position: relative;
   padding: 1.7rem 2.7rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -182,9 +176,11 @@ header {
   height: 60vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  padding: 5rem 0;
 }
 .home-hero-section::before {
   content: "";
@@ -207,22 +203,24 @@ header {
   position: relative;
   max-width: 80rem;
   z-index: 3;
-  margin-left: 34rem;
   max-height: fit-content;
+  margin-left: 15rem;
 }
+
 .home-hero-content h1 {
-  font-size: 4.5rem;
+  font-size: 3.2rem;
   color: #fff;
-  font-weight: 600;
-  line-height: 7rem;
+  font-weight: 500;
+  line-height: 5rem;
   margin: 1rem 0 2rem 0;
 }
 
 .home-hero-content p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #fff;
   line-height: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
+  font-weight: 400;
 }
 
 .home-hero-buttons {
@@ -231,41 +229,27 @@ header {
   margin-bottom: 4rem;
 }
 
-.home-hero-list li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 3px;
-  margin-bottom: 1.5rem;
-  color: #fff;
-  font-size: 1.9rem;
-}
-.home-hero-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.home-hero-list ion-icon {
-  font-size: 3rem;
-  color: #e2b041;
-  flex-shrink: 0;
-}
-
 /* --------------------------- */
 /* ---- SECTION OFFER ---- */
 /* --------------------------- */
 
+.section-light {
+  background-color: #f7f7f5;
+  margin: 5rem 5rem 0 5rem;
+  border-radius: 2rem;
+}
+
 .home-offer-container {
   margin: 0 auto;
-  max-width: 170rem;
+  max-width: 190rem;
+  padding: 8rem 0;
 }
 
 .home-offer-intro h2 {
-  font-size: 3.8rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 700;
   line-height: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
   position: relative;
 }
@@ -274,16 +258,16 @@ header {
   position: absolute;
   content: "";
   background: #14315830;
-  height: 2px;
+  height: 1px;
   width: 100rem;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -5px;
+  bottom: -8px;
 }
 
 .home-offer-intro p {
-  font-size: 1.9rem;
-  font-weight: 600;
+  font-size: 1.7rem;
+  font-weight: 500;
   line-height: 3.3rem;
   margin-bottom: 5rem;
   text-align: center;
@@ -293,28 +277,30 @@ header {
   display: flex;
   gap: 3rem;
   flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 170rem;
   justify-content: center;
 }
 
 .home-offer-card {
   padding: 3rem;
   background-color: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   aspect-ratio: 1 / 0.8;
   border-radius: 0.6rem;
-  flex: 0 0 calc(25% - 2.5rem);
+  flex: 0 0 calc(23% - 2.5rem);
 }
 .home-offer-card-icon-header-row {
   display: flex;
-  border-bottom: 3px solid #6d6b6b53;
+  border-bottom: 1px solid #6d6b6b53;
   justify-content: flex-start;
   align-items: center;
-  padding-bottom: 3rem;
-  gap: 1rem;
+  padding-bottom: 2rem;
+  gap: 1.5rem;
 }
 
 .home-offer-card h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 4rem;
   font-weight: 700;
   width: fit-content;
@@ -322,10 +308,10 @@ header {
 
 .home-offer-card p {
   font-size: 1.6rem;
-  line-height: 1.7;
-  font-weight: 600;
+  line-height: 2;
+  font-weight: 500;
   text-align: justify;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .home-offer-card img {
@@ -340,11 +326,12 @@ header {
 
 .home-proof-container {
   margin: 0 auto;
-  max-width: 140rem;
+  max-width: 120rem;
+  padding: 8rem 0;
 }
 
 .home-proof-container h2 {
-  font-size: 3.8rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 5rem;
   margin-bottom: 4rem;
@@ -379,13 +366,13 @@ header {
 }
 
 .home-proof-stat:last-child strong {
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: #282828;
 }
 
 .home-proof-stat strong {
   display: block;
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1;
   font-weight: 700;
   color: #e2b041;
@@ -398,7 +385,7 @@ header {
 }
 
 .home-proof-stat p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.4;
   font-weight: 600;
 }
@@ -406,34 +393,106 @@ header {
 .home-proof-logos {
   display: flex;
   justify-content: center;
-  max-width: 100rem;
   margin: 2rem auto 0 auto;
   gap: 2rem;
 }
 
 .home-proof-logos img {
-  max-height: 7rem;
+  max-height: 5.5rem;
   width: auto;
   object-fit: contain;
+}
+/* --------------------------- */
+/* ---- SECTION BENEFITS ---- */
+/* --------------------------- */
+
+.section-dark {
+  background: #11151b;
+  color: #fff;
+  margin: 5rem 5rem 0 5rem;
+  border-radius: 2rem;
+}
+
+.home-benefits-container {
+  display: flex;
+  align-items: center;
+  max-width: 140rem;
+  max-height: 55rem;
+  margin: 0 auto;
+  padding: 5rem 5rem;
+  gap: 5rem;
+}
+
+.home-benefits-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-benefits-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.home-benefits-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.home-benefits-image img {
+  align-self: center;
+  max-height: 45rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
+  filter: brightness(0.8) contrast(1.1) saturate(0.9);
+}
+
+.home-benefits-container h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 5rem;
+}
+
+.home-benefits-container-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 4rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.home-benefits-container-list ion-icon {
+  font-size: 3rem;
+  color: #e2b041;
+  flex-shrink: 0;
 }
 
 /* --------------------------- */
 /* ---- SECTION CLIENTS ---- */
 /* --------------------------- */
-
 .clients {
-  margin: 0 auto;
+  margin: 5rem auto;
   max-width: 130rem;
   text-align: center;
+  padding: 5rem 0;
 }
 
 .clients-header {
-  font-size: 4.2rem;
-  color: #aaa;
-  font-weight: 300;
+  font-size: 4rem;
+  color: #4b5563;
+  font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .carousel-main-div {
@@ -497,20 +556,18 @@ header {
 /* --------------------------- */
 
 footer {
-  background-color: #100b0f;
+  background-color: #11151b;
   color: #fff;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding: 3rem 15rem;
 }
 
 .footer-top-main-div-row {
   display: flex;
   justify-content: space-between;
-  max-width: 175rem;
   width: 100%;
   margin: 0 auto;
   max-height: fit-content;
-  width: 100%;
 }
 
 footer img {
@@ -527,13 +584,12 @@ footer img {
 }
 
 .footer-contact-column ion-icon {
-  font-size: 3rem;
+  font-size: 2.2rem;
   color: #b78833;
 }
 
 .footer-contact-data {
-  padding-left: 5rem;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   height: 6rem;
   justify-content: space-between;
   margin-bottom: 1rem;
@@ -544,8 +600,8 @@ footer img {
   display: flex;
   gap: 1rem;
   align-items: center;
-  padding: 1.2rem;
-  font-size: 1.5rem;
+  padding: 0.8rem;
+  font-size: 1.3rem;
 }
 
 .footer-ion-icon-and-data-row a {
@@ -557,8 +613,8 @@ footer img {
 }
 
 .footer-google-map iframe {
-  width: 32rem;
-  height: 32rem;
+  width: 30rem;
+  height: 30rem;
 }
 
 .footer-menu-text {
