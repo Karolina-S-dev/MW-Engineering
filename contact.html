@@ -33,12 +33,12 @@
     <title>MW-engineering</title>
   </head>
 
-  <body>
+  <body id="top">
     <!-- HEADER -->
     <header>
       <div class="header-inner">
         <div class="nav-main-items-row">
-          <a href="index.html" class="header-brand-col">
+          <a href="index.html" class="header-brand-col flex-col">
             <img
               src="img/header-logo.png"
               alt="MW-Engineering - instalacje elektryczne"
@@ -49,9 +49,21 @@
           </a>
           <nav>
             <ul class="nav-links">
-              <li><a href="about.html" class="nav-button nav-button--secondary">O FIRMIE</a></li>
-              <li><a href="projects.html" class="nav-button nav-button--secondary">REALIZACJE</a></li>
-              <li><a href="contact.html" class="nav-button nav-button--primary">KONTAKT</a></li>
+              <li>
+                <a href="about.html" class="nav-button nav-button--secondary"
+                  >O FIRMIE</a
+                >
+              </li>
+              <li>
+                <a href="projects.html" class="nav-button nav-button--secondary"
+                  >REALIZACJE</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="nav-button nav-button--primary"
+                  >KONTAKT</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
@@ -64,20 +76,62 @@
       <!-- CONTACT INVITATION AND PHOTOS (LEFT SIDE) -->
       <div class="contact-invitation-and-photos">
         <div class="contact-us-col">
-          <h1>Skontaktuj się z nami !</h1>
-          <p class="contact-us-description">
-            Realizujesz inwestycję, modernizację lub utrzymanie infrastruktury
-            elektrycznej i oświetleniowej? Jeśli szukasz partnera, który rozumie
-            realia pracy zakładów przemysłowych i dowozi projekty bez przestojów
-            — zostaw kontakt. Od lat wspieramy firmy produkcyjne w projektach
-            wymagających niezawodności, optymalizacji kosztów i sprawnej
-            realizacji. Odezwiemy się i zaproponujemy konkretne rozwiązania
-            dopasowane do Twojego zakładu.
-          </p>
-          <div class="contact-us-photos-div-row">
-            <img src="img/air-liquide.jpg" alt="" class="img-left" />
-            <img src="img/air-liquide2.jpg" alt="" class="img-right" />
+          <h1>Skontaktuj się w sprawie realizacji</h1>
+          <div class="contact-us-description">
+            <p>
+              Realizujesz inwestycję, modernizację lub utrzymanie infrastruktury
+              elektrycznej i oświetleniowej?
+            </p>
+            <p>
+              Jeśli szukasz partnera, który rozumie realia pracy zakładów
+              przemysłowych i dowozi projekty bez przestojów — zostaw kontakt.
+            </p>
+            <p>
+              Od lat wspieramy firmy produkcyjne w projektach wymagających
+              niezawodności, optymalizacji kosztów i sprawnej realizacji.
+              Odezwiemy się i zaproponujemy konkretne rozwiązania dopasowane do
+              Twojego zakładu.
+            </p>
           </div>
+          <div class="contact-steps">
+            <div class="contact-step">
+              <div class="contact-step-header">
+                <ion-icon name="document-text-outline"></ion-icon>
+                <p class="contact-step-number">01</p>
+              </div>
+              <h3>Opisz zakres prac</h3>
+              <p>
+                Napisz, czego dotyczy Twoja inwestycja lub problem do
+                rozwiązania.
+              </p>
+            </div>
+
+            <div class="contact-step">
+              <div class="contact-step-header">
+                <ion-icon name="call-outline"></ion-icon>
+                <p class="contact-step-number">02</p>
+              </div>
+              <h3>Oddzwonimy</h3>
+              <p>
+                Skontaktujemy się z Tobą, aby doprecyzować potrzeby i
+                odpowiedzieć na pytania.
+              </p>
+            </div>
+
+            <div class="contact-step">
+              <div class="contact-step-header">
+                <ion-icon name="settings-outline"></ion-icon>
+                <p class="contact-step-number">03</p>
+              </div>
+              <h3>Przygotujemy propozycję</h3>
+              <p>
+                Otrzymasz dopasowane rozwiązania i rekomendacje najlepiej
+                odpowiadające Twojemu zakładowi.
+              </p>
+            </div>
+          </div>
+
+          <img src="img/contact/contact-img.png" alt="" />
         </div>
       </div>
 
@@ -149,7 +203,7 @@
             <label for="position">Stanowisko</label>
             <input
               type="text"
-              placeholder="Pana/Pani stanowisko"
+              placeholder="Podaj swoje stanowisko"
               id="position"
               name="position"
             />
@@ -163,6 +217,11 @@
               required
             ></textarea>
           </div>
+          <label class="file-upload">
+            <ion-icon name="attach-outline"></ion-icon>
+            <p>Wybierz plik</p>
+            <input type="file" />
+          </label>
           <div class="form-button">
             <button class="btn-submit" type="submit">Wyślij</button>
           </div>
@@ -228,7 +287,15 @@
           </div>
         </div>
       </div>
+      <div class="footer-bottom">
+        <p>2026 © All rights reserved</p>
+      </div>
     </footer>
+
+    <!-- SCROLL TOP BUTTON -->
+    <a href="#top" class="scroll-top">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
 
     <!-- ION ICONS -->
     <script
