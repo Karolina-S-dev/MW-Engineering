@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="MW" />
+    <meta
+      name="description"
+      content="
+      Projektowanie i wykonawstwo instalacji elektrycznych oraz oświetlenia przemysłowego. Modernizacje, rozdzielnice, systemy sterowania."
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>MW-engineering</title>
+  </head>
+
+  <body id="top">
+    <!-- HEADER -->
+    <header>
+      <div class="header-inner">
+        <div class="nav-main-items-row">
+          <a href="index.html" class="header-brand-col flex-col">
+            <img
+              src="img/header-logo.png"
+              alt="MW-Engineering - instalacje elektryczne"
+            />
+            <span class="header-tagline">
+              ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY
+            </span>
+          </a>
+          <nav aria-label="Główna nawigacja">
+            <ul class="nav-links">
+              <li>
+                <a href="index.html" class="nav-button nav-button--secondary"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="nav-button nav-button--secondary"
+                  >O FIRMIE</a
+                >
+              </li>
+              <li>
+                <a href="projects.html" class="nav-button nav-button--secondary"
+                  >REALIZACJE</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="nav-button nav-button--primary"
+                  >KONTAKT</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- WHY-US SECTION-->
+      <section class="why-us-section">
+        <!-- LEFT-COLUMN -->
+        <div class="why-us-intro">
+          <p class="why-us-label">DLACZEGO MY</p>
+          <h2 class="why-us-title">
+            Podejście dopasowane do realiów pracy przemysłu
+          </h2>
+          <p class="why-us-description">
+            Modernizacja w działającym zakładzie to zawsze ryzyko operacyjne.
+            Dlatego skupiamy się na rozwiązaniach, które są przewidywalne,
+            bezpieczne i uzasadnione biznesowo.
+          </p>
+          <div class="why-us-experience-row">
+            <ion-icon name="people-outline"></ion-icon>
+            <p>
+              Doświadczenie w branżach: chemicznej, spożywczej, automotive,
+              lotniczej i ciężkiej.
+            </p>
+          </div>
+        </div>
+        <!-- RIGHT-COLUMN -->
+        <div class="why-us-flex">
+          <div class="why-card">
+            <img src="img/about/factory-icon.png" alt="" />
+            <h3>Dostosowanie do pracy zakładu</h3>
+            <p>
+              Planujemy i realizujemy prace w taki sposób, aby ograniczyć wpływ
+              na bieżącą produkcję.
+            </p>
+          </div>
+          <div class="why-card">
+            <img src="img/about/optimal-usage-icon.png" alt="" />
+            <h3>Optymalne wykorzystanie infrastruktury</h3>
+            <p>
+              Wykorzystujemy istniejące instalacje tam, gdzie jest to
+              uzasadnione — co realnie obniża koszty inwestycji.
+            </p>
+          </div>
+          <div class="why-card">
+            <img src="img/about/solutions-icon.png" alt="" />
+            <h3>Rozwiązania szyte na miarę</h3>
+            <p>
+              Każdy projekt dopasowujemy do warunków pracy, a nie do
+              katalogowych założeń.
+            </p>
+          </div>
+          <div class="why-card">
+            <img src="img/about/safety-icon.png" alt="" />
+            <h3>Bezpieczeństwo i zgodność z normami</h3>
+            <p>
+              Pracujemy zgodnie z wymaganiami BHP, normami branżowymi oraz
+              uzgodnieniami PPOŻ.
+            </p>
+          </div>
+          <div class="why-card">
+            <img src="img/about/components-icon.png" alt="" />
+            <h3>Sprawdzone komponenty i technologie</h3>
+            <p>
+              Stosujemy rozwiązania oparte na komponentach renomowanych
+              producentów (m.in. Siemens, Eaton, WAGO, Hager).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- INDUSTRIES SECTION-->
+      <section class="industries-section">
+        <div class="industries-header">
+          <p class="industries-label">DOŚWIADCZENIE</p>
+          <h2 class="industries-title">Branże, w których działamy</h2>
+        </div>
+
+        <div class="industries-cards-container">
+          <div class="industry-card">
+            <img src="img/about/chemistry-industry.jpg" alt="" />
+            <p>Przemysł chemiczny</p>
+          </div>
+          <div class="industry-card">
+            <img src="img/about/food-and-drink.png" alt="" />
+            <p>Przemysł spożywczy</p>
+          </div>
+          <div class="industry-card">
+            <img src="img/about/automotive.png" alt="" />
+            <p>Automotive</p>
+          </div>
+          <div class="industry-card">
+            <img src="img/about/airplane.png" alt="" />
+            <p>Przemysł lotniczy</p>
+          </div>
+          <div class="industry-card">
+            <img src="img/about/heavy-industry.png" alt="" />
+            <p>Przemysł ciężki</p>
+          </div>
+          <div class="industry-card">
+            <img src="img/about/store.png" alt="" />
+            <p>Magazyny wysokiego składowania</p>
+          </div>
+          <div class="industry-card">
+            <img src="img/about/retail.png" alt="" />
+            <p>Obiekty retail</p>
+          </div>
+        </div>
+        <div class="industries-description">
+          <p class="industries-description-text">
+            Realizowaliśmy projekty w działających zakładach produkcyjnych oraz
+            obiektach o wysokich wymaganiach operacyjnych, gdzie kluczowe było
+            zachowanie ciągłości pracy i bezpieczeństwa.
+          </p>
+        </div>
+      </section>
+
+      <!-- WORK SECTION-->
+      <section class="work-section">
+        <div class="work-header">
+          <p class="work-label">JAK PRACUJEMY</p>
+          <h2 class="work-title">Proces dopasowany do realiów inwestycji</h2>
+          <p class="work-subtitle">
+            Każdy projekt prowadzimy etapowo — z naciskiem na przewidywalność,
+            bezpieczeństwo i kontrolę kosztów.
+          </p>
+        </div>
+        <div class="process-container-row">
+          <div class="process-card-main">
+            <div class="process-card">
+              <h2 class="process-number">01</h2>
+              <h3>Audyt infrastruktury</h3>
+              <p>
+                Oceniamy stan istniejących instalacji, identyfikujemy
+                ograniczenia i możliwości optymalizacji.
+              </p>
+            </div>
+          </div>
+          <div class="process-card-main">
+            <div class="process-card">
+              <h2 class="process-number">02</h2>
+              <h3>Dobór rozwiązań</h3>
+              <p>
+                Proponujemy rozwiązania dopasowane do warunków pracy, wymagań
+                technicznych i budżetu inwestycji.
+              </p>
+            </div>
+          </div>
+          <div class="process-card-main">
+            <div class="process-card">
+              <h2 class="process-number">03</h2>
+              <h3>Projekt i uzgodnienia</h3>
+              <p>
+                Przygotowujemy dokumentację projektową oraz prowadzimy
+                uzgodnienia (w tym ppoż i wymagania formalne).
+              </p>
+            </div>
+          </div>
+          <div class="process-card-main">
+            <div class="process-card">
+              <h2 class="process-number">04</h2>
+              <h3>Prefabrykacja wdrożenia</h3>
+              <p>
+                Realizujemy prefabrykację oraz planujemy wdrożenie w sposób
+                ograniczający ryzyko operacyjne.
+              </p>
+            </div>
+          </div>
+          <div class="process-card-main">
+            <div class="process-card">
+              <h2 class="process-number">05</h2>
+              <h3>Montaż i uruchomienie</h3>
+              <p>
+                Wdrażamy instalację zgodnie z ustalonym harmonogramem i
+                warunkami pracy zakładu.
+              </p>
+            </div>
+          </div>
+          <div class="process-card-main">
+            <div class="process-card">
+              <h2 class="process-number">06</h2>
+              <h3>Pomiary i dokumentacja</h3>
+              <p>
+                Wykonujemy pomiary, odbiory oraz przekazujemy kompletną
+                dokumentację.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="work-banner">
+          <img src="img/about/safety-icon-dark.png" alt="" />
+          <p>
+            Każdy etap jest planowany tak, aby ograniczyć ingerencję w bieżącą
+            działalność zakładu i zapewnić pełną kontrolę nad przebiegiem
+            inwestycji.
+          </p>
+        </div>
+      </section>
+
+      <!-- VALUE SECTION-->
+      <section class="value-section">
+        <div class="value-content">
+          <div class="value-section-main">
+            <p class="value-label">WARTOŚĆ DLA KLIENTA</p>
+            <h2 class="value-title">Efekty, które mają znaczenie operacyjne</h2>
+            <p class="value-description">
+              Nasze realizacje są projektowane tak, aby przynosiły wymierne
+              korzyści — zarówno na etapie inwestycji, jak i w codziennej
+              eksploatacji.
+            </p>
+          </div>
+          <div class="value-cards-container">
+            <div class="value-card">
+              <img src="img/about/costs.png" alt="" />
+              <h3>Optymalizacja kosztów inwestycji (CAPEX)</h3>
+              <p>
+                Wykorzystujemy istniejącą infrastrukturę tam, gdzie ma to
+                uzasadnienie — ograniczając zakres i koszt modernizacji.
+              </p>
+            </div>
+            <div class="value-card">
+              <img src="img/about/diagram.png" alt="" />
+              <h3>Niższe koszty eksploatacyjne (OPEX)</h3>
+              <p>
+                Nowoczesne systemy oświetleniowe i sterowania pozwalają
+                ograniczyć zużycie energii oraz koszty utrzymania.
+              </p>
+            </div>
+            <div class="value-card">
+              <img src="img/about/warning-triangle.png" alt="" />
+              <h3>Ograniczenie ryzyka operacyjnego</h3>
+              <p>
+                Wdrożenia planujemy w sposób przewidywalny, z uwzględnieniem
+                warunków pracy zakładu i jego ograniczeń.
+              </p>
+            </div>
+            <div class="value-card">
+              <img src="img/about/safety-icon.png" alt="" />
+              <h3>Zgodność z normami i wymaganiami</h3>
+              <p>
+                Instalacje spełniają wymagania BHP, norm branżowych oraz audytów
+                technicznych i ppoż.
+              </p>
+            </div>
+            <div class="value-card">
+              <img src="img/about/solutions.png" alt="" />
+              <h3>Rozwiązania dopasowane do realnych warunków</h3>
+              <p>
+                Projektujemy systemy pod konkretne środowisko pracy — nie na
+                podstawie założeń, tylko rzeczywistych danych.
+              </p>
+            </div>
+          </div>
+
+          <div class="value-banner">
+            <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+            <p>
+              Efektem jest instalacja, która działa stabilnie, jest uzasadniona
+              kosztowo i wpisuje się w realia operacyjne zakładu.
+            </p>
+          </div>
+        </div>
+        <div class="value-section-image">
+          <img src="img/about/factory-value-img.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top-main-div-row">
+        <img
+          src="img/footer-logo.png"
+          alt="MW-Engineering - instalacje elektryczne"
+        />
+
+        <div class="footer-contact-and-map-data-row">
+          <div class="footer-contact-column flex-col">
+            <address class="footer-contact-data flex-col">
+              <h3>Dane kontaktowe:</h3>
+              <h3>MW-Engineering Mariusz Wąchocki</h3>
+            </address>
+
+            <div class="footer-ion-icon-and-data-row">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+              <p>tel. <a href="tel:+48 695 413 382">+48 695 413 382</a></p>
+            </div>
+
+            <div class="footer-ion-icon-and-data-row">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              <p>
+                email:<a href="mailto:biuro@mw-engineering.pl">
+                  biuro@mw-engineering.pl</a
+                >
+              </p>
+            </div>
+
+            <div class="footer-ion-icon-and-data-row">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <div class="footer-menu-text">
+                <p>Białe Zagłębie 11 lok. 9</p>
+                <p>26-052 Nowiny</p>
+              </div>
+            </div>
+
+            <div class="footer-ion-icon-and-data-row">
+              <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+              <div class="footer-menu-text">
+                <p>NIP: 6572847203</p>
+                <p>REGON: 542543502</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-google-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d191335.39728885508!2d20.530634!3d50.824967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471786364533893f%3A0xf237a4926323931e!2zQmlhxYJlIFphZ8WCxJliaWUgMTEvOSwgMjYtMDUyIE5vd2lueQ!5e1!3m2!1spl!2spl!4v1776257057550!5m2!1spl!2spl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa dojazdu do siedziby MW-Engineering"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 © All rights reserved</p>
+      </div>
+    </footer>
+
+    <!-- SCROLL TOP BUTTON -->
+    <a href="#top" class="scroll-top">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <!-- ION ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

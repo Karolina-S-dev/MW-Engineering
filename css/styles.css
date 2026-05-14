@@ -82,7 +82,7 @@ header {
 
 .header-inner {
   margin: 0 auto;
-  padding: 3rem 15rem;
+  padding: 1.5rem 15rem;
 }
 
 .header-brand-col {
@@ -152,7 +152,7 @@ header {
 
 .nav-button--primary {
   background-color: #fff;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   color: #000;
   font-weight: 600;
 }
