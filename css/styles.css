@@ -559,7 +559,7 @@ footer {
   background-color: #11151b;
   color: #fff;
   justify-content: space-between;
-  padding: 2rem 15rem;
+  padding: 4rem 15rem;
 }
 
 .footer-top-main-div-row {
@@ -569,6 +569,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   max-height: fit-content;
+  gap: 5rem;
 }
 
 footer img {
@@ -578,32 +579,40 @@ footer img {
 
 .footer-contact-and-map-data-row {
   display: flex;
+  max-width: 120rem;
+  gap: 15rem;
 }
 
-.footer-contact-column {
-  margin-right: 15rem;
-}
-
-.footer-contact-column ion-icon {
+.footer-ion-icon-and-data-row ion-icon {
   font-size: 2.2rem;
   color: #b78833;
 }
 
 .footer-contact-data {
-  font-size: 1.3rem;
-  justify-content: space-between;
-  line-height: 3rem;
   margin-bottom: 1rem;
   font-style: normal;
+}
+
+.footer-contact-data h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-contact-data h2 {
+  font-size: 1.4rem;
+}
+
+.footer-contact-data p {
+  font-size: 1.3rem;
 }
 
 .footer-ion-icon-and-data-row {
   display: flex;
   gap: 1rem;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.8rem 0;
   font-size: 1.3rem;
-}
+  }
 
 .footer-ion-icon-and-data-row a {
   transition: all 0.3s ease;
@@ -614,18 +623,20 @@ footer img {
 }
 
 .footer-google-map iframe {
-  width: 25rem;
-  height: 25rem;
+  width: 22rem;
+  height: 22rem;
 }
 
 .footer-menu-text {
-  line-height: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   text-align: right;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding-top: 1rem;
   font-size: 1.2rem;
   color: #8b9097;
@@ -648,7 +659,7 @@ footer img {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   z-index: 999;
- }
+}
 
 .scroll-top:hover {
   transform: translateY(-3px);
