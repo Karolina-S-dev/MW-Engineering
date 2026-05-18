@@ -9,6 +9,8 @@
   letter-spacing: 0.2rem;
   color: #e2b041;
   margin-bottom: 1.6rem;
+  position: relative;
+  width: fit-content;;
 }
 
 .section-title {
