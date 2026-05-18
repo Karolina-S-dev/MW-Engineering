@@ -23,7 +23,7 @@
   background: linear-gradient(
     135deg,
     #000000 0%,
-    #000000f0 40%,
+    #0f0f0ff0 40%,
     #b789335f 100%
   );
   z-index: 1;
@@ -327,7 +327,7 @@
 }
 
 .projects-contact-col p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
@@ -339,12 +339,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  letter-spacing: 1px;
 }
 
 .projects-contact-button a {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-right: 3rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .projects-contact-button ion-icon {

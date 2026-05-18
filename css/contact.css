@@ -273,7 +273,7 @@
 .form-group input:hover,
 .form-group textarea:hover {
   border-color: rgba(0, 0, 0, 0.08);
-  background-color: #fafafa;
+  background-color: #f3f3f3;
 }
 
 .form-group input:focus,

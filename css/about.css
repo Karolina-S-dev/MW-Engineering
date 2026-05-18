@@ -10,7 +10,7 @@
   color: #e2b041;
   margin-bottom: 1.6rem;
   position: relative;
-  width: fit-content;;
+  width: fit-content;
 }
 
 .section-title {
@@ -180,7 +180,7 @@
   background: #11151b;
   border: 1px solid #ffffff0f;
   flex: 0 0 clamp(15rem, 25%, 16rem);
-  max-height: 22rem;
+  max-height: 23rem;
   height: 100%;
   color: #fff;
   padding: 2rem 1rem;
@@ -198,7 +198,7 @@
     0 10px 30px #00000033,
     0 0 10px #e2b04114;
 }
-.industry-card-header{
+.industry-card-header {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -220,7 +220,15 @@
   align-items: center;
   gap: 3px;
   justify-self: flex-end;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.8rem;
+  background-color: #1a1c21;
 }
+
+.realization-links ion-icon {
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+ }
 
 .realization-links:hover {
   text-decoration: underline;
