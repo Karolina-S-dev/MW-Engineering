@@ -195,10 +195,9 @@
   flex: 0 0 calc(33% - 0.6rem);
   justify-content: flex-start;
   align-items: flex-start;
-  max-height: 45rem;
   height: 100%;
   border-radius: 8px;
-  }
+}
 
 .project-card-img {
   overflow: hidden;
@@ -346,11 +345,110 @@
   font-size: 1.5rem;
   font-weight: 500;
   margin-right: 3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .projects-contact-button ion-icon {
   width: 2rem;
   height: 2rem;
   color: #e2b041;
+}
+
+/* -----Modal Gallery Air Liquide----- */
+.btn-activate-modal {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  letter-spacing: 1px;
+  padding: 1rem 1.5rem;
+  margin: 0 1rem 1rem 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.4rem;
+  right: 2rem;
+  transition: all 0.3s ease;
+  align-self: flex-end !important;
+}
+
+.btn-activate-modal:hover {
+  color: #f4f5f6;
+}
+
+.modal-gallery-background {
+  position: fixed;
+  z-index: 9998;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-gallery-background.active {
+  opacity: 1;
+  display: flex;
+}
+
+.modal-gallery-content {
+  width: 90vw;
+  height: 80vh;
+  background-color: #11151b;
+  z-index: 9999;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-gallery-content ion-icon {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.3rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  background-color: #f4f5f6;
+  color: #11151b;
+  align-self: flex-end !important;
+}
+
+.gallery-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: auto;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+  height: 1.2rem;
+  background: #11151b;
+}
+
+.gallery-scroll::-webkit-scrollbar-track {
+  background: #2c2f33;
+  border-radius: 10px;
+  height: 1.5rem;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.gallery-scroll img {
+  flex: 0 0 100%;
+  width: 100%;
+  max-height: 65vh;
+  object-fit: contain;
+  scroll-snap-align: center;
+  margin-bottom: 3rem;
 }
