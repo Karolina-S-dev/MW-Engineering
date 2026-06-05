@@ -398,7 +398,7 @@
   right: 2rem;
   transition: all 0.3s ease;
   align-self: flex-end;
-  }
+}
 
 .btn-activate-modal:hover {
   color: #878686;
