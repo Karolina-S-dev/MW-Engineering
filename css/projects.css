@@ -217,22 +217,11 @@
   }
 
 .project-card h3 {
-  color: #11151b;
+  color: #6e6f71;
   font-size: 2.1rem;
   font-weight: 600;
   text-transform: uppercase;
-  position: relative;
-  margin-bottom: 2.5rem;
-}
-
-.project-card h3::after {
-  position: absolute;
-  content: "";
-  background-color: rgb(226, 176, 65);
-  height: 2px;
-  width: 6rem;
-  left: 0;
-  bottom: -1rem;
+  margin-bottom: 3rem;
 }
 
 .project-description {
@@ -252,9 +241,9 @@
   justify-content: center;
   align-items: center;
   background-color: #aeafb030;
-  padding: 1.2rem 1.4rem;
+  padding: 1rem 1.4rem;
   width: fit-content;
-  gap: 1rem;
+  gap: 0.6rem;
   border-radius: 8px;
 }
 
@@ -402,7 +391,7 @@
   right: 2rem;
   transition: all 0.3s ease;
   align-self: flex-end !important;
-  margin-top: 1.4rem;
+  margin-top: 2rem;
   }
 
 .btn-activate-modal:hover {
