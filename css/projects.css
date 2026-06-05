@@ -160,16 +160,6 @@
   margin-bottom: 3rem;
 }
 
-.projects-button {
-  padding: 0.9rem;
-  color: #e2b041;
-  border: 1px solid #e2b041;
-  border-radius: 6px;
-  background: transparent;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
 .project-cards-row {
   display: flex;
   gap: 1.5rem;
@@ -302,7 +292,7 @@
   background-color: #f4f5f6;
   display: flex;
   border-radius: 8px;
-  padding: 4rem 10rem;
+  padding: 3.4rem 10rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -372,7 +362,7 @@
 }
 
 .btn-activate-modal:hover {
-  color: #f4f5f6;
+  color: #878686;
 }
 
 .modal-gallery-background {
@@ -406,8 +396,8 @@
 }
 
 .modal-gallery-content ion-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 0.3rem;
   font-size: 2rem;
   border-radius: 0.5rem;
@@ -416,12 +406,16 @@
   align-self: flex-end !important;
 }
 
+.modal-gallery-content ion-icon:hover {
+    background-color: #c8caca;
+  }
+
 .gallery-scroll {
   display: flex;
   overflow-x: auto;
   gap: 1rem;
   scroll-snap-type: x mandatory;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 .gallery-scroll::-webkit-scrollbar {
