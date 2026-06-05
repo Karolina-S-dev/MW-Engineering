@@ -163,9 +163,9 @@
 .project-cards-row {
   display: flex;
   gap: 1.5rem;
-  flex: 0 0 calc(75% - 0rem);
+  flex: 0 0 75%;
   flex-wrap: wrap;
-  height: 100%;
+  align-items: stretch;
 }
 
 .project-card-light {
@@ -183,53 +183,51 @@
   display: flex;
   flex-direction: column;
   flex: 0 0 calc(33% - 0.6rem);
-  justify-content: flex-start;
-  align-items: flex-start;
   border-radius: 8px;
-  height: 100%;
+  transition: all 0.6s ease;
+}
+
+.project-card:hover .project-card-img img {
+  transform: scale(1.07);
 }
 
 .project-card-img {
   overflow: hidden;
   width: 100%;
   aspect-ratio: 16/10;
-  object-fit: cover;
 }
 
-.project-card img {
+.project-card-img img {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   width: 100%;
   height: 100%;
   transition: all 0.6s ease;
-}
-
-.project-card img:hover {
-  transform: scale(1.1);
+  object-fit: cover;
+  display: block;
 }
 
 .project-card-content {
   padding: 2.2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
+  flex: 1;
 }
 
 .project-card h3 {
   color: #6e6f71;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-description {
   font-weight: 400;
-  font-size: 1.5rem;
-  text-align: justify;
-  line-height: 2.3rem;
-  margin-bottom: 1rem;
+  font-size: 1.45rem;
+  text-align: left;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-card span {
@@ -245,6 +243,8 @@
   width: fit-content;
   gap: 0.6rem;
   border-radius: 8px;
+  margin-bottom: 2rem;
+  margin-top: auto;
 }
 
 .location-div ion-icon {
@@ -253,7 +253,7 @@
 }
 
 .location-text {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
 }
 
 /* ---------- AERONAUTICAL-INDUSTRY ---------- */
@@ -281,13 +281,13 @@
 }
 
 .single-card img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .single-card-overlay {
   position: absolute;
   background-color: #11151b;
-  opacity: 0.8;
+  opacity: 0.9;
   color: #fff;
   left: 2rem;
   bottom: 2rem;
@@ -385,7 +385,7 @@
   color: #e2b041;
 }
 
-/* -----Modal Gallery Air Liquide----- */
+/* -----Modal Gallery----- */
 .btn-activate-modal {
   background-color: transparent;
   text-transform: uppercase;
@@ -394,12 +394,11 @@
   border: none;
   cursor: pointer;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   right: 2rem;
   transition: all 0.3s ease;
-  align-self: flex-end !important;
-  margin-top: 2rem;
-}
+  align-self: flex-end;
+  }
 
 .btn-activate-modal:hover {
   color: #878686;
