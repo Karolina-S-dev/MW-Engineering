@@ -110,9 +110,9 @@
 
 /* ------------- REUSABLE ------------- */
 .projects-section {
-  padding: 5rem 8rem;
+  padding: 5rem;
   background-color: #838e9d30;
-  gap: 4rem;
+  gap: 3rem;
   display: flex;
 }
 .projects-light {
@@ -185,14 +185,14 @@
   flex: 0 0 calc(33% - 0.6rem);
   justify-content: flex-start;
   align-items: flex-start;
-  height: 100%;
   border-radius: 8px;
+  height: 100%;
 }
 
 .project-card-img {
   overflow: hidden;
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/10;
   object-fit: cover;
 }
 
@@ -208,18 +208,63 @@
   transform: scale(1.1);
 }
 
+.project-card-content {
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  }
+
 .project-card h3 {
-  color: #e2b041;
-  padding: 3rem 2rem;
-  font-size: 1.7rem;
+  color: #11151b;
+  font-size: 2.1rem;
   font-weight: 600;
   text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2.5rem;
 }
-.project-card p {
+
+.project-card h3::after {
+  position: absolute;
+  content: "";
+  background-color: rgb(226, 176, 65);
+  height: 2px;
+  width: 6rem;
+  left: 0;
+  bottom: -1rem;
+}
+
+.project-description {
   font-weight: 400;
-  font-size: 1.6rem;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.project-card span {
+  font-weight: 600;
+}
+
+.location-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aeafb030;
+  padding: 1.2rem 1.4rem;
+  width: fit-content;
+  gap: 1rem;
+  border-radius: 8px;
+}
+
+.location-div ion-icon {
+  color: #e2b041;
+  font-size: 2.2rem;
+}
+
+.location-text {
+  font-size: 1.5rem;
 }
 
 /* ---------- AERONAUTICAL-INDUSTRY ---------- */
@@ -348,10 +393,8 @@
 .btn-activate-modal {
   background-color: transparent;
   text-transform: uppercase;
-  color: #a9a9a9;
+  color: #e2b041;
   letter-spacing: 1px;
-  padding: 1rem 1.5rem;
-  margin: 0 1rem 1rem 0;
   border: none;
   cursor: pointer;
   font-weight: 600;
@@ -359,7 +402,8 @@
   right: 2rem;
   transition: all 0.3s ease;
   align-self: flex-end !important;
-}
+  margin-top: 1.4rem;
+  }
 
 .btn-activate-modal:hover {
   color: #878686;
@@ -407,8 +451,8 @@
 }
 
 .modal-gallery-content ion-icon:hover {
-    background-color: #c8caca;
-  }
+  background-color: #c8caca;
+}
 
 .gallery-scroll {
   display: flex;
