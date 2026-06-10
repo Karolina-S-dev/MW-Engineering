@@ -1,0 +1,93 @@
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 8.5px;
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 7.5px;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .projects-section {
+    padding: 2rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .project-cards-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .projects-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .projects-content img {
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  .projects-content h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem;
+    width: 30vw;
+    height: 1.5px;
+  }
+
+  .projects-content h2 {
+    margin-bottom: 2.5rem;
+  }
+
+  .projects-description {
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .project-card-content {
+    padding: 1.5rem;
+  }
+
+  .location-div {
+    margin-bottom: 1rem;
+    padding: 0.8rem 1.4rem;
+  }
+  .single-card img {
+    height: 30rem;
+   
+  }
+
+  .single-card {
+    flex-direction: column;
+  }
+
+  .single-card-overlay {
+    position: static;
+    padding: 1.5rem;
+    max-width: 100%;
+    background-color: transparent;
+  }
+  .background-transparent{
+    background-color: transparent;
+    color: #11151b;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+}
