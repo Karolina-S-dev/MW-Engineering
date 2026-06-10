@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MW-Engineering realizuje projekty instalacji elektrycznych i oświetlenia przemysłowego. Doświadczenie w branży chemicznej, spożywczej, automotive, lotniczej i ciężkiej."
+    />
     <!-- FONT MONTSERRAT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,59 +29,51 @@
       href="img/favicon/apple-touch-icon.png"
     />
     <meta name="apple-mobile-web-app-title" content="MW" />
-    <meta
-      name="description"
-      content="
-      Projektowanie i wykonawstwo instalacji elektrycznych oraz oświetlenia przemysłowego. Modernizacje, rozdzielnice, systemy sterowania."
-    />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <title>MW-engineering</title>
+    <title>MW-Engineering | O firmie</title>
   </head>
 
   <body id="top">
     <!-- HEADER -->
-    <header>
-      <div class="header-inner">
-        <div class="nav-main-items-row">
-          <a href="index.html" class="header-brand-col flex-col">
-            <img
-              src="img/header-logo.png"
-              alt="MW-Engineering - instalacje elektryczne"
-            />
-            <span class="header-tagline">
-              ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY
-            </span>
-          </a>
-          <nav aria-label="Główna nawigacja">
-            <ul class="nav-links">
-              <li>
-                <a href="index.html" class="nav-button nav-button--secondary"
-                  >HOME</a
-                >
-              </li>
-              <li>
-                <a href="about.html" class="nav-button nav-button--secondary"
-                  >O FIRMIE</a
-                >
-              </li>
-              <li>
-                <a href="projects.html" class="nav-button nav-button--secondary"
-                  >REALIZACJE</a
-                >
-              </li>
-              <li>
-                <a href="contact.html" class="nav-button nav-button--primary"
-                  >KONTAKT</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+    <header class="flex-row">
+      <a href="index.html" class="header-brand-col flex-col">
+        <img
+          src="img/header-logo.png"
+          alt="MW-Engineering - instalacje elektryczne"
+        />
+        <p class="header-tagline">
+          ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY
+        </p>
+      </a>
+      <nav>
+        <ul class="nav-links flex-row">
+          <li>
+            <a href="index.html" class="nav-button nav-button--secondary"
+              >STRONA GŁÓWNA</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-button nav-button--secondary"
+              >O FIRMIE</a
+            >
+          </li>
+          <li>
+            <a href="projects.html" class="nav-button nav-button--secondary"
+              >REALIZACJE</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="nav-button nav-button--primary"
+              >KONTAKT</a
+            >
+          </li>
+        </ul>
+        <ion-icon id="nav-burger" name="reorder-three"></ion-icon>
+      </nav>
     </header>
 
     <main>
@@ -163,78 +159,123 @@
         <div class="industries-cards-container">
           <div class="industry-card flex-col">
             <div class="industry-card-header">
-              <img src="img/about/chemistry-industry.jpg" alt="" />
+              <img
+                src="img/about/chemistry-industry-icon.jpg"
+                alt="Przemysł chemiczny"
+              />
               <p>Przemysł chemiczny</p>
             </div>
             <div class="realization-links">
-              <a href="projects.html#chemistry-industry" class="realization-link">Zobacz realizacje</a>
+              <a
+                href="projects.html#chemistry-industry"
+                class="realization-link"
+                >Zobacz realizacje</a
+              >
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </div>
           </div>
           <div class="industry-card flex-col">
             <div class="industry-card-header">
-              <img src="img/about/food-and-drink.png" alt="" />
+              <img
+                src="img/about/food-and-drink-icon.png"
+                alt="Przemysł spożywczy"
+              />
               <p>Przemysł spożywczy</p>
             </div>
             <div class="realization-links">
-              <a href="projects.html#food-and-drink-industry" class="realization-link">Zobacz realizacje</a>
+              <a
+                href="projects.html#food-and-drink-industry"
+                class="realization-link"
+                >Zobacz realizacje</a
+              >
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </div>
           </div>
           <div class="industry-card flex-col">
             <div class="industry-card-header">
-              <img src="img/about/automotive.png" alt="" />
+              <img
+                src="img/about/automotive-icon.png"
+                alt="Przemysł automotive"
+              />
               <p>Automotive</p>
             </div>
             <div class="realization-links">
-              <a href="projects.html#automotive-industry" class="realization-link">Zobacz realizacje</a>
+              <a
+                href="projects.html#automotive-industry"
+                class="realization-link"
+                >Zobacz realizacje</a
+              >
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </div>
           </div>
           <div class="industry-card flex-col">
             <div class="industry-card-header">
-              <img src="img/about/airplane.png" alt="" />
+              <img src="img/about/airplane-icon.png" alt="Przemysł lotniczy" />
               <p>Przemysł lotniczy</p>
             </div>
             <div class="realization-links">
-              <a href="projects.html#aeronautical-industry" class="realization-link">Zobacz realizacje</a>
+              <a
+                href="projects.html#aeronautical-industry"
+                class="realization-link"
+                >Zobacz realizacje</a
+              >
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </div>
           </div>
           <div class="industry-card flex-col">
             <div class="industry-card-header">
-              <img src="img/about/heavy-industry.png" alt="" />
+              <img
+                src="img/about/heavy-industry-icon.png"
+                alt="Przemysł ciężki"
+              />
               <p>Przemysł ciężki</p>
             </div>
             <div class="realization-links">
-              <a href="projects.html#heavy-industry" class="realization-link">Zobacz realizacje</a>
+              <a href="projects.html#heavy-industry" class="realization-link"
+                >Zobacz realizacje</a
+              >
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </div>
           </div>
           <div class="industry-card flex-col">
             <div class="industry-card-header">
-            <img src="img/about/store.png" alt="" />
-            <p>Magazyny wysokiego składowania</p></div>
+              <img
+                src="img/about/store-icon.png"
+                alt="Magazyny wysokiego składowania"
+              />
+              <p>Magazyny wysokiego składowania</p>
+            </div>
             <div class="realization-links">
-              <a href="projects.html#logistics" class="realization-link">Zobacz realizacje</a>
+              <a href="projects.html#logistics" class="realization-link"
+                >Zobacz realizacje</a
+              >
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </div>
           </div>
           <div class="industry-card flex-col">
             <div class="industry-card-header">
-            <img src="img/about/laboratory.png" alt="" />
-            <p>Sektor medyczny</p></div>
+              <img src="img/about/laboratory-icon.png" alt="Sektor medyczny" />
+              <p>Sektor medyczny</p>
+            </div>
             <div class="realization-links">
-              <a href="projects.html#medical-sector" class="realization-link">Zobacz realizacje</a>
+              <a href="projects.html#medical-sector" class="realization-link"
+                >Zobacz realizacje</a
+              >
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </div>
           </div>
           <div class="industry-card flex-col">
             <div class="industry-card-header">
-            <img src="img/about/retail.png" alt="" />
-            <p>Obiekty retail</p></div>
+              <img
+                src="img/about/retail-icon.png"
+                alt="Obiekty handlowe retail"
+              />
+              <p>Obiekty retail</p>
+            </div>
             <div class="realization-links">
-              <a href="projects.html#retail-sector" class="realization-link">Zobacz realizacje</a>
+              <a href="projects.html#retail-sector" class="realization-link"
+                >Zobacz realizacje</a
+              >
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </div>
           </div>
@@ -338,7 +379,7 @@
           <div class="value-section-main flex-col">
             <p class="section-label">WARTOŚĆ DLA KLIENTA</p>
             <h2
-              class="section-title section-title--underline section-title--dark section-title--underline section-title-mb-lg"
+              class="section-title section-title--dark section-title--underline section-title-mb-lg"
             >
               Efekty, które mają znaczenie operacyjne
             </h2>
@@ -350,7 +391,7 @@
           </div>
           <div class="value-cards-container">
             <div class="value-card flex-col">
-              <img src="img/about/costs.png" alt="" />
+              <img src="img/about/costs-icon.png" alt="" />
               <h3>Optymalizacja kosztów inwestycji (CAPEX)</h3>
               <p>
                 Wykorzystujemy istniejącą infrastrukturę tam, gdzie ma to
@@ -358,7 +399,7 @@
               </p>
             </div>
             <div class="value-card">
-              <img src="img/about/diagram.png" alt="" />
+              <img src="img/about/diagram-icon.png" alt="" />
               <h3>Niższe koszty eksploatacyjne (OPEX)</h3>
               <p>
                 Nowoczesne systemy oświetleniowe i sterowania pozwalają
@@ -366,7 +407,7 @@
               </p>
             </div>
             <div class="value-card">
-              <img src="img/about/warning-triangle.png" alt="" />
+              <img src="img/about/warning-triangle-icon.png" alt="" />
               <h3>Ograniczenie ryzyka operacyjnego</h3>
               <p>
                 Wdrożenia planujemy w sposób przewidywalny, z uwzględnieniem
@@ -382,7 +423,7 @@
               </p>
             </div>
             <div class="value-card">
-              <img src="img/about/solutions.png" alt="" />
+              <img src="img/about/solutions-icon-2.png" alt="" />
               <h3>Rozwiązania dopasowane do realnych warunków</h3>
               <p>
                 Projektujemy systemy pod konkretne środowisko pracy — nie na
@@ -400,7 +441,10 @@
           </div>
         </div>
         <div class="value-section-image">
-          <img src="img/about/factory-value-img.png" alt="" />
+          <img
+            src="img/about/factory-value-photo.png"
+            alt="Rozdzielnice elektryczne w obiekcie przemysłowym"
+          />
         </div>
       </section>
     </main>
@@ -421,7 +465,7 @@
             </address>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="location-outline"></ion-icon>
               <div class="footer-menu-text">
                 <p>Białe Zagłębie 11 lok. 9</p>
                 <p>26-052 Nowiny</p>
@@ -429,7 +473,7 @@
             </div>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="business-outline"></ion-icon>
               <div class="footer-menu-text">
                 <p>NIP: 6572847203</p>
                 <p>REGON: 542543502</p>
@@ -441,12 +485,12 @@
               <h3>Dane kontaktowe</h3>
             </div>
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="call-outline"></ion-icon>
               <p>tel. <a href="tel:+48 695 413 382">+48 695 413 382</a></p>
             </div>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="mail-outline"></ion-icon>
               <p>
                 email:<a href="mailto:biuro@mw-engineering.pl">
                   biuro@mw-engineering.pl</a
@@ -487,5 +531,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,375 @@
+/* adjustment for nav width and cards icons */
+@media only screen and (max-width: 1450px) {
+  html,
+  body {
+    font-size: 9.5px;
+  }
+
+  header {
+    padding: 1.5rem 7rem;
+  }
+
+  .nav-links {
+    gap: 0;
+  }
+
+  .home-offer-cards-div {
+    gap: 2rem;
+  }
+
+  .home-offer-card {
+    flex: 0 0 calc(23% - 1rem);
+    padding: 2rem;
+  }
+
+  .home-offer-card-icon-header-row {
+    padding-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .home-offer-card h3 {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+
+  .home-offer-card img {
+    max-width: 6.5rem;
+  }
+
+  .home-proof-container {
+    padding: 7rem 7rem;
+  }
+
+  .home-proof-container h2 {
+    margin-bottom: 3rem;
+  }
+
+  .home-proof-stat {
+    padding: 2rem 1.5rem;
+  }
+
+  .home-benefits-container {
+    height: 55rem;
+  }
+
+  .home-benefits-container-list li {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .clients {
+    max-width: 115rem;
+  }
+  .carousel-group img {
+    height: 9rem;
+  }
+
+  footer {
+    padding: 4rem 7rem;
+  }
+
+  .footer-contact-and-map-data-row {
+    max-width: 68rem;
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 8.5px;
+  }
+
+  .nav-button {
+    letter-spacing: 1.2px;
+    padding: 1.5rem 2rem;
+  }
+
+  .home-hero-content {
+    margin-left: 5rem;
+  }
+
+  .carousel-main-div {
+    max-width: 105rem;
+  }
+
+  .btn {
+    padding: 1.4rem 2rem;
+  }
+
+  .home-offer-cards-div {
+    gap: 1.8rem;
+  }
+  .home-offer-card {
+    flex: 0 0 calc(23% - 0.9rem);
+    padding: 1.9rem;
+  }
+  .home-offer-card img {
+    max-width: 6rem;
+  }
+  .home-offer-card-icon-header-row {
+    gap: 0.5rem;
+  }
+  .home-offer-card h3 {
+    font-size: 1.7rem;
+    line-height: 3.2rem;
+  }
+
+  .home-offer-container {
+    padding: 5rem 0;
+  }
+
+  .home-benefits-content {
+    padding-left: 6rem;
+  }
+  .home-benefits-container {
+    height: 50rem;
+  }
+
+  .home-benefits-container h2 {
+    font-size: 2.3rem;
+  }
+  .home-benefits-container-list li {
+    margin-top: 1.8rem;
+  }
+
+  .footer img {
+    max-height: 4rem;
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  header {
+    padding: 1.5rem 3rem;
+  }
+
+  .header-brand-col img {
+    max-width: 10rem;
+  }
+
+  .header-tagline {
+    font-size: 1.05rem;
+    letter-spacing: 0;
+  }
+
+  .nav-button {
+    padding: 1.1rem 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+
+  .carousel-main-div {
+    max-width: 85rem;
+  }
+
+  .section-light {
+    margin: 3rem 3rem 0 3rem;
+  }
+  .home-offer-container {
+    padding: 3rem 0;
+  }
+
+  .home-offer-intro p {
+    margin-bottom: 2rem;
+  }
+
+  .home-offer-intro h2::after {
+    max-width: 80rem;
+  }
+
+  .home-offer-card p {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    padding-top: 1.6rem;
+  }
+
+  .home-offer-card h3 {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+  .home-offer-card {
+    padding: 1.5rem;
+  }
+  .home-offer-card img {
+    max-width: 5rem;
+  }
+
+  .home-offer-cards-div {
+    gap: 1.4rem;
+  }
+  .home-offer-card {
+    flex: 0 0 calc(23% - 0.7rem);
+  }
+
+  .home-proof-container {
+    padding: 4rem 10rem;
+  }
+
+  .home-proof-container h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .home-proof-logos img {
+    max-height: 4.8rem;
+  }
+
+  .home-proof-logos {
+    gap: 1rem;
+  }
+
+  .home-benefits-container-list li {
+    font-size: 1.6rem;
+    margin-top: 1.4rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .home-benefits-container h2 {
+    line-height: 4rem;
+  }
+
+  .home-benefits-container {
+    height: 45rem;
+  }
+
+  .clients-header {
+    font-size: 3.3rem;
+  }
+
+  .clients {
+    padding: 1rem 0;
+  }
+
+  .footer-google-map {
+    max-width: 17rem;
+  }
+
+  footer img {
+    max-width: 17rem;
+  }
+
+  .footer-contact-and-map-data-row {
+    gap: 2rem;
+    max-width: 58rem;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  nav ion-icon[name="reorder-three"] {
+    display: block;
+    font-size: 32px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+  }
+  .nav-links {
+    opacity: 0;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.4s ease;
+    gap: 1.2rem;
+    z-index: 5;
+    right: -0.3rem;
+    top: -0.3rem;
+    background-color: #11151b;
+    width: 22rem;
+    padding: 2rem;
+    border-radius: 6px;
+    border: 1px solid #2b2b2c;
+    padding-top: 5rem;
+  }
+
+  
+
+  .nav-button::after {
+    bottom: 3px;
+    left: 50%;
+    height: 1.5px;
+    width: 75%;
+  }
+
+  .home-offer-cards-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-proof-container {
+    padding: 4rem 3rem;
+  }
+
+  .home-proof-stat strong {
+    font-size: 3.5rem;
+  }
+  .home-proof-stat:last-child strong {
+    font-size: 3.3rem;
+    color: #282828;
+  }
+
+  .home-offer-container {
+    padding: 3rem 2rem;
+  }
+
+  .home-offer-intro h2::after {
+    max-width: 45rem;
+  }
+
+  .home-offer-intro h2 {
+    line-height: 4rem;
+  }
+
+  .home-offer-card-icon-header-row {
+    gap: 1.5rem;
+  }
+
+  .home-proof-logos {
+    flex-wrap: wrap;
+    gap: 0rem;
+  }
+  .home-proof-logos img {
+    max-height: 3.9rem;
+  }
+
+  .home-benefits-container {
+    height: 30rem;
+  }
+
+  .section-dark {
+    margin: 2rem 2rem 0 2rem;
+  }
+  .home-benefits-container-list li {
+    font-size: 1.2rem;
+    margin-top: 0;
+    padding-bottom: 0;
+    line-height: 2.3rem;
+    gap: 1rem;
+    align-items: center;
+  }
+  .home-benefits-content {
+    padding-left: 2rem;
+  }
+
+  .home-benefits-container h2 {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .home-benefits-container-list ion-icon {
+    font-size: 2rem;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+}

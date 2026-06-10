@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projektowanie, modernizacja i wykonawstwo instalacji elektrycznych, rozdzielnic elektrycznych oraz oświetlenia przemysłowego. Realizacje dla zakładów produkcyjnych, magazynów i obiektów przemysłowych w Polsce i Niemczech."
+    />
     <!-- FONT MONTSERRAT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,69 +29,63 @@
       href="img/favicon/apple-touch-icon.png"
     />
     <meta name="apple-mobile-web-app-title" content="MW" />
-    <meta
-      name="description"
-      content="
-      Projektowanie i wykonawstwo instalacji elektrycznych oraz oświetlenia przemysłowego. Modernizacje, rozdzielnice, systemy sterowania."
-    />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <title>MW-engineering</title>
+    <title>
+      MW-Engineering | Instalacje elektryczne i oświetlenie przemysłowe
+    </title>
   </head>
 
   <body id="top">
-    <!-- HEADER -->
-    <header>
-      <div class="header-inner">
-        <div class="nav-main-items-row">
-          <a href="index.html" class="header-brand-col flex-col">
-            <img
-              src="img/header-logo.png"
-              alt="MW-Engineering - instalacje elektryczne"
-            />
-            <span class="header-tagline">
-              ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY
-            </span>
-          </a>
-          <nav aria-label="Główna nawigacja">
-            <ul class="nav-links">
-              <li>
-                <a href="index.html" class="nav-button nav-button--secondary"
-                  >HOME</a
-                >
-              </li>
-              <li>
-                <a href="about.html" class="nav-button nav-button--secondary"
-                  >O FIRMIE</a
-                >
-              </li>
-              <li>
-                <a href="projects.html" class="nav-button nav-button--secondary"
-                  >REALIZACJE</a
-                >
-              </li>
-              <li>
-                <a href="contact.html" class="nav-button nav-button--primary"
-                  >KONTAKT</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+    <!--------------------------------- HEADER ---------------------------------->
+    <header class="flex-row">
+      <a href="index.html" class="header-brand-col flex-col">
+        <img
+          src="img/header-logo.png"
+          alt="MW-Engineering - instalacje elektryczne"
+        />
+        <p class="header-tagline">
+          ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY
+        </p>
+      </a>
+      <nav>
+        <ul class="nav-links flex-row">
+          <li>
+            <a href="index.html" class="nav-button nav-button--secondary"
+              >STRONA GŁÓWNA</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-button nav-button--secondary"
+              >O FIRMIE</a
+            >
+          </li>
+          <li>
+            <a href="projects.html" class="nav-button nav-button--secondary"
+              >REALIZACJE</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="nav-button nav-button--primary"
+              >KONTAKT</a
+            >
+          </li>
+        </ul>
+        <ion-icon id="nav-burger" name="reorder-three"></ion-icon>
+      </nav>
     </header>
     <main>
       <!-- SECTION HERO -->
-      <section class="home-hero-section">
+      <section class="home-hero-section flex-col">
         <div class="home-hero-content">
           <h1>
             Oświetlenie przemysłowe <br />i instalacje elektryczne dopasowane do
             pracy zakładu
           </h1>
           <p>
-            Realizujemy modernizacje i wdrożenia w istniejącej infrastrukturze —
+            Realizujemy modernizacje w istniejącej infrastrukturze —
             <br />
             z uwzględnieniem organizacji produkcji, wymagań BHP i optymalizacji
             kosztów inwestycji.
@@ -118,7 +116,7 @@
           <div class="home-offer-cards-div">
             <div class="home-offer-card flex-col">
               <div class="home-offer-card-icon-header-row">
-                <img src="img/home/cards-img/bulb.png" alt="" />
+                <img src="img/home/cards-img/bulb-icon.png" alt="" />
                 <h3>Oświetlenie przemysłowe</h3>
               </div>
               <p>
@@ -129,7 +127,7 @@
             </div>
             <div class="home-offer-card">
               <div class="home-offer-card-icon-header-row">
-                <img src="img/home/cards-img/installation.png" alt="" />
+                <img src="img/home/cards-img/installation-icon.png" alt="" />
                 <h3>Instalacje elektryczne</h3>
               </div>
               <p>
@@ -139,7 +137,7 @@
             </div>
             <div class="home-offer-card">
               <div class="home-offer-card-icon-header-row">
-                <img src="img/home/cards-img/control.png" alt="" />
+                <img src="img/home/cards-img/control-icon.png" alt="" />
                 <h3>Systemy sterowania</h3>
               </div>
               <p>
@@ -149,7 +147,7 @@
             </div>
             <div class="home-offer-card">
               <div class="home-offer-card-icon-header-row">
-                <img src="img/home/cards-img/modernization.png" alt="" />
+                <img src="img/home/cards-img/modernization-icon.png" alt="" />
                 <h3>Modernizacje <br />i optymalizacja</h3>
               </div>
               <p>
@@ -179,15 +177,24 @@
             </div>
           </div>
           <div class="home-proof-logos">
-            <img src="img/home/company-logos/qemetica.jpg" alt="Qemetica" />
+            <img
+              src="img/home/company-logos/qemetica.jpg"
+              alt="Logo Qemetica"
+            />
             <img
               src="img/home/company-logos/swiss-krono.jpg"
-              alt="Swiss Krono"
+              alt="Logo Swiss Krono"
             />
-            <img src="img/home/company-logos/unilever.jpg" alt="Unilever" />
-            <img src="img/home/company-logos/prologis.jpg" alt="Prologis" />
-            <img src="img/home/company-logos/airbus.jpg" alt="Airbus" />
-            <img src="img/home/company-logos/colian.jpg" alt="Colian" />
+            <img
+              src="img/home/company-logos/unilever.jpg"
+              alt="Logo Unilever"
+            />
+            <img
+              src="img/home/company-logos/prologis.jpg"
+              alt="Logo Prologis"
+            />
+            <img src="img/home/company-logos/airbus.jpg" alt="Logo Airbus" />
+            <img src="img/home/company-logos/colian.jpg" alt="Logo Colian" />
           </div>
         </div>
       </section>
@@ -199,25 +206,28 @@
             <h2>Podejście dopasowane do realiów przemysłu</h2>
             <ul class="home-benefits-container-list">
               <li>
-                <ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon
+                <ion-icon name="checkmark-outline"></ion-icon
                 ><span>Dostosowanie do pracy zakładu</span>
               </li>
               <li>
-                <ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon
+                <ion-icon name="checkmark-outline"></ion-icon
                 ><span>Wykorzystanie istniejącej infrastruktury</span>
               </li>
               <li>
-                <ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon
+                <ion-icon name="checkmark-outline"></ion-icon
                 ><span>Bezpieczeństwo i zgodność z normami</span>
               </li>
               <li>
-                <ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon
+                <ion-icon name="checkmark-outline"></ion-icon
                 ><span>Rozwiązania dopasowane do realnych warunków pracy</span>
               </li>
             </ul>
           </div>
           <div class="home-benefits-image">
-            <img src="img/home/contact-image.png" alt="" />
+            <img
+              src="img/home/industrial-engineering-photo.png"
+              alt="Inżynierowie analizujący dokumentację przy rozdzielnicach elektrycznych"
+            />
           </div>
         </div>
       </section>
@@ -225,10 +235,7 @@
       <!-- SECTION CLIENTS -->
       <section class="clients">
         <h2 class="clients-header">Współpracujemy z:</h2>
-        <div
-          class="carousel-main-div"
-          aria-label="Logotypy klientów i partnerów"
-        >
+        <div class="carousel-main-div">
           <div class="carousel-track">
             <!-- GROUP 1 -->
             <ul class="carousel-group">
@@ -277,7 +284,7 @@
             </ul>
 
             <!-- GROUP 2 (animation duplicate) -->
-            <ul class="carousel-group" aria-hidden="true">
+            <ul class="carousel-group">
               <li>
                 <img src="img/home/company-logos/airbus.jpg" alt="" />
               </li>
@@ -324,7 +331,7 @@
             </address>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="location-outline"></ion-icon>
               <div class="footer-menu-text">
                 <p>Białe Zagłębie 11 lok. 9</p>
                 <p>26-052 Nowiny</p>
@@ -332,7 +339,7 @@
             </div>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="business-outline"></ion-icon>
               <div class="footer-menu-text">
                 <p>NIP: 6572847203</p>
                 <p>REGON: 542543502</p>
@@ -344,14 +351,15 @@
               <h3>Dane kontaktowe</h3>
             </div>
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="call-outline"></ion-icon>
               <p>tel. <a href="tel:+48 695 413 382">+48 695 413 382</a></p>
             </div>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="mail-outline"></ion-icon>
               <p>
-                email:<a href="mailto:biuro@mw-engineering.pl">
+                email:
+                <a href="mailto:biuro@mw-engineering.pl">
                   biuro@mw-engineering.pl</a
                 >
               </p>
@@ -390,5 +398,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

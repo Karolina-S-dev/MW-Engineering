@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Zobacz realizacje MW-Engineering. Oświetlenie przemysłowe, instalacje elektryczne i systemy sterowania dla przemysłu, logistyki, automotive, sektora medycznego i retail."
+    />
     <!-- FONT MONTSERRAT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,59 +34,53 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <title>MW-engineering</title>
+    <title>MW-Engineering | Realizacje przemysłowe</title>
   </head>
 
   <body id="top">
     <!-- HEADER -->
-    <header>
-      <div class="header-inner">
-        <div class="nav-main-items-row">
-          <a href="index.html" class="header-brand-col flex-col">
-            <img
-              src="img/header-logo.png"
-              alt="MW-Engineering - instalacje elektryczne"
-            />
-            <span class="header-tagline">
-              ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY
-            </span>
-          </a>
-          <nav>
-            <ul class="nav-links">
-              <li>
-                <a href="index.html" class="nav-button nav-button--secondary"
-                  >HOME</a
-                >
-              </li>
-              <li>
-                <a href="about.html" class="nav-button nav-button--secondary"
-                  >O FIRMIE</a
-                >
-              </li>
-              <li>
-                <a href="projects.html" class="nav-button nav-button--secondary"
-                  >REALIZACJE</a
-                >
-              </li>
-              <li>
-                <a href="contact.html" class="nav-button nav-button--primary"
-                  >KONTAKT</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+    <header class="flex-row">
+      <a href="index.html" class="header-brand-col flex-col">
+        <img
+          src="img/header-logo.png"
+          alt="MW-Engineering - instalacje elektryczne"
+        />
+        <p class="header-tagline">
+          ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY
+        </p>
+      </a>
+      <nav>
+        <ul class="nav-links flex-row">
+          <li>
+            <a href="index.html" class="nav-button nav-button--secondary"
+              >STRONA GŁÓWNA</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-button nav-button--secondary"
+              >O FIRMIE</a
+            >
+          </li>
+          <li>
+            <a href="projects.html" class="nav-button nav-button--secondary"
+              >REALIZACJE</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="nav-button nav-button--primary"
+              >KONTAKT</a
+            >
+          </li>
+        </ul>
+        <ion-icon id="nav-burger" name="reorder-three"></ion-icon>
+      </nav>
     </header>
 
     <main>
       <!-- SECTION-HERO -->
       <section class="hero">
         <video class="hero-video" autoplay muted loop playsinline>
-          <source
-            src="./img/photos-from-investments/movies/hero-movie.mp4"
-            type="video/mp4"
-          />
+          <source src="./img/movies/hero-movie.mp4" type="video/mp4" />
         </video>
         <div class="hero-content">
           <p class="section-label">REALIZACJE</p>
@@ -123,7 +121,7 @@
       <!-------------------- LOGISTICS---------------------->
       <section class="projects-section projects-light" id="logistics">
         <div class="projects-content">
-          <img src="img/projects/warehouse-transparent.png" alt="" />
+          <img src="img/projects/warehouse-transparent-icon.png" alt="" />
           <h2 class="projects-title">Magazyny i logistyka</h2>
           <p class="projects-description">
             Kompleksowe instalacje i systemy oświetleniowe dla centrów
@@ -136,8 +134,8 @@
           <div class="project-card project-card-light">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Amazon/project-amazon.jpg"
-                alt=""
+                src="./img/photos-from-investments/amazon/project-amazon.jpg"
+                alt="Instalacja oświetlenia i systemu sterowania w centrum logistycznym Amazon"
               />
             </div>
             <div class="project-card-content">
@@ -153,9 +151,56 @@
                 <ion-icon name="location"></ion-icon>
                 <p class="location-text">Bad Hersfeld, DE</p>
               </div>
-              <button id="" class="btn-activate-modal">
+              <button data-target="gallery1" class="btn-activate-modal">
                 Zobacz realizację
               </button>
+            </div>
+          </div>
+          <div class="modal-gallery-background" id="gallery1">
+            <div class="modal-gallery-content">
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
+              <div class="gallery-scroll">
+                <img
+                  src="./img/photos-from-investments/amazon/Amazon-1.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/amazon/Amazon-3.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/amazon/Amazon-4.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/amazon/Amazon-6.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/amazon/Amazon-7.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/amazon/Amazon-8.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/amazon/Amazon-9.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/amazon/project-amazon.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
 
@@ -163,8 +208,8 @@
           <div class="project-card project-card-light">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Prologis/Prologis_3.jpeg"
-                alt=""
+                src="./img/photos-from-investments/prologis/Prologis_3.jpeg"
+                alt="Instalacja oświetleniowa w centrum logistycznym Prologis"
               />
             </div>
             <div class="project-card-content">
@@ -183,31 +228,37 @@
           </div>
           <div class="modal-gallery-background" id="gallery2">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
-                  src="./img/photos-from-investments/Prologis/Prologis_4.jpeg"
+                  src="./img/photos-from-investments/prologis/Prologis_4.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Prologis/Prologis_1.jpeg"
+                  src="./img/photos-from-investments/prologis/Prologis_1.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Prologis/Prologis_2.jpeg"
+                  src="./img/photos-from-investments/prologis/Prologis_2.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Prologis/Prologis_3.jpeg"
+                  src="./img/photos-from-investments/prologis/Prologis_3.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Prologis/Prologis_5.jpeg"
+                  src="./img/photos-from-investments/prologis/Prologis_5.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Prologis/Prologis_6.jpeg"
+                  src="./img/photos-from-investments/prologis/Prologis_6.jpeg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -217,8 +268,8 @@
           <div class="project-card project-card-light">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Rosiński Packaging/Rosiński-packaging-3.jpeg"
-                alt=""
+                src="./img/photos-from-investments/rosinski-packaging/Rosiński-packaging-3.jpeg"
+                alt="Oświetlenie w zakładzie Rosiński Packaging"
               />
             </div>
             <div class="project-card-content">
@@ -237,15 +288,17 @@
           </div>
           <div class="modal-gallery-background" id="gallery3">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
-                  src="./img/photos-from-investments/Rosiński Packaging/Rosiński-packaging-1.jpeg"
+                  src="./img/photos-from-investments/rosinski-packaging/Rosiński-packaging-1.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Rosiński Packaging/Rosiński-packaging-2.jpeg"
+                  src="./img/photos-from-investments/rosinski-packaging/Rosiński-packaging-2.jpeg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -255,8 +308,8 @@
           <div class="project-card project-card-light">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Eurocash/Eurocash_3.jpeg"
-                alt=""
+                src="./img/photos-from-investments/eurocash/Eurocash_3.jpeg"
+                alt="Modernizacja oświetlenia LED w obiekcie Eurocash"
               />
             </div>
             <div class="project-card-content">
@@ -277,35 +330,42 @@
           </div>
           <div class="modal-gallery-background" id="gallery4">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
-                  src="./img/photos-from-investments/Eurocash/Eurocash_1.jpeg"
+                  src="./img/photos-from-investments/eurocash/Eurocash_1.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Eurocash/Eurocash_2.jpeg"
+                  src="./img/photos-from-investments/eurocash/Eurocash_2.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Eurocash/Eurocash_3.jpeg"
+                  src="./img/photos-from-investments/eurocash/Eurocash_3.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Eurocash/Eurocash_4.jpeg"
+                  src="./img/photos-from-investments/eurocash/Eurocash_4.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Eurocash/Eurocash_5.jpeg"
+                  src="./img/photos-from-investments/eurocash/Eurocash_5.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Eurocash/Eurocash_6.jpeg"
+                  src="./img/photos-from-investments/eurocash/Eurocash_6.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Eurocash/Eurocash_7.jpeg"
+                  src="./img/photos-from-investments/eurocash/Eurocash_7.jpeg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -316,7 +376,7 @@
       <!--------------------- CHEMISTRY INDUSTRY--------------------->
       <section class="projects-section projects-dark" id="chemistry-industry">
         <div class="projects-content">
-          <img src="img/projects/chemistry-transparent.png" alt="" />
+          <img src="img/projects/chemistry-transparent-icon.png" alt="" />
           <h2 class="projects-title">Przemysł chemiczny</h2>
           <p class="projects-description">
             Realizacje wykonywane w środowiskach wymagających ciągłości pracy i
@@ -329,8 +389,8 @@
           <div class="project-card project-card-dark">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Air-Liquide/air-liquide.jpeg"
-                alt=""
+                src="./img/photos-from-investments/air-liquide/air-liquide.jpeg"
+                alt="Modernizacja oświetlenia zewnętrznego w zakładzie Air Liquide"
               />
             </div>
             <div class="project-card-content">
@@ -350,47 +410,57 @@
           </div>
           <div class="modal-gallery-background" id="gallery5">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
-                  src="./img/photos-from-investments/Air-Liquide/air-liquide.jpeg"
+                  src="./img/photos-from-investments/air-liquide/air-liquide.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Air-Liquide/air-liquide2.jpeg"
+                  src="./img/photos-from-investments/air-liquide/air-liquide2.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Air-Liquide/air-liquide3.jpeg"
+                  src="./img/photos-from-investments/air-liquide/air-liquide3.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Air-Liquide/air-liquide4.jpeg"
+                  src="./img/photos-from-investments/air-liquide/air-liquide4.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Air-Liquide/air-liquide5.jpeg"
+                  src="./img/photos-from-investments/air-liquide/air-liquide5.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Air-Liquide/air-liquide6.jpeg"
+                  src="./img/photos-from-investments/air-liquide/air-liquide6.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Air-Liquide/air-liquide7.jpeg"
+                  src="./img/photos-from-investments/air-liquide/air-liquide7.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Air-Liquide/air-liquide8.jpeg"
+                  src="./img/photos-from-investments/air-liquide/air-liquide8.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Air-Liquide/air-liquide9.jpeg"
+                  src="./img/photos-from-investments/air-liquide/air-liquide9.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Air-Liquide/air-liquide10.jpeg"
+                  src="./img/photos-from-investments/air-liquide/air-liquide10.jpeg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -400,8 +470,8 @@
           <div class="project-card project-card-dark">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Qemetica-soda-polska/Qemetica-10.jpg"
-                alt=""
+                src="./img/photos-from-investments/qemetica-soda-polska/Qemetica-10.jpg"
+                alt="Modernizacja oświetlenia przemysłowego w zakładzie Qemetica"
               />
             </div>
             <div class="project-card-content">
@@ -421,47 +491,57 @@
           </div>
           <div class="modal-gallery-background" id="gallery6">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
-                  src="./img/photos-from-investments/Qemetica-soda-polska/Qemetica-1.jpeg"
+                  src="./img/photos-from-investments/qemetica-soda-polska/Qemetica-1.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Qemetica-soda-polska/Qemetica-2.jpeg"
+                  src="./img/photos-from-investments/qemetica-soda-polska/Qemetica-2.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Qemetica-soda-polska/Qemetica-3.jpeg"
+                  src="./img/photos-from-investments/qemetica-soda-polska/Qemetica-3.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Qemetica-soda-polska/Qemetica-4.jpeg"
+                  src="./img/photos-from-investments/qemetica-soda-polska/Qemetica-4.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Qemetica-soda-polska/Qemetica-5.jpeg"
+                  src="./img/photos-from-investments/qemetica-soda-polska/Qemetica-5.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Qemetica-soda-polska/Qemetica-6.jpeg"
+                  src="./img/photos-from-investments/qemetica-soda-polska/Qemetica-6.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Qemetica-soda-polska/Qemetica-7.jpeg"
+                  src="./img/photos-from-investments/qemetica-soda-polska/Qemetica-7.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Qemetica-soda-polska/Qemetica-8.jpeg"
+                  src="./img/photos-from-investments/qemetica-soda-polska/Qemetica-8.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Qemetica-soda-polska/Qemetica-9.jpeg"
+                  src="./img/photos-from-investments/qemetica-soda-polska/Qemetica-9.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Qemetica-soda-polska/Qemetica-10.jpg"
+                  src="./img/photos-from-investments/qemetica-soda-polska/Qemetica-10.jpg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -470,7 +550,10 @@
           <!----------------------- KANDELIUM ----------------------->
           <div class="project-card project-card-dark">
             <div class="project-card-img">
-              <img src="" alt="" />
+              <img
+                src="./img/photos-from-investments/kandelium/Kandelium_2.jpeg"
+                alt="Modernizacja oświetlenia w zakładzie chemicznym Kandelium"
+              />
             </div>
             <div class="project-card-content">
               <h3>KANDELIUM</h3>
@@ -484,9 +567,31 @@
                 <ion-icon name="location"></ion-icon>
                 <p class="location-text">Bad Hönningen, DE</p>
               </div>
-              <button class="btn-activate-modal" data-target="gallery4">
+              <button class="btn-activate-modal" data-target="gallery7">
                 Zobacz realizację
               </button>
+            </div>
+          </div>
+          <div class="modal-gallery-background" id="gallery7">
+            <div class="modal-gallery-content">
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
+              <div class="gallery-scroll">
+                <img
+                  src="./img/photos-from-investments/kandelium/Kandelium_2.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/kandelium/Kandelium_3.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/kandelium/Kandelium_1.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -498,7 +603,7 @@
         id="food-and-drink-industry"
       >
         <div class="projects-content">
-          <img src="img/projects/food-and-drink-transparent.png" alt="" />
+          <img src="img/projects/food-and-drink-transparent-icon.png" alt="" />
 
           <h2 class="projects-title">Przemysł spożywczy</h2>
           <p class="projects-description">
@@ -511,7 +616,10 @@
           <!----------------------- COLIAN ----------------------->
           <div class="project-card project-card-light">
             <div class="project-card-img">
-              <img src="./img/photos-from-investments/" alt="" />
+              <img
+                src="./img/photos-from-investments/"
+                alt="Modernizacja oświetlenia i instalacji elektrycznej w zakładzie Colian"
+              />
             </div>
             <div class="project-card-content">
               <h3>Colian</h3>
@@ -535,7 +643,10 @@
           <!-------------------- DELICPOL --------------------->
           <div class="project-card project-card-light">
             <div class="project-card-img">
-              <img src="./img/photos-from-investments/" alt="" />
+              <img
+                src="./img/photos-from-investments/"
+                alt="Modernizacja oświetlenia i infrastruktury elektrycznej w zakładzie Delicpol"
+              />
             </div>
             <div class="project-card-content">
               <h3>DELICPOL</h3>
@@ -558,7 +669,10 @@
           <!-------------------- EMILGRANA --------------------->
           <div class="project-card project-card-light">
             <div class="project-card-img">
-              <img src="" alt="" />
+              <img
+                src="./img/photos-from-investments/emilgrana/Emilgrana-1.jpg"
+                alt="Oświetlenie LED w zakładzie produkcji serów Emilgrana"
+              />
             </div>
 
             <div class="project-card-content">
@@ -572,16 +686,36 @@
                 <ion-icon name="location"></ion-icon>
                 <p class="location-text">Siedlec</p>
               </div>
-              <button class="btn-activate-modal" data-target="gallery4">
+              <button class="btn-activate-modal" data-target="gallery10">
                 Zobacz realizację
               </button>
+            </div>
+          </div>
+          <div class="modal-gallery-background" id="gallery10">
+            <div class="modal-gallery-content">
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
+              <div class="gallery-scroll">
+                <img
+                  src="./img/photos-from-investments/emilgrana/Emilgrana-1.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/emilgrana/Emilgrana-2.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
 
           <!-------------------- PPH INDYK MAZURY --------------------->
           <div class="project-card project-card-light">
             <div class="project-card-img">
-              <img src="" alt="" />
+              <img
+                src="./img/photos-from-investments/indyk-mazury/IM_5.jpeg"
+                alt="Instalacja oświetleniowa w zakładzie przetwórstwa drobiowego"
+              />
             </div>
             <div class="project-card-content">
               <h3>PPH Indyk Mazury</h3>
@@ -593,9 +727,41 @@
                 <ion-icon name="location"></ion-icon>
                 <p class="location-text">Ostróda</p>
               </div>
-              <button class="btn-activate-modal" data-target="gallery4">
+              <button class="btn-activate-modal" data-target="gallery11">
                 Zobacz realizację
               </button>
+            </div>
+          </div>
+          <div class="modal-gallery-background" id="gallery11">
+            <div class="modal-gallery-content">
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
+              <div class="gallery-scroll">
+                <img
+                  src="./img/photos-from-investments/indyk-mazury/IM_2.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/indyk-mazury/IM_1.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/indyk-mazury/IM_3.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/indyk-mazury/IM_4.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/indyk-mazury/IM_5.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -604,7 +770,7 @@
       <!-------------------------- AUTOMOTIVE--------------------------->
       <section class="projects-section projects-dark" id="automotive-industry">
         <div class="projects-content">
-          <img src="img/projects/automotive-transparent.png" alt="" />
+          <img src="img/projects/automotive-transparent-icon.png" alt="" />
 
           <h2 class="projects-title">Automotive</h2>
           <p class="projects-description">
@@ -615,8 +781,8 @@
 
         <div class="single-card">
           <img
-            src="./img/photos-from-investments/Stellantis/Stellantis_4.jpeg"
-            alt=""
+            src="./img/photos-from-investments/stellantis/Stellantis_4.jpeg"
+            alt="Modernizacja oświetlenia i infrastruktury elektroenergetycznej w zakładzie Stellantis"
           />
           <div class="single-card-overlay">
             <h3>Stellantis</h3>
@@ -637,35 +803,42 @@
         </div>
         <div class="modal-gallery-background" id="gallery12">
           <div class="modal-gallery-content">
-            <ion-icon name="close-outline" id="closing-X"></ion-icon>
+            <ion-icon name="close-outline" class="closing-x"></ion-icon>
             <div class="gallery-scroll">
               <img
-                src="./img/photos-from-investments/Stellantis/Stellantis_2.jpeg"
+                src="./img/photos-from-investments/stellantis/Stellantis_2.jpeg"
                 alt=""
+                loading="lazy"
               />
               <img
-                src="./img/photos-from-investments/Stellantis/Stellantis_3.jpeg"
+                src="./img/photos-from-investments/stellantis/Stellantis_3.jpeg"
                 alt=""
+                loading="lazy"
               />
               <img
-                src="./img/photos-from-investments/Stellantis/Stellantis_4.jpeg"
+                src="./img/photos-from-investments/stellantis/Stellantis_4.jpeg"
                 alt=""
+                loading="lazy"
               />
               <img
-                src="./img/photos-from-investments/Stellantis/Stellantis_5.jpeg"
+                src="./img/photos-from-investments/stellantis/Stellantis_5.jpeg"
                 alt=""
+                loading="lazy"
               />
               <img
-                src="./img/photos-from-investments/Stellantis/Stellantis_6.jpeg"
+                src="./img/photos-from-investments/stellantis/Stellantis_6.jpeg"
                 alt=""
+                loading="lazy"
               />
               <img
-                src="./img/photos-from-investments/Stellantis/Stellantis_7.jpeg"
+                src="./img/photos-from-investments/stellantis/Stellantis_7.jpeg"
                 alt=""
+                loading="lazy"
               />
               <img
-                src="./img/photos-from-investments/Stellantis/Stellantis_8.jpeg"
+                src="./img/photos-from-investments/stellantis/Stellantis_8.jpeg"
                 alt=""
+                loading="lazy"
               />
             </div>
           </div>
@@ -678,7 +851,7 @@
         id="aeronautical-industry"
       >
         <div class="projects-content">
-          <img src="img/projects/airplane-transparent.png" alt="" />
+          <img src="img/projects/airplane-transparent-icon.png" alt="" />
 
           <h2 class="projects-title">Przemysł lotniczy</h2>
           <p class="projects-description">
@@ -689,8 +862,8 @@
 
         <div class="single-card">
           <img
-            src="./img/photos-from-investments/Airbus/airbus-factory-photo.jpg"
-            alt=""
+            src="./img/photos-from-investments/airbus/airbus-factory-photo.jpg"
+            alt="Modernizacja oświetlenia i instalacji elektrycznej w obiekcie przemysłu lotniczego"
           />
           <div class="single-card-overlay">
             <h3>NDA</h3>
@@ -712,7 +885,7 @@
       <!------------------------ HEAVY INDUSTRY---------------------->
       <section class="projects-section projects-dark" id="heavy-industry">
         <div class="projects-content">
-          <img src="img/projects/heavy-industry-transparent.png" alt="" />
+          <img src="img/projects/heavy-industry-transparent-icon.png" alt="" />
 
           <h2 class="projects-title">Przemysł ciężki</h2>
           <p class="projects-description">
@@ -725,8 +898,8 @@
           <div class="project-card project-card-dark">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Werner-kenkel/Werner-kenkel-img.jpg"
-                alt=""
+                src="./img/photos-from-investments/werner-kenkel/Werner-kenkel-img.jpg"
+                alt="Modernizacja oświetlenia przemysłowego z systemem sterowania PLC"
               />
             </div>
             <div class="project-card-content">
@@ -747,27 +920,32 @@
           </div>
           <div class="modal-gallery-background" id="gallery14">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
-                  src="./img/photos-from-investments/Werner-kenkel/Werner-kenkel-img.webp"
+                  src="./img/photos-from-investments/werner-kenkel/Werner-kenkel-img.jpg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Werner-kenkel/Werner_2.jpeg"
+                  src="./img/photos-from-investments/werner-kenkel/Werner_2.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Werner-kenkel/Werner_6.jpeg"
+                  src="./img/photos-from-investments/werner-kenkel/Werner_6.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Werner-kenkel/Werner_7.jpeg"
+                  src="./img/photos-from-investments/werner-kenkel/Werner_7.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Werner-kenkel/Werner_8.jpeg"
+                  src="./img/photos-from-investments/werner-kenkel/Werner_8.jpeg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -776,7 +954,10 @@
           <!------------------------ COBRA EUROPE ---------------------->
           <div class="project-card project-card-dark">
             <div class="project-card-img">
-              <img src="./img/photos-from-investments/" alt="" />
+              <img
+                src="./img/photos-from-investments/"
+                alt="Modernizacja oświetlenia i systemu sterowania w zakładzie Cobra Europe"
+              />
             </div>
             <div class="project-card-content">
               <h3>Cobra Europe</h3>
@@ -798,7 +979,10 @@
           <!------------------------ OKNOPLAST ---------------------->
           <div class="project-card project-card-dark">
             <div class="project-card-img">
-              <img src="" alt="" />
+              <img
+                src=""
+                alt="Modernizacja oświetlenia przemysłowego w zakładzie Oknoplast"
+              />
             </div>
             <div class="project-card-content">
               <h3>Oknoplast</h3>
@@ -821,8 +1005,8 @@
           <div class="project-card project-card-dark">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Swiss-krono/Swiss_1.jpeg"
-                alt=""
+                src="./img/photos-from-investments/swiss-krono/Swiss_1.jpeg"
+                alt="Modernizacja oświetlenia i instalacji elektrycznych w zakładzie Swiss Krono"
               />
             </div>
             <div class="project-card-content">
@@ -844,31 +1028,37 @@
           </div>
           <div class="modal-gallery-background" id="gallery17">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
-                  src="./img/photos-from-investments/Swiss-krono/Swiss_1.jpeg"
+                  src="./img/photos-from-investments/swiss-krono/Swiss_1.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Swiss-krono/Swiss_3.jpeg"
+                  src="./img/photos-from-investments/swiss-krono/Swiss_3.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Swiss-krono/Swiss_4.jpeg"
+                  src="./img/photos-from-investments/swiss-krono/Swiss_4.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Swiss-krono/Swiss_6.jpeg"
+                  src="./img/photos-from-investments/swiss-krono/Swiss_6.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Swiss-krono/Swiss_2.jpg"
+                  src="./img/photos-from-investments/swiss-krono/Swiss_2.jpg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Swiss-krono/Swiss_5.jpg"
+                  src="./img/photos-from-investments/swiss-krono/Swiss_5.jpg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -877,7 +1067,10 @@
           <!------------------------ ROWE GMBH ---------------------->
           <div class="project-card project-card-dark">
             <div class="project-card-img">
-              <img src="./img/photos-from-investments/Rowe/Rowe_2.png" alt="" />
+              <img
+                src="./img/photos-from-investments/rowe/Rowe_2.png"
+                alt="Modernizacja oświetlenia przemysłowego w zakładzie ROWE GmbH"
+              />
             </div>
             <div class="project-card-content">
               <h3>ROWE GMBH</h3>
@@ -894,13 +1087,35 @@
               </button>
             </div>
           </div>
+          <div class="modal-gallery-background" id="gallery18">
+            <div class="modal-gallery-content">
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
+              <div class="gallery-scroll">
+                <img
+                  src="./img/photos-from-investments/rowe/Rowe_1.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/rowe/Rowe_2.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/rowe/Rowe_3.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
 
           <!---------------------SIMOLDES PLASTICOS ---------------------->
           <div class="project-card project-card-dark">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Simoldes/SP-5.jpeg"
-                alt=""
+                src="./img/photos-from-investments/simoldes/SP-5.jpeg"
+                alt="Modernizacja oświetlenia przemysłowego w zakładzie Simoldes Plasticos"
               />
             </div>
 
@@ -921,31 +1136,37 @@
           </div>
           <div class="modal-gallery-background" id="gallery19">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
-                  src="./img/photos-from-investments/Simoldes/SP-2.jpeg"
+                  src="./img/photos-from-investments/simoldes/SP-2.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Simoldes/SP-5.jpeg"
+                  src="./img/photos-from-investments/simoldes/SP-5.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Simoldes/SP-9.jpeg"
+                  src="./img/photos-from-investments/simoldes/SP-9.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Simoldes/SP-12.jpeg"
+                  src="./img/photos-from-investments/simoldes/SP-12.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Simoldes/SP-17.jpeg"
+                  src="./img/photos-from-investments/simoldes/SP-17.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Simoldes/SP-18.jpeg"
+                  src="./img/photos-from-investments/simoldes/SP-18.jpeg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -955,13 +1176,13 @@
           <div class="project-card project-card-dark">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Neu-JKF/JKF_26.jpeg"
-                alt=""
+                src="./img/photos-from-investments/neu-jkf/JKF_26.jpeg"
+                alt="Modernizacja oświetlenia przemysłowego w zakładzie NEU-JKF"
               />
             </div>
 
             <div class="project-card-content">
-              <h3>Neu - JKF</h3>
+              <h3>NEU - JKF</h3>
               <p class="project-description">
                 <span> Zakres wykonanych prac:</span> modernizacja oświetlenia
                 generalnego.
@@ -977,31 +1198,37 @@
           </div>
           <div class="modal-gallery-background" id="gallery20">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
-                  src="./img/photos-from-investments/Neu-JKF/JKF_2.jpeg"
+                  src="./img/photos-from-investments/neu-jkf/JKF_2.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Neu-JKF/JKF_4.jpeg"
+                  src="./img/photos-from-investments/neu-jkf/JKF_4.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Neu-JKF/JKF_13.jpeg"
+                  src="./img/photos-from-investments/neu-jkf/JKF_13.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Neu-JKF/JKF_17.jpeg"
+                  src="./img/photos-from-investments/neu-jkf/JKF_17.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Neu-JKF/JKF_18.jpeg"
+                  src="./img/photos-from-investments/neu-jkf/JKF_18.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Neu-JKF/JKF_26.jpeg"
+                  src="./img/photos-from-investments/neu-jkf/JKF_26.jpeg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -1012,7 +1239,7 @@
       <!----------------------- MEDICAL SECTION----------------------->
       <section class="projects-section projects-light" id="medical-sector">
         <div class="projects-content">
-          <img src="img/projects/laboratory-transparent.png" alt="" />
+          <img src="img/projects/laboratory-transparent-icon.png" alt="" />
 
           <h2 class="projects-title">Sektor medyczny</h2>
           <p class="projects-description">
@@ -1026,8 +1253,8 @@
           <div class="project-card project-card-light">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Diagnostyka/Diagnostyka_1.jpeg"
-                alt=""
+                src="./img/photos-from-investments/diagnostyka/Diagnostyka_1.jpeg"
+                alt="Instalacje zasilające dla laboratoriów Diagnostyka"
               />
             </div>
             <div class="project-card-content">
@@ -1048,43 +1275,52 @@
           </div>
           <div class="modal-gallery-background" id="gallery21">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
-                  src="./img/photos-from-investments/Diagnostyka/Diagnostyka_2.jpeg"
+                  src="./img/photos-from-investments/diagnostyka/Diagnostyka_2.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Diagnostyka/Diagnostyka_3.jpeg"
+                  src="./img/photos-from-investments/diagnostyka/Diagnostyka_3.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Diagnostyka/Diagnostyka_4.jpeg"
+                  src="./img/photos-from-investments/diagnostyka/Diagnostyka_4.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Diagnostyka/Diagnostyka_5.jpeg"
+                  src="./img/photos-from-investments/diagnostyka/Diagnostyka_5.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Diagnostyka/Diagnostyka_6.jpeg"
+                  src="./img/photos-from-investments/diagnostyka/Diagnostyka_6.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Diagnostyka/Diagnostyka_7.jpeg"
+                  src="./img/photos-from-investments/diagnostyka/Diagnostyka_7.jpeg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
           </div>
 
-          <!----------------------- ROCHE----------------------->
+          <!----------------------- ALAB----------------------->
           <div class="project-card project-card-light">
             <div class="project-card-img">
-              <img src="./img/photos-from-investments/" alt="" />
+              <img
+                src="./img/photos-from-investments/alab/Alab_7.jpg"
+                alt="Instalacje elektryczne dla laboratoriów ALAB"
+              />
             </div>
             <div class="project-card-content">
-              <h3>Roche</h3>
+              <h3>ALAB</h3>
               <p class="project-description">
                 <span> Zakres wykonanych prac:</span> wykonanie instalacji
                 zasilających oraz infrastruktury teletechnicznej dla maszyn
@@ -1099,26 +1335,41 @@
               </button>
             </div>
           </div>
-
-          <!----------------------- ALAB----------------------->
-          <div class="project-card project-card-light">
-            <div class="project-card-img">
-              <img src="" alt="" />
-            </div>
-            <div class="project-card-content">
-              <h3>ALAB</h3>
-              <p class="project-description">
-                <span> Zakres wykonanych prac:</span> wykonanie instalacji
-                zasilających oraz infrastruktury teletechnicznej dla maszyn
-                diagnostycznych i laboratoryjnych.
-              </p>
-              <div class="location-div">
-                <ion-icon name="location"></ion-icon>
-                <p class="location-text">cała Polska</p>
+          <div class="modal-gallery-background" id="gallery22">
+            <div class="modal-gallery-content">
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
+              <div class="gallery-scroll">
+                <img
+                  src="./img/photos-from-investments/alab/Alab_1.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/alab/Alab_2.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/alab/Alab_3.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/alab/Alab_4.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/alab/Alab_5.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./img/photos-from-investments/alab/Alab_6.jpeg"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
-              <button class="btn-activate-modal" data-target="gallery23">
-                Zobacz realizację
-              </button>
             </div>
           </div>
         </div>
@@ -1127,7 +1378,7 @@
       <!-------------------------- RETAIL SECTION------------------------->
       <section class="projects-section projects-dark" id="retail-sector">
         <div class="projects-content">
-          <img src="img/projects/retail-transparent.png" alt="" />
+          <img src="img/projects/retail-transparent-icon.png" alt="" />
 
           <h2 class="projects-title">Retail</h2>
           <p class="projects-description">
@@ -1140,7 +1391,10 @@
           <!-------------------------- IKEA------------------------->
           <div class="project-card project-card-dark">
             <div class="project-card-img">
-              <img src="" alt="" />
+              <img
+                src=""
+                alt="Modernizacja oświetlenia sklepu i magazynu IKEA"
+              />
             </div>
             <div class="project-card-content">
               <h3>IKEA</h3>
@@ -1162,7 +1416,10 @@
           <!-------------------------- JYSK------------------------->
           <div class="project-card project-card-dark">
             <div class="project-card-img">
-              <img src="./img/photos-from-investments/Jysk/jysk.jpeg" alt="" />
+              <img
+                src="./img/photos-from-investments/jysk/jysk.jpeg"
+                alt="Modernizacja oświetlenia w sklepach JYSK"
+              />
             </div>
             <div class="project-card-content">
               <h3>JYSK</h3>
@@ -1181,15 +1438,17 @@
           </div>
           <div class="modal-gallery-background" id="gallery25">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
-                  src="./img/photos-from-investments/Jysk/jysk.jpeg"
+                  src="./img/photos-from-investments/jysk/jysk.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
-                  src="./img/photos-from-investments/Jysk/jysk_2.jpeg"
+                  src="./img/photos-from-investments/jysk/jysk_2.jpeg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -1200,7 +1459,7 @@
             <div class="project-card-img">
               <img
                 src="./img/photos-from-investments/bricoman/bricoman-4.jpeg"
-                alt=""
+                alt="Realizacja dla obiektu Bricoman"
               />
             </div>
             <div class="project-card-content">
@@ -1219,31 +1478,37 @@
           </div>
           <div class="modal-gallery-background" id="gallery26">
             <div class="modal-gallery-content">
-              <ion-icon name="close-outline" id="closing-X"></ion-icon>
+              <ion-icon name="close-outline" class="closing-x"></ion-icon>
               <div class="gallery-scroll">
                 <img
                   src="./img/photos-from-investments/bricoman/bricoman.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   src="./img/photos-from-investments/bricoman/bricoman-2.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   src="./img/photos-from-investments/bricoman/bricoman-3.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   src="./img/photos-from-investments/bricoman/bricoman-4.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   src="./img/photos-from-investments/bricoman/bricoman-5.jpeg"
                   alt=""
+                  loading="lazy"
                 />
                 <img
                   src="./img/photos-from-investments/bricoman/bricoman-6.jpeg"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -1253,8 +1518,8 @@
           <div class="project-card project-card-dark">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/Auchan/auchan-img.jpeg"
-                alt=""
+                src="./img/photos-from-investments/auchan/auchan-img.jpeg"
+                alt="Realizacja dla obiektu Auchan"
               />
             </div>
             <div class="project-card-content">
@@ -1281,7 +1546,7 @@
             <div class="project-card-img">
               <img
                 src="./img/photos-from-investments/castorama/castorama-img.png"
-                alt=""
+                alt="Realizacja dla obiektu Castorama"
               />
             </div>
 
@@ -1304,22 +1569,23 @@
             </div>
           </div>
 
+          <!---------------------- EGURROLA DANCE STUDIO------------------>
           <div class="project-card project-card-dark">
             <div class="project-card-img">
               <img
-                src="./img/photos-from-investments/manufaktura/manufaktura-img.jpeg"
-                alt=""
+                src="./img/photos-from-investments/egurrola-dance-studio/Egurrola-dance-studio-1.jpeg"
+                alt="Realizacja dla obiektu Egurrola Dance Studio"
               />
             </div>
 
             <div class="project-card-content">
-              <h3>MANUFAKTURA</h3>
+              <h3>EGURROLA DANCE STUDIO</h3>
               <p class="project-description">
                 <span> Zakres wykonanych prac:</span>
               </p>
               <div class="location-div">
                 <ion-icon name="location"></ion-icon>
-                <p class="location-text">Łódź</p>
+                <p class="location-text">Konstancin - Jeziorna</p>
               </div>
               <button class="btn-activate-modal" data-target="gallery29">
                 Zobacz realizację
@@ -1327,27 +1593,32 @@
             </div>
             <div class="modal-gallery-background" id="gallery29">
               <div class="modal-gallery-content">
-                <ion-icon name="close-outline" id="closing-X"></ion-icon>
+                <ion-icon name="close-outline" class="closing-x"></ion-icon>
                 <div class="gallery-scroll">
                   <img
-                    src="./img/photos-from-investments/manufaktura/manufaktura-img.jpeg"
+                    src="./img/photos-from-investments/egurrola-dance-studio/Egurrola-dance-studio-1.jpeg"
                     alt=""
+                    loading="lazy"
                   />
                   <img
-                    src="./img/photos-from-investments/manufaktura/manufaktura-img-2.jpeg"
+                    src="./img/photos-from-investments/egurrola-dance-studio/Egurrola-dance-studio-2.jpeg"
                     alt=""
+                    loading="lazy"
                   />
                   <img
-                    src="./img/photos-from-investments/manufaktura/manufaktura-img-3.jpeg"
+                    src="./img/photos-from-investments/egurrola-dance-studio/Egurrola-dance-studio-3.jpeg"
                     alt=""
+                    loading="lazy"
                   />
                   <img
-                    src="./img/photos-from-investments/manufaktura/manufaktura-img-4.jpeg"
+                    src="./img/photos-from-investments/egurrola-dance-studio/Egurrola-dance-studio-4.jpeg"
                     alt=""
+                    loading="lazy"
                   />
                   <img
-                    src="./img/photos-from-investments/manufaktura/manufaktura-img-5.jpeg"
+                    src="./img/photos-from-investments/egurrola-dance-studio/Egurrola-dance-studio-5.jpeg"
                     alt=""
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -1368,10 +1639,10 @@
               </p>
             </div>
           </div>
-          <button class="projects-contact-button">
-            <a href="contact.html">Skontaktuj się z nami</a>
+          <a href="contact.html" class="projects-contact-button"
+            ><span>Skontaktuj się z nami</span>
             <ion-icon name="arrow-forward-outline"></ion-icon>
-          </button>
+          </a>
         </div>
       </section>
     </main>
@@ -1392,7 +1663,7 @@
             </address>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="location-outline"></ion-icon>
               <div class="footer-menu-text">
                 <p>Białe Zagłębie 11 lok. 9</p>
                 <p>26-052 Nowiny</p>
@@ -1400,7 +1671,7 @@
             </div>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="business-outline"></ion-icon>
               <div class="footer-menu-text">
                 <p>NIP: 6572847203</p>
                 <p>REGON: 542543502</p>
@@ -1412,12 +1683,12 @@
               <h3>Dane kontaktowe</h3>
             </div>
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="call-outline"></ion-icon>
               <p>tel. <a href="tel:+48 695 413 382">+48 695 413 382</a></p>
             </div>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="mail-outline"></ion-icon>
               <p>
                 email:<a href="mailto:biuro@mw-engineering.pl">
                   biuro@mw-engineering.pl</a
@@ -1458,6 +1729,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="./js/projects.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

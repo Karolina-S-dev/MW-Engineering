@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Skontaktuj się z MW-Engineering w sprawie instalacji elektrycznych, modernizacji oświetlenia przemysłowego i systemów sterowania. Przygotujemy rozwiązanie dopasowane do Twojego zakładu."
+    />
     <!-- FONT MONTSERRAT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,49 +34,46 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <title>MW-engineering</title>
+    <title>MW-Engineering | Kontakt</title>
   </head>
 
   <body id="top">
     <!-- HEADER -->
-    <header>
-      <div class="header-inner">
-        <div class="nav-main-items-row">
-          <a href="index.html" class="header-brand-col flex-col">
-            <img
-              src="img/header-logo.png"
-              alt="MW-Engineering - instalacje elektryczne"
-            />
-            <span class="header-tagline">
-              ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY
-            </span>
-          </a>
-          <nav>
-            <ul class="nav-links">
-              <li>
-                <a href="index.html" class="nav-button nav-button--secondary"
-                  >HOME</a
-                >
-              </li>
-              <li>
-                <a href="about.html" class="nav-button nav-button--secondary"
-                  >O FIRMIE</a
-                >
-              </li>
-              <li>
-                <a href="projects.html" class="nav-button nav-button--secondary"
-                  >REALIZACJE</a
-                >
-              </li>
-              <li>
-                <a href="contact.html" class="nav-button nav-button--primary"
-                  >KONTAKT</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+   <header class="flex-row">
+      <a href="index.html" class="header-brand-col flex-col">
+        <img
+          src="img/header-logo.png"
+          alt="MW-Engineering - instalacje elektryczne"
+        />
+        <p class="header-tagline">
+          ELECTRICAL INSTALLATIONS | LIGHTING | INDUSTRY
+        </p>
+      </a>
+      <nav>
+        <ul class="nav-links flex-row">
+          <li>
+            <a href="index.html" class="nav-button nav-button--secondary"
+              >STRONA GŁÓWNA</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-button nav-button--secondary"
+              >O FIRMIE</a
+            >
+          </li>
+          <li>
+            <a href="projects.html" class="nav-button nav-button--secondary"
+              >REALIZACJE</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="nav-button nav-button--primary"
+              >KONTAKT</a
+            >
+          </li>
+        </ul>
+        <ion-icon id="nav-burger" name="reorder-three"></ion-icon>
+      </nav>
     </header>
 
     <!-- SECTION CONTACT-US -->
@@ -137,21 +138,19 @@
 
             <div class="image-wrapper">
               <div class="dots-pattern"></div>
-              <img src="img/contact/contact-image.png" alt="" />
+              <img
+                src="img/contact/contact-photo.png"
+                alt="Analiza instalacji elektrycznej w zakładzie przemysłowym"
+              />
             </div>
           </div>
         </div>
 
         <!-- CONTACT-US-FORM SECTION -->
-        <form
-          class="form-contact-us-main"
-          action="#"
-          method="post"
-          aria-label="Formularz kontaktowy"
-        >
+        <form class="form-contact-us-main" action="#" method="post">
           <div class="form-contact-data">
             <div class="form-ion-icon-and-data-row">
-              <ion-icon name="location" aria-hidden="true"></ion-icon>
+              <ion-icon name="location"></ion-icon>
               <h3>MW-Engineering Mariusz Wąchocki</h3>
             </div>
             <div class="form-menu-text">
@@ -161,14 +160,10 @@
           </div>
 
           <div class="form-ion-icon-and-data-row">
-            <ion-icon name="call" aria-hidden="true"></ion-icon>
+            <ion-icon name="call"></ion-icon>
             <p>
               tel.
-              <a
-                href="tel:+48695413382"
-                aria-label="Zadzwoń pod numer +48695413382"
-                >+48 695 413 382</a
-              >
+              <a href="tel:+48695413382">+48 695 413 382</a>
             </p>
           </div>
           <div class="form-group-row">
@@ -267,7 +262,7 @@
             </address>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="location-outline"></ion-icon>
               <div class="footer-menu-text">
                 <p>Białe Zagłębie 11 lok. 9</p>
                 <p>26-052 Nowiny</p>
@@ -275,7 +270,7 @@
             </div>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="business-outline"></ion-icon>
               <div class="footer-menu-text">
                 <p>NIP: 6572847203</p>
                 <p>REGON: 542543502</p>
@@ -287,12 +282,12 @@
               <h3>Dane kontaktowe</h3>
             </div>
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="call-outline"></ion-icon>
               <p>tel. <a href="tel:+48 695 413 382">+48 695 413 382</a></p>
             </div>
 
             <div class="footer-ion-icon-and-data-row">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              <ion-icon name="mail-outline"></ion-icon>
               <p>
                 email:<a href="mailto:biuro@mw-engineering.pl">
                   biuro@mw-engineering.pl</a
@@ -333,5 +328,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
