@@ -55,7 +55,6 @@ a {
 .btn-primary {
   background: linear-gradient(135deg, #e2b041, #a67c2a);
   color: #fff;
-  border: 1px solid #a67c2a;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
@@ -66,9 +65,10 @@ a {
 }
 
 .btn-secondary {
-  background: transparent;
-  color: #d1d5db; 
-  border: 1px solid rgba(209, 213, 219, 0.6);
+  background: #11151b;
+  opacity: 0.8;
+  color: #d1d5db;
+  border: 1px solid rgba(209, 213, 219, 0.178);
 }
 
 .btn-secondary:hover {
@@ -174,7 +174,6 @@ nav ion-icon[name="reorder-three"] {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  margin: 0 auto;
   position: relative;
   z-index: 1;
   justify-content: center;
@@ -198,7 +197,7 @@ nav ion-icon[name="reorder-three"] {
 
 .home-hero-content {
   position: relative;
-  max-width: 60rem;
+  max-width: 53rem;
   z-index: 3;
   max-height: fit-content;
   margin-left: 10rem;
@@ -207,13 +206,13 @@ nav ion-icon[name="reorder-three"] {
 .home-hero-content h1 {
   font-size: 3.2rem;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 5rem;
   margin-bottom: 2rem;
 }
 
 .home-hero-content p {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: #fff;
   line-height: 4rem;
   margin-bottom: 4rem;
@@ -221,8 +220,7 @@ nav ion-icon[name="reorder-three"] {
 }
 
 .home-hero-buttons {
-  display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 /* --------------------------- */
@@ -231,14 +229,12 @@ nav ion-icon[name="reorder-three"] {
 
 .section-light {
   background-color: #eceff3a9;
-  margin: 5rem 5rem 0 5rem;
+  margin: 5rem;
   border-radius: 20px;
 }
 
 .home-offer-container {
-  margin: 0 auto;
-  max-width: 190rem;
-  padding: 8rem 0;
+  padding: 7rem;
 }
 
 .home-offer-intro h2 {
@@ -270,10 +266,7 @@ nav ion-icon[name="reorder-three"] {
 }
 
 .home-offer-cards-div {
-  display: flex;
   gap: 3rem;
-  margin: 0 auto;
-  max-width: 170rem;
   justify-content: center;
   align-items: stretch;
 }
@@ -283,7 +276,7 @@ nav ion-icon[name="reorder-three"] {
   background-color: rgba(255, 255, 255, 0.96);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-  flex: 0 0 calc(23% - 2.5rem);
+  flex: 0 0 calc(25% - 1.5rem);
 }
 .home-offer-card-icon-header-row {
   display: flex;
@@ -291,11 +284,11 @@ nav ion-icon[name="reorder-three"] {
   align-items: center;
   padding-bottom: 2rem;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .home-offer-card h3 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   line-height: 4rem;
   font-weight: 700;
   width: fit-content;
@@ -310,10 +303,11 @@ nav ion-icon[name="reorder-three"] {
 }
 
 .home-offer-card img {
-  max-width: 8rem;
+  max-width: 6.4rem;
   width: 100%;
   aspect-ratio: 1/1;
 }
+
 
 /* --------------------------- */
 /* ---- SECTION PROOF ---- */
@@ -404,7 +398,7 @@ nav ion-icon[name="reorder-three"] {
 .section-dark {
   background: #11151b;
   color: #fff;
-  margin: 5rem 5rem 0 5rem;
+  margin: 5rem;
   border-radius: 20px;
 }
 
@@ -412,7 +406,7 @@ nav ion-icon[name="reorder-three"] {
   display: flex;
   align-items: center;
   height: 60rem;
-  margin: 0 auto;
+  
 }
 
 .home-benefits-content {
@@ -478,7 +472,7 @@ nav ion-icon[name="reorder-three"] {
 }
 
 .clients-header {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #4b5563;
   font-weight: 400;
   letter-spacing: 3px;
@@ -487,7 +481,7 @@ nav ion-icon[name="reorder-three"] {
 }
 
 .carousel-main-div {
-  max-width: 130rem;
+  width: 90vw;
   margin: 0 auto;
   overflow: hidden;
   /* MAGIC ✨ */
