@@ -31,7 +31,6 @@
   }
 
   .home-offer-card h3 {
-    font-size: 1.7rem;
     line-height: 3.2rem;
   }
 
@@ -147,14 +146,7 @@
   }
 
   .header-tagline {
-    font-size: 1.05rem;
-    letter-spacing: 0;
-  }
-
-  .nav-button {
-    padding: 1.1rem 1.5rem;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
+    color: #fff;
   }
 
   .home-hero-section {
@@ -186,10 +178,6 @@
     width: 80vw;
   }
 
-  .home-offer-card h3 {
-    font-size: 1.6rem;
-    line-height: 2.8rem;
-  }
   .home-offer-card {
     padding: 1.7rem;
   }
@@ -282,8 +270,8 @@
     right: -0.3rem;
     top: -0.3rem;
     background-color: #11151b;
-    width: 22rem;
-    padding: 2rem;
+    width: 25rem;
+    padding: 2rem 1rem;
     border-radius: 6px;
     border: 1px solid #2b2b2c;
     padding-top: 5rem;
@@ -294,6 +282,10 @@
     left: 50%;
     height: 1.5px;
     width: 75%;
+  }
+
+  .header-tagline {
+    letter-spacing: 0;
   }
 
   .home-hero-section {
@@ -309,14 +301,24 @@
 
   .home-hero-content h1 {
     font-size: 3rem;
-    line-height: 3.8rem;
-    margin-bottom: 2rem;
   }
 
   .home-hero-content p {
     font-size: 1.7rem;
-    line-height: 2.8rem;
+    line-height: 3.3rem;
     margin-bottom: 2rem;
+  }
+
+  .home-hero-section::before {
+    background: linear-gradient(
+      90deg,
+      rgba(3, 8, 20, 0.82) 0%,
+      rgba(3, 8, 20, 0.72) 25%,
+      rgba(3, 8, 20, 0.45) 55%,
+      rgba(3, 8, 20, 0.15) 100%
+    );
+    filter: brightness(85%) contrast(115%) saturate(90%);
+    z-index: 2;
   }
 
   .home-hero-buttons {
@@ -339,9 +341,6 @@
     padding: 2rem;
   }
 
-  .home-offer-card h3 {
-    font-size: 1.8rem;
-  }
   .home-offer-card p {
     font-size: 1.7rem;
   }
@@ -430,7 +429,7 @@
   }
 
   .footer-contact-and-map-data-row {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   footer {
