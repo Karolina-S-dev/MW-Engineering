@@ -15,8 +15,11 @@ buttons.forEach((button) => {
     });
 
     const target = button.dataset.target;
+    const targetGallery = document.getElementById(target);
 
-    document.getElementById(target).classList.add("active");
+    if (targetGallery) {
+      targetGallery.classList.add("active");
+    }
   });
 });
 
