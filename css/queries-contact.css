@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1600px) {
+  html,
+  body {
+    font-size: 9.5px;
+  }
+
+  .contact-section {
+    padding: 5rem;
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 8.5px;
+  }
+
+  .contact-section {
+    padding: 5rem 3rem;
+  }
+  .contact-us-main-row {
+    gap: 3rem;
+  }
+
+  .form-contact-us-main {
+    flex: 0 0 calc(43% - 1.5rem);
+    padding: 3rem;
+  }
+
+  .contact-invitation-and-photos {
+    flex: 0 0 calc(57% - 1.5rem);
+  }
+  .contact-steps {
+    margin-bottom: 1rem;
+  }
+}
+
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 7.5px;
+  }
+
+  .contact-us-main-row {
+    gap: 2rem;
+  }
+
+  .form-contact-us-main {
+    flex: 0 0 calc(43% - 1rem);
+    padding: 3rem;
+  }
+
+  .contact-invitation-and-photos {
+    flex: 0 0 calc(57% - 1rem);
+  }
+
+  .contact-section {
+    padding: 4rem 2rem;
+  }
+
+  .form-contact-us-main {
+    flex: 0 0 calc(45% - 1.5rem);
+    padding: 2rem;
+  }
+
+  .contact-invitation-and-photos {
+    flex: 0 0 calc(55% - 1.5rem);
+  }
+
+  .contact-steps {
+    gap: 1rem;
+  }
+
+  .contact-step {
+    flex: 0 0 calc(33% - 0.5rem);
+  }
+
+  .contact-step p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .image-wrapper img {
+    height: 20vh;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .contact-us-main-row {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .contact-section {
+    background: linear-gradient(
+      180deg,
+      #d7d7d7 0%,
+      #dadada 45%,
+      #f5f5f5 75%,
+      #ffffff 100%
+    );
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+}
