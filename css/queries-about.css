@@ -1,0 +1,213 @@
+@media only screen and (max-width: 1500px) {
+  html,
+  body {
+    font-size: 9.5px;
+  }
+
+  .work-section {
+    margin: 0 5rem;
+    padding: 7rem 9rem;
+  }
+}
+
+/* adjustment for industries-section */
+@media only screen and (max-width: 1320px) {
+  .industries-section {
+    padding: 7rem 3rem 12rem 15rem;
+    gap: 2rem;
+    border-bottom: 2px solid #ffffff0f;
+  }
+
+  .work-section {
+    margin: 0 4rem;
+    padding: 7rem 3rem;
+  }
+}
+
+/* laptops and big tablets - 1024px - 1200px */
+@media only screen and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 8.5px;
+  }
+
+  .section-padding {
+    padding: 5rem 5rem;
+  }
+
+  .industries-section {
+    padding: 6rem 5rem 12rem 5rem;
+    height: 80vh;
+    margin: 0 4rem;
+  }
+  .industry-card {
+    flex: 0 0 calc(24% - 0.5rem);
+  }
+
+  .industries-cards-container {
+    max-height: 30vh;
+  }
+
+  .industries-header {
+    flex: 0 0 calc(20% - 1rem);
+  }
+  .industries-cards-container {
+    flex: 0 0 calc(60% - 1rem);
+  }
+
+  .industries-description {
+    flex: 0 0 calc(20% - 1rem);
+  }
+  .industries-description-text {
+    margin: 0 1.5rem;
+  }
+  .work-section {
+    margin: 0 3rem;
+    padding: 8rem 3rem;
+  }
+}
+/* tablets 768px - 1023px */
+@media only screen and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 7.5px;
+  }
+
+  .why-card {
+    gap: 0.2rem;
+  }
+
+  .why-card img {
+    max-width: 7rem;
+  }
+
+  .why-us-section {
+    gap: 1rem;
+  }
+  .why-us-intro {
+    flex: 0 0 calc(40% - 0.5rem);
+  }
+  .why-us-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 calc(60% - 0.5rem);
+  }
+  .why-us-section {
+    max-width: 90vw;
+  }
+
+  .industries-section {
+    gap: 1rem;
+    padding: 5rem 4rem 12rem 4rem;
+    margin: 0 3rem;
+    height: 70vh;
+  }
+
+  .industries-header {
+    flex: 0 0 calc(20% - 0.5rem);
+  }
+  .industries-cards-container {
+    flex: 0 0 calc(60% - 0.5rem);
+  }
+
+  .industries-description {
+    flex: 0 0 calc(20% - 0.5rem);
+  }
+  .process-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .process-card {
+    padding: 4rem 2rem 0 0;
+  }
+  .industries-description-text {
+    margin: 0 0.5rem;
+    line-height: 2.2rem;
+  }
+
+  .industry-card p {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+  }
+}
+
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
+  .why-us-section {
+    flex-direction: column;
+  }
+  .section-padding {
+    padding: 2rem 0;
+  }
+  .why-us-experience-row {
+    margin-top: 1rem;
+  }
+  .why-card {
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .industries-section {
+    flex-direction: column;
+    padding: 4rem 2rem 12rem 2rem;
+    margin: 0 2rem;
+    height: 90vh;
+  }
+  .industries-cards-container {
+    width: 100%;
+    max-height: fit-content;
+    max-height: 35vh;
+  }
+  .industry-card {
+    flex: 0 0 calc(20% - 0.5rem);
+    max-height: 20rem;
+  }
+
+  .realization-links {
+    gap: 2px;
+    padding: 0rem;
+  }
+  .industries-description {
+    padding-top: 4rem;
+    justify-content: flex-start;
+  }
+  .process-container-row {
+    flex-direction: column;
+    width: 70vw;
+    margin-top: 2rem;
+  }
+  .work-section {
+    margin: 0 2rem;
+  }
+
+  .process-card {
+    border-left: 1.6px solid #e2b041;
+    border-top: none;
+    padding: 3rem 0 0 3rem;
+    margin-top: 0;
+  }
+
+  .process-card-main:not(:first-child) .process-card::before {
+    top: 2.5rem;
+    left: 0;
+  }
+
+  .process-card::after {
+    height: 1.6rem;
+    width: 1rem;
+    top: 1rem;
+    left: 0;
+  }
+
+  .process-card-main:not(:last-child)::after {
+    display: none;
+  }
+}
+
+/* small mobile - phones*/
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+}

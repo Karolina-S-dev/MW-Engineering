@@ -1,6 +1,6 @@
 /* ----- REUSABLE-----  */
 .section-padding {
-  padding: 7rem 20rem;
+  padding: 7rem 5rem;
 }
 
 .section-label {
@@ -54,7 +54,9 @@
   display: flex;
   gap: 4rem;
   justify-content: space-between;
-}
+  margin: 0 auto;
+  max-width: 85vw;
+  }
 
 .why-us-intro {
   flex: 0 0 calc(40% - 2rem);
@@ -93,13 +95,13 @@
   flex-wrap: wrap;
   flex: 0 0 calc(60% - 2rem);
   gap: 1rem;
+  align-items: stretch;
 }
 
 .why-card {
   justify-content: center;
   gap: 1rem;
-  flex: 1 1 calc(33% - 1rem);
-  max-height: 27rem;
+  flex: 1 0 calc(33% - 1rem);
   border: 1px solid #e8e8e8;
   padding: 2rem;
 }
@@ -188,6 +190,7 @@
   justify-content: space-between;
   text-align: center;
   transition: all 0.3s ease;
+  z-index: 6;
 }
 
 .industry-card:hover {
@@ -228,7 +231,7 @@
 .realization-links ion-icon {
   font-size: 1.3rem;
   margin-left: 0.3rem;
- }
+}
 
 .realization-links:hover {
   text-decoration: underline;
@@ -242,6 +245,7 @@
 .industries-description {
   flex: 0 0 calc(25% - 1rem);
   justify-content: flex-end;
+  z-index: 6;
 }
 
 .industries-description-text {
