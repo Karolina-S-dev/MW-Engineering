@@ -89,6 +89,7 @@
 .hero-stat ion-icon {
   font-size: 3.6rem;
   color: #e2b041;
+  flex-shrink: 0;
 }
 
 .hero-stat-col p {
@@ -343,6 +344,7 @@
   width: 5rem;
   height: 5rem;
   color: #e2b041;
+  flex-shrink: 0;
 }
 
 .projects-contact-col {
@@ -446,6 +448,7 @@
   background-color: #f4f5f6;
   color: #11151b;
   align-self: flex-end !important;
+  margin-bottom: 2rem;
 }
 
 .modal-gallery-content ion-icon:hover {
@@ -458,6 +461,8 @@
   gap: 1rem;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  margin: auto 0;
+
 }
 
 .gallery-scroll::-webkit-scrollbar {
