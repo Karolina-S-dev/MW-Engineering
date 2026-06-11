@@ -94,7 +94,7 @@
   }
 
   .project-card {
-    flex: 0 0 calc(50% - 0.75rem);
+    width: 100%;
   }
 
   .single-card img {
