@@ -11,8 +11,9 @@
     background: linear-gradient(
       135deg,
       #040404 0%,
-      #212121f0 40%,
-      #cdb4855f 100%
+      #1d1d1d 20%,
+      #d3ba8a5f 100%,
+      #ceaf745f 100%
     );
   }
 
@@ -114,7 +115,7 @@
 /* mobile - phones */
 @media only screen and (max-width: 767px) {
   .hero {
-    height: 40vh;
+    height: 45vh;
   }
 
   .hero-content {
@@ -135,6 +136,8 @@
 
   .hero-stat {
     gap: 0.6rem;
+    max-width: 16rem;
+    width: 100%;
   }
 
   .hero-stat-text span {
