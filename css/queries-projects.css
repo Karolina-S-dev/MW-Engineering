@@ -1,8 +1,87 @@
+@media only screen and (max-width: 1450px) {
+  html,
+  body {
+    font-size: 9.5px;
+  }
+  .hero {
+    height: 56vh;
+  }
+
+  .hero::before {
+    background: linear-gradient(
+      135deg,
+      #040404 0%,
+      #212121f0 40%,
+      #cdb4855f 100%
+    );
+  }
+
+  .projects-section {
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+
+  .projects-content {
+    flex: 0 0 calc(25% - 1rem);
+  }
+
+  .project-cards-row {
+    flex: 0 0 calc(75% - 1rem);
+  }
+
+  .project-description {
+    font-size: 1.45rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-card-content {
+    padding: 2rem;
+  }
+
+  .location-div {
+    margin-bottom: 1.5rem;
+  }
+
+  .single-card img {
+    aspect-ratio: 25/11;
+  }
+
+  .single-card {
+    flex: 0 0 calc(75% - 1rem);
+  }
+
+  .single-card-overlay {
+    padding: 1.5rem;
+    left: 1rem;
+    bottom: 1rem;
+    max-width: 33%;
+  }
+}
+
 /* laptops and big tablets - 1024px - 1200px */
 @media only screen and (max-width: 1200px) {
   html,
   body {
     font-size: 8.5px;
+  }
+
+  .modal-gallery-content {
+    width: 90vw;
+    height: 90vh;
+    padding: 3rem;
+  }
+
+  .gallery-scroll img {
+    max-height: 75vh;
+  }
+
+  .projects-contact-section {
+    padding: 3rem 2rem;
+  }
+
+  .projects-contact-banner {
+    padding: 3.4rem 7rem;
   }
 }
 
@@ -12,10 +91,35 @@
   body {
     font-size: 7.5px;
   }
+
+  .project-card {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+
+  .single-card img {
+    aspect-ratio: 25/14;
+  }
+
+  .projects-contact-banner {
+    padding: 3rem;
+  }
 }
 
 /* mobile - phones */
 @media only screen and (max-width: 767px) {
+  .hero {
+    height: 40vh;
+  }
+
+  .hero-content {
+    left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .hero-stat {
+    display: flex;
+    gap: 1rem;}
+
   .projects-section {
     padding: 2rem;
     flex-direction: column;
@@ -24,7 +128,6 @@
 
   .project-cards-row {
     flex-direction: column;
-    gap: 1.5rem;
   }
 
   .projects-content {
@@ -43,7 +146,6 @@
     transform: translateX(-50%);
     bottom: -1rem;
     width: 30vw;
-    height: 1.5px;
   }
 
   .projects-content h2 {
@@ -52,7 +154,6 @@
 
   .projects-description {
     margin-bottom: 1.5rem;
-    line-height: 2rem;
   }
 
   .project-card-content {
@@ -60,12 +161,10 @@
   }
 
   .location-div {
-    margin-bottom: 1rem;
     padding: 0.8rem 1.4rem;
   }
   .single-card img {
-    height: 30rem;
-   
+    max-height: 30rem;
   }
 
   .single-card {
@@ -74,13 +173,47 @@
 
   .single-card-overlay {
     position: static;
-    padding: 1.5rem;
     max-width: 100%;
     background-color: transparent;
   }
-  .background-transparent{
+
+  .background-transparent {
     background-color: transparent;
     color: #11151b;
+  }
+
+  .projects-contact-button ion-icon {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
+  .projects-contact-banner ion-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .projects-contact-col {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1.5rem;
+    max-width: 60vw;
+  }
+
+  .projects-contact-banner {
+    padding: 1.5rem;
+    justify-content: space-between;
+  }
+
+  .projects-contact-button {
+    padding: 1.8rem 2.2rem;
+
+    line-height: 2.2rem;
+    max-width: 17rem;
+  }
+
+  .modal-gallery-content {
+    width: 94vw;
+    height: 62vh;
+    padding: 1rem;
   }
 }
 

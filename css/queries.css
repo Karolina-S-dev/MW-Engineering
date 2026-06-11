@@ -149,6 +149,14 @@
     color: #fff;
   }
 
+  .nav-button--secondary{
+    padding: 1.5rem 1rem;
+  }
+
+  .nav-links{
+    gap: 0.7rem;
+  }
+
   .home-hero-section {
     height: 53vh;
     background-attachment: scroll;
