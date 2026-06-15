@@ -45,8 +45,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 2.6rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin: 2rem 0;
 }
 
 /* ----- WHY-US SECTION-----  */
@@ -56,7 +55,7 @@
   justify-content: space-between;
   margin: 0 auto;
   max-width: 85vw;
-  }
+}
 
 .why-us-intro {
   flex: 0 0 calc(40% - 2rem);
@@ -433,7 +432,10 @@
 
 .value-section {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
+  max-width: 85vw;
+  margin: 0 auto;
+  align-items: stretch;
 }
 
 .value-content {
@@ -516,7 +518,7 @@
 
 .value-section-image {
   flex: 0 0 calc(30% - 2rem);
-  padding: 3rem 0 3rem 3rem;
+  padding: 3rem 0;
 }
 
 .value-section-image img {
