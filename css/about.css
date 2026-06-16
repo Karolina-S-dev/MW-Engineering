@@ -103,6 +103,7 @@
   flex: 1 0 calc(33% - 1rem);
   border: 1px solid #e8e8e8;
   padding: 2rem;
+  border-radius: 5px;
 }
 
 .why-card img {
@@ -129,15 +130,16 @@
 .industries-section {
   display: flex;
   background-color: #0a0e14;
-  padding: 7rem 15rem 12rem 15rem;
-  gap: 4rem;
+  padding: 7rem 12rem 12rem 15rem;
+  gap: 3rem;
   border-bottom: 2px solid #ffffff0f;
   margin: 0 5rem;
   border-radius: 20px;
   position: relative;
   z-index: 2;
-  min-height: 52rem;
+  height: fit-content;
   overflow: hidden;
+  justify-content: space-between;
 }
 
 .industries-section::after {
@@ -157,19 +159,20 @@
 }
 
 .industries-header {
-  flex: 0 0 calc(25% - 1rem);
+  flex: 0 0 calc(25% - 2rem);
   max-width: 35rem;
   justify-content: flex-start;
   z-index: 2;
 }
 
 .industries-cards-container {
-  flex: 0 0 calc(50% - 1rem);
+  flex: 0 0 calc(50% - 2rem);
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  height: fit-content;
 }
 
 .industries-cards-container img {
@@ -180,16 +183,16 @@
 .industry-card {
   background: #11151b;
   border: 1px solid #ffffff0f;
-  flex: 0 0 clamp(15rem, 25%, 16rem);
-  max-height: 23rem;
-  height: 100%;
+  flex: 0 0 calc(25% - 1rem);
+  height: 24rem;
   color: #fff;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   align-items: center;
   justify-content: space-between;
   text-align: center;
   transition: all 0.3s ease;
   z-index: 6;
+  border-radius: 5px;
 }
 
 .industry-card:hover {
@@ -221,15 +224,17 @@
   display: flex;
   align-items: center;
   gap: 3px;
-  justify-self: flex-end;
+  justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 0.8rem;
-  background-color: #1a1c21;
+  padding: 1.2rem 0.8rem;
+  background-color: #1d1e22;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 7;
 }
 
 .realization-links ion-icon {
-  font-size: 1.3rem;
-  margin-left: 0.3rem;
+  font-size: 1.5rem;
 }
 
 .realization-links:hover {
@@ -239,10 +244,11 @@
 .realization-link {
   font-size: 1.15rem !important;
   color: #b8bcc5;
+  z-index: 9;
 }
 
 .industries-description {
-  flex: 0 0 calc(25% - 1rem);
+  flex: 0 0 calc(25% - 2rem);
   justify-content: flex-end;
   z-index: 6;
 }
@@ -506,6 +512,7 @@
 
 .value-banner ion-icon {
   font-size: 4rem;
+  flex-shrink: 0;
 }
 
 .value-banner p {
