@@ -32,7 +32,6 @@
 
   .project-description {
     font-size: 1.45rem;
-    line-height: 2rem;
     margin-bottom: 1rem;
   }
 
@@ -211,12 +210,12 @@
   }
 
   .projects-contact-button ion-icon {
-    width: 3.5rem !important;
-    height: 3.5rem !important;
+    width: 2.8rem !important;
+    height: 2.8rem !important;
   }
   .projects-contact-banner ion-icon {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .projects-contact-col {

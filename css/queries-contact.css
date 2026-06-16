@@ -47,15 +47,6 @@
     gap: 2rem;
   }
 
-  .form-contact-us-main {
-    flex: 0 0 calc(43% - 1rem);
-    padding: 3rem;
-  }
-
-  .contact-invitation-and-photos {
-    flex: 0 0 calc(57% - 1rem);
-  }
-
   .contact-section {
     padding: 4rem 2rem;
   }
