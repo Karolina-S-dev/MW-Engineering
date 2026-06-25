@@ -238,9 +238,23 @@
           </div>
           <label class="file-upload">
             <ion-icon name="attach-outline"></ion-icon>
-            <p>Wybierz plik (opcjonalnie)</p>
+            Wybierz plik (opcjonalnie)
             <input type="file" name="file" />
           </label>
+
+          <div class="form-checkbox flex-row">
+            <input type="checkbox" id="privacy" name="privacy" required />
+            <label for="privacy"
+              >Zapoznałem(-am) się z<a
+                href="privacy-policy.html"
+                target="_blank"
+              >
+                Polityką Prywatności
+              </a>
+              i wyrażam zgodę na przetwarzanie moich danych osobowych w celu
+              udzielenia odpowiedzi na przesłane zapytanie.
+            </label>
+          </div>
           <div class="form-button">
             <button class="btn-submit" type="submit">Wyślij zapytanie</button>
           </div>
@@ -253,7 +267,7 @@
     </section>
 
     <!----------------------- FOOTER --------------------------->
-    <footer>
+     <footer>
       <div class="footer-top-main-div-row">
         <img
           src="img/footer-logo.png"
@@ -262,16 +276,18 @@
 
         <div class="footer-contact-and-map-data-row">
           <div class="flex-col footer-data">
-            <address class="footer-contact-data flex-col">
-              <h3>Dane firmy</h3>
-              <h2>MW-Engineering Mariusz Wąchocki</h2>
-            </address>
+            <div class="footer-contact-data flex-col">
+              <p class="company-data">Dane firmy</p>
+              <p class="company-name">MW-Engineering Mariusz Wąchocki</p>
+            </div>
 
             <div class="footer-ion-icon-and-data-row">
               <ion-icon name="location-outline"></ion-icon>
               <div class="footer-menu-text">
-                <p>ul. Spacerowa 10H/2</p>
-                <p>26-052 Zagrody</p>
+                <address>
+                  <p>ul. Spacerowa 10H/2</p>
+                  <p>26-052 Zagrody</p>
+                </address>
               </div>
             </div>
 
@@ -285,12 +301,12 @@
           </div>
           <div class="flex-col footer-data">
             <div class="footer-contact-data">
-              <h3>Dane kontaktowe</h3>
+              <p class="company-data">Dane kontaktowe</p>
             </div>
             <div class="footer-ion-icon-and-data-row">
               <ion-icon name="call-outline"></ion-icon>
               <div class="footer-menu-text">
-                <p>tel. <a href="tel:+48 695 413 382">+48 695 413 382</a></p>
+                <p>tel.<a href="tel:+48695413382">+48 695 413 382</a></p>
               </div>
             </div>
 
@@ -320,7 +336,14 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>2026 © All rights reserved</p>
+        <p>
+          2026 © Wszystkie prawa zastrzeżone
+          <span> | </span><a href="privacy-policy.html">Polityka prywatności</a>
+          <span> | </span>Projekt i wykonanie:
+          <a href="https://www.linkedin.com/in/karolina-s-123bb238b/"
+            >Karolina Szary</a
+          >
+        </p>
       </div>
     </footer>
 

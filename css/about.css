@@ -113,11 +113,11 @@
   opacity: 0.6;
 }
 
-.why-card h3 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 2rem;
-  margin-bottom: 1.3rem;
+.why-card-title {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  line-height: 2rem !important;
+  margin-bottom: 1.3rem !important;
 }
 
 .why-card p {
@@ -382,20 +382,19 @@
 }
 
 .process-number {
-  font-size: 3.4rem;
-  color: #e2b041;
-  font-weight: 700;
+  font-size: 3.4rem !important;
+  color: #e2b041 !important;
+  font-weight: 700 !important;
   letter-spacing: 0.3rem;
-  margin-bottom: 2rem;
 }
 
-.process-card h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 1.35;
-  text-transform: uppercase;
-  color: #ffffffe6;
-  text-align: left;
+.process-card-title {
+  font-size: 1.6rem !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  text-transform: uppercase !important;
+  color: #ffffffe6 !important;
+  text-align: left !important;
 }
 
 .process-card p {
@@ -485,9 +484,9 @@
   margin-bottom: 1.7rem;
 }
 
-.value-card h3 {
-  font-size: 1.4rem;
-  font-weight: 700;
+.value-card-title {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
   line-height: 2rem;
   margin-bottom: 1.7rem;
 }

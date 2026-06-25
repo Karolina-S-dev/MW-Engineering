@@ -290,6 +290,31 @@
   color: #9aa4b2;
 }
 
+
+.form-checkbox {
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.form-checkbox input {
+  width: 1.7rem;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  accent-color: #11151b;
+  flex-shrink: 0;
+}
+
+.form-checkbox a {
+  color: #000;
+  font-weight: 700;
+}
+
+.form-checkbox label {
+  line-height: 1.6rem;
+  font-size: 1.1rem;
+}
+
+
 .form-button {
   display: block;
   align-self: center;
