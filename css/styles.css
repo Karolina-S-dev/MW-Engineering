@@ -111,7 +111,7 @@ header {
 }
 
 .nav-button {
-  transition: all 0.4s ease;
+  transition: transform 0.4s ease;
   position: relative;
   padding: 1.5rem 2.5rem;
   font-size: 1.5rem;
@@ -125,7 +125,12 @@ header {
   transform: scale(1.035);
 }
 
-.nav-button::after {
+.nav-button span {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-button span::after {
   content: "";
   position: absolute;
   background: linear-gradient(
@@ -135,13 +140,19 @@ header {
     #9ca3af 70%,
     #4b5563 100%
   );
-  bottom: 8px;
+  bottom: -8px;
   left: 50%;
   height: 2px;
-  width: 75%;
+  width: 100%;
   transform: translateX(-50%) scaleX(0);
   transform-origin: center;
   transition: transform 0.4s ease;
+  opacity: 0;
+}
+
+.nav-button:hover span::after {
+  opacity: 1;
+  transform: translateX(-50%) scaleX(1);
 }
 
 .nav-button--primary {
@@ -191,6 +202,7 @@ nav ion-icon[name="reorder-three"] {
     rgba(30, 35, 40, 0.15) 85%,
     rgba(40, 45, 50, 0.05) 100%
   );
+  -webkit-filter: brightness(85%) contrast(115%) saturate(90%);
   filter: brightness(85%) contrast(115%) saturate(90%);
   z-index: 2;
 }
@@ -199,6 +211,8 @@ nav ion-icon[name="reorder-three"] {
   position: relative;
   max-width: 53rem;
   z-index: 3;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
   max-height: fit-content;
   margin-left: 10rem;
 }
@@ -297,6 +311,8 @@ nav ion-icon[name="reorder-three"] {
   font-size: 1.9rem;
   line-height: 4rem;
   font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -394,6 +410,7 @@ nav ion-icon[name="reorder-three"] {
 .home-proof-logos img {
   max-height: 5.5rem;
   width: auto;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 /* --------------------------- */
@@ -425,6 +442,7 @@ nav ion-icon[name="reorder-three"] {
 .home-benefits-image {
   flex: 0 0 calc(60%);
   display: flex;
+  -webkit-clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
   height: 100%;
   overflow: hidden;
@@ -435,8 +453,11 @@ nav ion-icon[name="reorder-three"] {
 .home-benefits-image img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -webkit-filter: brightness(0.95) contrast(1.1) saturate(0.9);
   filter: brightness(0.95) contrast(1.1) saturate(0.9);
+  -o-object-position: 5% center;
   object-position: 5% center;
 }
 
@@ -505,11 +526,15 @@ nav ion-icon[name="reorder-three"] {
 
 .carousel-track {
   display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
+  -webkit-animation: scroll 20s linear infinite;
   animation: scroll 20s linear infinite;
   height: 13rem;
 }
 .carousel-track:hover {
+  -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
 
@@ -526,7 +551,17 @@ nav ion-icon[name="reorder-three"] {
   width: auto;
   flex-shrink: 0;
   display: block;
+  -webkit-filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.212));
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.212));
+}
+
+@-webkit-keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes scroll {
@@ -555,6 +590,8 @@ footer {
   align-items: flex-start;
   width: 100%;
   margin: 0 auto;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
   max-height: fit-content;
   gap: 5rem;
 }
@@ -671,6 +708,6 @@ footer img {
   background-color: #1b2330;
 }
 
-.footer-data{
+.footer-data {
   max-width: 28rem;
 }
