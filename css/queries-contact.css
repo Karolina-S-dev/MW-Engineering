@@ -70,10 +70,6 @@
   .image-wrapper img {
     height: 20vh;
   }
-  .contact-us-col {
-    justify-content: space-between;
-    height: 100%;
-  }
 }
 
 /* mobile - phones */

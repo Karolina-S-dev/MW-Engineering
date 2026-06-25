@@ -65,3 +65,29 @@ if (navBurger && navLinks) {
     }
   });
 }
+
+// ----- Contact form toast -----
+
+const params = new URLSearchParams(window.location.search);
+const formMessage = document.getElementById("form-message");
+
+if (formMessage && params.has("status")) {
+  if (params.get("status") === "success") {
+    formMessage.textContent = "Dziękujemy! Wiadomość została wysłana.";
+    formMessage.classList.add("success");
+  } else {
+    formMessage.textContent = "Nie udało się wysłać wiadomości.";
+    formMessage.classList.add("error");
+  }
+
+
+  window.history.replaceState({}, "", window.location.pathname);
+
+  setTimeout(() => {
+    formMessage.style.opacity = "0";
+
+    setTimeout(() => {
+      formMessage.style.display = "none";
+    }, 400);
+  }, 5000);
+}

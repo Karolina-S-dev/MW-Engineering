@@ -214,27 +214,29 @@
               />
             </div>
           </div>
-          <div class="form-group">
-            <label for="email">Email*</label>
-            <input
-              type="email"
-              placeholder="Adres e-mail"
-              id="email"
-              name="email"
-              autocomplete="email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="phone">Numer telefonu*</label>
-            <input
-              type="tel"
-              placeholder="Podaj swój numer telefonu"
-              id="phone"
-              name="phone"
-              autocomplete="tel"
-              required
-            />
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input
+                type="email"
+                placeholder="Adres e-mail"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Numer telefonu*</label>
+              <input
+                type="tel"
+                placeholder="Podaj swój numer telefonu"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+                required
+              />
+            </div>
           </div>
           <div class="form-group">
             <label for="position">Stanowisko</label>
@@ -256,8 +258,15 @@
           </div>
           <label class="file-upload">
             <ion-icon name="attach-outline"></ion-icon>
-            Wybierz plik (opcjonalnie)
-            <input type="file" name="file" />
+            <div class="flex-col">
+              Wybierz plik (opcjonalnie)
+              <span>PDF, DOC, DOCX, JPG, PNG, maks. 10 MB</span>
+              <input
+                type="file"
+                name="file"
+                accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+              />
+            </div>
           </label>
 
           <div class="form-checkbox flex-row">
@@ -273,6 +282,7 @@
               udzielenia odpowiedzi na przesłane zapytanie.
             </label>
           </div>
+          <p id="form-message" class="form-message"></p>
           <div class="form-button">
             <button class="btn-submit" type="submit">Wyślij zapytanie</button>
           </div>
