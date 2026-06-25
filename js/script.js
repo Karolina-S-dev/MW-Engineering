@@ -80,7 +80,6 @@ if (formMessage && params.has("status")) {
     formMessage.classList.add("error");
   }
 
-
   window.history.replaceState({}, "", window.location.pathname);
 
   setTimeout(() => {
