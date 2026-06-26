@@ -3,8 +3,11 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 60vh;
   overflow: hidden;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  padding: 8rem 12rem;
 }
 
 .hero-video {
@@ -31,15 +34,10 @@
 }
 
 .hero-content {
-  position: absolute;
-  left: 8rem;
-  color: #fff;
+  position: relative;
   z-index: 3;
+  color: #fff;
   max-width: 60rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .section-label {
