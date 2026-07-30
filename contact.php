@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $position = htmlspecialchars($_POST["position"] ?? "");
     $message = htmlspecialchars($_POST["message"] ?? "");
 
-    $to = "biuro@mw-engineering.pl";
+    $to = "karolina.szary93@gmail.com";
     $subject = "Nowe zapytanie ze strony MW-Engineering";
 
     $boundary = md5(time());
