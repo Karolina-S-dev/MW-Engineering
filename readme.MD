@@ -90,14 +90,31 @@ This project helped me strengthen my practical frontend development skills by:
 
 ---
 
-## Technologies
+## Tech Stack
+
+### Frontend
 
 - HTML5
 - CSS3
+- JavaScript
+
+### Styling & Responsive Design
+
 - Flexbox
 - Media Queries
-- JavaScript
-- PHP – contact form integration
+
+### Backend
+
+- PHP (contact form integration)
+
+### Version Control
+
+- Git
+- GitHub
+
+### Deployment
+
+- GitHub Pages
 
 ---
 
@@ -112,4 +129,4 @@ Google Lighthouse performance scores ranged from 89 to 96 across the website pag
 
 ## Author
 
-Designed and Developed by Karolina Szary
+Designed and developed by Karolina Szary
